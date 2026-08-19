@@ -146,6 +146,24 @@ b = np.array([1+2j,-1,2-1j])
 np.sum(np.conj(a)*b)
 `````
 Fysikere og matematikere er uenige
+
+
+## Finne uttrykk for plan 
+Punkt + normalvektorl
+Punktet ligger i planet om differansen mellom puntket og (generellt) punkt i plan er ortogonalt med normalvektoren. 
+
+$0=((x,y,z)-(x_0,y_0,z_0))\cdot (a,b,c))$
+Kan skrives $ax+by+cz=ax_0 + by_0+cz_0$
+HS er en konstant:)
+
+## Generalisering av Pythagoras
+Hvis $\vec{a}$ og $\vec{b}$ er ortogonale så er:
+$|\vec{a}+\vec{b}|^2$ = skalarprodiktet av a + b med seg selv. Ganges ut. Blir null for a x b, også 0 konjugert for b x a. $\overline{0}=0$
+
+
+$|\vec{a}+\vec{b}|^2 = |\vec{a}|^2+|+\vec{b}|^2$
+PYTAGORAS, bare generelt for vektorer i alle n
+
 Neste tema: [[Matriser]]
 
 
