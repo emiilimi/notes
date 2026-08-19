@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: emiilimi.github.io/notes
+  baseUrl: notater.emoldestad.no
   ignorePatterns:
     - private
     - templates
