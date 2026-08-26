@@ -3,6 +3,7 @@
 
 # Vektorer (Nå begynner vi faktisk)
 
+[Bok](https://erasmus-ctm.github.io/linalg-project/book-student/matrixintro/matrixintro.html#length-scalar-product-and-projection)
 ##  generelt
 
 En vektor: samling av tall (komponenter) listet i en gitt rekkefølge. (I kompendiet er de i fet skrift)S
@@ -166,4 +167,37 @@ PYTAGORAS, bare generelt for vektorer i alle n
 
 Neste tema: [[Matriser]]
 
+## Projeksjoner
+(eksamensrelevant for midtveiseksamen.([**midtveis MAT1105 H25**](https://www.uio.no/studier/emner/matnat/math/MAT1105/oppgaver/midtveis/Deleks.MAT1105.H2025.pdf): 1-2  
+[**prøvemidt. MAT1105 H25**](https://www.uio.no/studier/emner/matnat/math/MAT1105/oppgaver/midtveis/Deleks.MAT1105.H2025_prove.pdf): 1-2))
 
+"I mitt kompendium er det litt flytende hva som er et punkt og hva som er en vektor"
+
+Minner om R2 punkt til linje. Projeksjon av a på linjen gjennom b. Normalvektor fra b til a.
+
+$\vec{p}=c\cdot \vec{b}$ (Parallelle. ) Ortogonal på $\vec{a}-c\cdot\vec{b}$
+|b|^2 ?
+
+(regneeksempel. OK)
+
+## så begynner vi med vinkler:)
+$\theta$ er vinkelen mellom $\vec{a}$ og $\vec{b}$
+projeksjonen av a på b blir hosliggende katet. a er hypotenus. cos $\theta$ = jhos/hyp
+
+også forenkles og forkortes uttrykk for projektsjonen
+Følger at: $|\vec{a}\cdot\vec{b}|=|\vec{a}||\vec{b}|cos\theta$
+
+Også beviser/utleder vi at cosinus er rasistisk. 
+
+## Schwarz-ulikheten
+Bevis
+$|\vec{a}\cdot\vec{b}|<=|\vec{a]}||\vec{b}|$
+Setter inn pytagoras. |a^2| = proja a på b ^2
+
+Se forelesningsnotat. Greit bevis. 
+Når får man likhet?
+hvis og bare hvis a=proj a på b
+
+## Trekantlikheten
+
+Korteste avstand til et punkt er en rett linje. Høres ganske åpenbart ut. Bevis i forelesnignsnotat.

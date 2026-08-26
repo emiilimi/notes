@@ -63,3 +63,5 @@ WW2. Teknovitenskap. Atombombe, kryptologi, kodeknekking, radarer --> datamaskin
 Prestisjen til fysikk etter WW2 skaper stort miljø for teknologivitenskap. Siden den gang, ganske smooth sailing frem til nå. Turbulent. 
 
 Sånn ferdig:)
+
+Neste tema: [[Mengder]]
