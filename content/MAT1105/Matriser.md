@@ -106,6 +106,8 @@ $tA$ matrise med komponenter $ta_{ij}$
 hopper over en slide for vi har ikke definert matriseaddisjon ennå.
 
 $(A+B)^T=A^T+B^T$
+$(AB)^T=B^T A^T$
+
 $((A+B)^T)_{ij}=(A+B)ji$
  og så videre til vi står komponentvis $a_{ij}+b_{ij}=a_{ij}+b_{ij}$
 
@@ -162,13 +164,11 @@ $ax^T=(\begin{matrix} a_{1} \\  a_{2} \\ \dots \\  a_{m}\end{matrix}) ( \begin{m
 5. A $m\times n$ så $AI_{n}=A$ og en til omskrivning. $I_{n}$ er nøytralt element. 
 
 
-
 #### Bevis for #1
 se forelesningsnotat
 Bruker summeformel (definisjonen av produktet $AB$) for matrisemultiplikasjon definert tidligere. 
 Gir sånn ca mening. 
 Gir mye mer mening utifra lineære transformasjoner...
-
 
 
 #### Bevis for #5

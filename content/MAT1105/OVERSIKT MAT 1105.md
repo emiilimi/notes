@@ -28,3 +28,5 @@ Ukesoppgaver: [Lenke på kurssiden!](https://www.uio.no/studier/emner/matnat/mat
 Obliger: 5 stk, 3 må leveres. Mulighet til å få tilbakemelding på hvordan man har løst en oppgave. Benytt seg av! Frist 14.30 torsdager, Canvas. Det dere leverer er GODKJENT. Utsatt frist: over helgen. 
 Legemelding: Mail til studieinfo@math.uio.no
 
+Gruppelærer:
+annebrug@g

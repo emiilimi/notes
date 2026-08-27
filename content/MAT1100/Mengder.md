@@ -90,3 +90,8 @@ HVis ikke: $x>2$ som gir $x^{2} \leq 2$
 
 Vi innfører ved hjelp av aksiomet $r=sup\;I$
 Vi vil sjekke at $r^{2}=2$
+
+
+
+
+neste emne: [[Induksjon]]

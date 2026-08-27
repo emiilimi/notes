@@ -58,6 +58,7 @@ Hvis KI forandrer måten vi tenker på matematikk på, så er det ikke første g
 Leibniz og Newton: transformerer samfunnet, teknologiutvikling, vesentlig komponent til den industrielle revolusjon. Forandring skjer etappevis (regelmessig??)
 (Eulers tid: matematikk for the happy (rich) few) (I dag: evnen til å modellere fenomener i natur og samfunn. Ingeniørhøyskoler ila 1800-tallet.)
 
+
 WW2. Teknovitenskap. Atombombe, kryptologi, kodeknekking, radarer --> datamaskin!
 
 Prestisjen til fysikk etter WW2 skaper stort miljø for teknologivitenskap. Siden den gang, ganske smooth sailing frem til nå. Turbulent. 
