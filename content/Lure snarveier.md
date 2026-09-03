@@ -19,23 +19,27 @@ Herlig. $$\sqrt{x}$$
 Eller
 $f(x)=2x^2$
 
+
+$\vdots$  `\vdots`
+
+
 ## Symboler
 
 Vanlige symboler kan vi finne i knappene i formeleditoren, men det tar ofte lang tid, og det er raskere å lære seg hurtigtastene for dem. Koden for de ulike symbolene er veldig lik LaTeX-kode.
 
 Aktuelle koder:
 
-| LaTeX Code         | Resultat          | Latex Suite               | LaTeX Code   | Resultat             | Latex Suite     |
-| ------------------ | ----------------- | -------------------------- | ------------ | --------------------- | --------------- |
-| `\in`              | $\in$             | `inn`                      | `\pm`        | $\pm$                 | `+-`            |
-| `\geq`             | $\geq$            | `>=`                       | `\infty`     | $\infty$              | `ooo`           |
-| `\leq`             | $\leq$            | `<=`                       | `\wedge`     | $\wedge$              | *ingen snarvei* |
-| `\neq`             | $\neq$            | `!=`                       | `\cdot`      | $\cdot$               | `cdot` / `**`   |
-| `\leftarrow`       | $\leftarrow$      | *ingen snarvei*            | `\cup`       | $\cup$                | `orr`           |
-| `\Leftarrow`       | $\Leftarrow$      | *ingen snarvei*            | `\sqrt{ }`   | $\sqrt{\phantom{x}}$  | `sq`            |
-| `\rightarrow`      | $\rightarrow$     | `->`                       | `\subseteq`  | $\subseteq$           | `sub=`          |
-| `\Rightarrow`      | $\Rightarrow$     | `=>` (→ \implies)          | `\vee`       | $\vee$                | *ingen snarvei* |
-| `\Leftrightarrow`  | $\Leftrightarrow$ | `<->` (→ \leftrightarrow)  | `\degree`    | $\degree$             | *ingen snarvei* |
+| LaTeX Code        | Resultat          | Latex Suite               | LaTeX Code  | Resultat             | Latex Suite     |
+| ----------------- | ----------------- | ------------------------- | ----------- | -------------------- | --------------- |
+| `\in`             | $\in$             | `inn`                     | `\pm`       | $\pm$                | `+-`            |
+| `\geq`            | $\geq$            | `>=`                      | `\infty`    | $\infty$             | `ooo`           |
+| `\leq`            | $\leq$            | `<=`                      | `\wedge`    | $\wedge$             | *ingen snarvei* |
+| `\neq`            | $\neq$            | `!=`                      | `\cdot`     | $\cdot$              | `cdot` / `**`   |
+| `\leftarrow`      | $\leftarrow$      | *ingen snarvei*           | `\cup`      | $\cup$               | `orr`           |
+| `\Leftarrow`      | $\Leftarrow$      | *ingen snarvei*           | `\sqrt{ }`  | $\sqrt{\phantom{x}}$ | `sq`            |
+| `\rightarrow`     | $\rightarrow$     | `->`                      | `\subseteq` | $\subseteq$          | `sub=`          |
+| `\Rightarrow`     | $\Rightarrow$     | `=>` (→ \implies)         | `\vee`      | $\vee$               | *ingen snarvei* |
+| `\Leftrightarrow` | $\Leftrightarrow$ | `<->` (→ \leftrightarrow) | `\degree`   | $\degree$            | *ingen snarvei* |
 
 > Snarveier merket **(auto)** eller uten "Tab" skrives ut med en gang. De uten merking krever `Tab` for å utløse selve LaTeX-koden (f.eks. skriv `sum`, så `Tab` for å få `\sum_{i=1}^{N}`). Symboler merket *ingen snarvei* finnes ikke i standardoppsettet til Latex Suite — du må skrive full LaTeX-kode, eller legge til en egen snippet i innstillingene.
 
@@ -78,5 +82,7 @@ Hvis du kjenner navnet på den greske bokstaven, så skriver du det med \ foran,
 | Er ikke element i      | `x \notin A`     | $x \notin A$         | `notin` (auto)           |
 | Tom mengde             | `\emptyset`      | $\emptyset$           | `eset` (auto)             |
 | Mengdebygger           | `\{ x : x > 0 \}` | $\{ x : x > 0 \}$   | `set` (auto, gir `\{ \}` med markør inni) |
+$\vdots$  `\vdots`
+
 
 > Etter `set` må du selv skrive innholdet og et kolon/strek (`:` eller `\|`) for betingelsen, f.eks. `set` → `\{ x : x > 0 \}`.

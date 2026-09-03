@@ -16,13 +16,14 @@ $m-k+1$ muligheter...
 
 Det finnes $n$
 
+Vist på tavlen. 
+
 fakultet bare ikke hele veien ned dvs vi deler på den delen av fakulteten vi ikke tok. 
 
 
 Hvor mange ordnete utvalg finnes? danner mengden av ordnete utvalg og teller elementer. 
 fakultet!
 
-dette ga ikke helt mening. 
 $n!$ ordnede utvalg av $n$ elementer i $A$ (gitt at |A|=n)
 
 ## Uordnete utvalg
@@ -32,3 +33,15 @@ Ordnet utvalg, og glemmer orden. Samme som å velge en delmengde av $k$ elemente
 
 Kalligrafisk stor p av a=$\{ B: B\in A \}$ og$|B|=k$ ($\#B$)
 notasjon m over k gitt at m er elementer i A. 
+
+$\begin{matrix} m \\  k\end{matrix}=\frac{m!}{(m-k)!(k!)}$
+
+
+## Sammenheng mellom biomialkoeffisienter
+$\begin{matrix}n+1 \\  i\end{matrix}=\begin{matrix}n \\  i-1\end{matrix}+ \begin{matrix} n \\  i\end{matrix}$
+
+med eller uten Anne (ref KOLA)
+
+### BINOMIALFORMELEN:
+Utledes av pascals trekant kind of?
+$(a+b)^n=\sum_{i=0}^{n}(\begin{matrix}n \\  i\end{matrix})a^{n-i}b^i$
