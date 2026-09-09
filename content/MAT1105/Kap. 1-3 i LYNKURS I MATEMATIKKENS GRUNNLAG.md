@@ -6,8 +6,8 @@
 *Definisjon*: beviser ingenting, introduserer nye begreper
 
 *Mengder*: samlinger av matematiske objekter. 
-
+[[Mengder]]
 
 Se over eksemplene og regn oppgaver.
 
-Hva i all verden er det kartesiske produktet?
+[[Utsagnslogikk]]

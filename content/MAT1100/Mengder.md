@@ -1,5 +1,5 @@
 
-### Først litt om induksjonsbevis?
+### Først litt om implikasjon?
 Implikasjon: Vi påstår P, og at $P \implies Q$, Q er sant.
 Dersom vi fra P kan utlede Q:$P\implies Q$
 
@@ -8,7 +8,9 @@ Dersom vi fra P kan utlede Q:$P\implies Q$
 *annet viktig poeng: og betyr BÅDE OG, eller betyr ELLER (ikke enten eller)*
 
 Sannhetstabell: 
+
 | P | Q | $P\implies Q$ |
+| - | - | ---- | 
 | U | U | S |
 | U | S | S |
 | S | U | U | 
@@ -18,6 +20,7 @@ Sannhetstabell:
 *"Alle synes dette er rart*
 Farris men bare på torsdager osv. 
 
+resten her [[Utsagnslogikk]]
 ## Mengder
 
 A snitt B

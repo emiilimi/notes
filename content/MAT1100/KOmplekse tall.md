@@ -46,7 +46,7 @@ bruker assosiativitet av addisjon for reelle tall for å bevise at assosiativite
 
 
 Modulus til $z$ er $|z|=\sqrt{ a^{2}+b^{2} }$ (utvidelse av absoluttverdi til de komplekse tallene)
-$|z|^2=z*zkonjugert$
+$|z|^2=z*\bar{z}$
 
 
 Konjugering: Vi definerer konjugering: speiling om aksen
@@ -56,19 +56,65 @@ Invers: Utled...
 $\frac{1}{z}$, gang ut med zkonjugert, $\frac{a-bi}{a^{2}+b^{2}}$
 
 
-
-
 15 min hull
 
-
-$\mathrm{Re}(z)=\frac{1}{2}*(z+z)$
-
-
+$\mathrm{Re}(z)=\frac{1}{2}*(z+\bar{z})$
 
 ### Trekantulikheten
 
 $|z_{1}+z_{2}|\leq|z_{1}|+|z_{2}|$
 	enkelt visuelt
 
-
 greit på tavlen også når alt ble rettet til slutt.
+
+
+## Komplekse tall runde 2!
+Repetisjon:
+$z=a+bi, a,b \in \mathbb{R}$
+$a=\mathrm{Re}(z)$
+$b=\mathrm{Im}(z)$
+Modulus/absoluttverdi: $|z|=\sqrt{ a^{2}+b^{2} }$
+$\bar{z}=a-bi$
+
+
+Også har vi noen egenskaper som vi viste tidligere.
+Antar at vi kan regne med komplekse tall som med reelle tall
+"bør sjekke at alle regnereglene gjelder, men det er et ganske møysommelig arbeid"
+
+Bør bevises. Måten man beviser: sett inn notasjon (utifra definisjon) og skriv ut hva det tilsvarer. "Knotete. Noen synes det er gørr kjedelig, jeg synes det er kjempegøy. Ikke hold det imot meg."
+
+
+## POLARFORM
+Begynner med enhetssirkelen. punkter på enhetssirkel: $(\cos\theta,\sin\theta)$ med $\theta \in \mathbb{R}$ (vi kan gå mange runder på enhetssirkelen, og i negativ retning)
+Bestemt opp til et tall $2\pi k,k \in \mathbb{Z}$ "ok dette tar jeg for gitt"
+(IDENTITETER trigonometrisk!)
+
+**KOMPLEKS NOTASJON** $U=\{ z\in \mathbb{C}:|z|=1\}$
+for $z \in U$ finnes det $\theta \in \mathbb{R}$ slik at $z=\cos \theta + (\sin \theta)i$
+bestemt mod $2\pi k,k\in \mathbb{Z}$
+
+Generelt kan vi skrive $z=r (\cos \theta + (\sin \theta)i)$ med $r\geq 0, \theta \in \mathbb{R}$ men hva skjer når $r=0$???
+$|z|=r$ (tall på enhetssirkelen, ligger i kortene at dette har modulus 1)
+
+
+
+Anta $z\neq=0$
+$|\frac{z}{|z|}|=1$ 
+
+
+"Det som er litt magisk:" Multiplikasjon blir enklere.
+
+### Invers
+$(e^{i\theta})^{-1}=e^{-i\theta}$
+fordi $e^{i\theta}e^{-i\theta}=e^{i(\theta-\theta)}=e^{i 0}=1$
+(og 1 er nøytralt element for multiplikasjon)
+
+#### Multiplikasjon av komplekse tall i polarform
+
+$r_{1}e^{i\theta_{1}}*r_{2}e^{i\theta_{2}}=r_{1}*r_{2}*e^{i(\theta_{1}+\theta_{2})}$
+
+$r$ er modulusen, $\theta$ er argument.  3blue1brown!!!!
+
+Eneste man trenger for å multiplisere:)
+
+Videre: [[Komplekse røtter]]

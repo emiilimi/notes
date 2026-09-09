@@ -7,7 +7,7 @@
 |     | torsdag                         | 2        | 2.1–2.2          |                | [[funksjoner]]                               |                           |
 |     | fredag                          |          | 1.15, 2.3–2.4    |                | plangeometri (Gjør på egen hånd! se ressurs) |                           |
 | 36  | mandag                          | 8        | 8.1–8.2          | 3.1–3.3        | [[KOmplekse tall]]polark.                    |                           |
-|     | torsdag                         |          | 8.3–8.4          | 3.4            | røtter                                       |                           |
+|     | torsdag                         |          | 8.3–8.4          | 3.4            | røtter [[Komplekse røtter]]                  |                           |
 |     | fredag                          |          | 8.5–8.6          | 3.5            | likninger                                    |                           |
 | 37  | mandag                          | 5        | 5.1–5.2          | 4.3            | følger, grenser                              |                           |
 |     | torsdag                         |          | 5.3–5.4          | 5.1–5.2        | kontinuitet, skjæring                        |                           |

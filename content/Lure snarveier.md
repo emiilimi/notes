@@ -86,3 +86,59 @@ $\vdots$  `\vdots`
 
 
 > Etter `set` må du selv skrive innholdet og et kolon/strek (`:` eller `\|`) for betingelsen, f.eks. `set` → `\{ x : x > 0 \}`.
+
+## Konjugert (komplekse tall)
+
+| Beskrivelse                              | LaTeX Code         | Resultat           | Latex Suite                         |
+| ----------------------------------------- | ------------------ | -------------------- | -------------------------------------- |
+| Konjugert, strek over enkeltbokstav       | `\bar{z}`          | $\bar{z}$           | `zbar` (auto, kun for én bokstav)      |
+| Konjugert, strek over lengre uttrykk      | `\overline{a+bi}`  | $\overline{a+bi}$   | *ingen snarvei*                        |
+| Konjugert, stjerne-notasjon               | `z^*`              | $z^*$               | `conj` (auto, gir `^{*}` etter bokstaven) |
+
+## Utsagnslogikk
+
+Egendefinerte snarveier fra `MAT1105/Utsagnslogikk.md` — disse er ikke standard i Latex Suite, du har lagt dem inn selv i snippet-innstillingene.
+
+| Beskrivelse                    | LaTeX Code    | Resultat        | Latex Suite (egendefinert) |
+| ------------------------------- | -------------- | ----------------- | ----------------------------- |
+| Negasjon (ikke)                 | `\neg`        | $\neg P$        | `MKneg`                       |
+| Konjunksjon (og)                | `\land`       | $\land$         | `MKland`                       |
+| Disjunksjon (eller)             | `\lor`        | $\lor$          | `MKlor`                        |
+| Implikasjon (impliserer)        | `\implies`    | $\implies$      | `MK=>` (standard `=>` finnes også) |
+| Omvendt implikasjon (implisert av) | `\impliedby` | $\impliedby$   | `MKimpliedby` (standard `=<` finnes også) |
+| Ekvivalens (hvis og bare hvis)  | `\Leftrightarrow` | $\Leftrightarrow$ | `MK<-->`                   |
+| For alle                        | `\forall`     | $\forall$        | *ingen snarvei*                |
+| Det finnes                      | `\exists`     | $\exists$        | *ingen snarvei*                |
+
+> $\land$/$\lor$ er samme symboler som brukes for snitt/union i mengdelære (`\wedge`/`\vee` gir identisk resultat) — konteksten avgjør om det leses som "og"/"eller" (logikk) eller "snitt"/"union" (mengder).
+
+> `\bar` gir en kort strek rett over én bokstav (typisk for $\bar z$), mens `\overline` strekker streken over hele uttrykket — bruk den når du konjugerer noe som `a+bi`.
+
+## Matrisesyntaks
+
+Eksempel:
+
+```
+$$
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+$$
+```
+
+$$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$$
+
+| Miljø        | Parentes          | LaTeX Code                                | Latex Suite         |
+| ------------- | ------------------ | ------------------------------------------- | --------------------- |
+| `pmatrix`    | ( )                | `\begin{pmatrix} ... \end{pmatrix}`        | `pmat` (auto, i `$$`) |
+| `bmatrix`    | [ ]                | `\begin{bmatrix} ... \end{bmatrix}`        | `bmat` (auto)          |
+| `Bmatrix`    | { }                | `\begin{Bmatrix} ... \end{Bmatrix}`        | `Bmat` (auto)          |
+| `vmatrix`    | \| \| (determinant) | `\begin{vmatrix} ... \end{vmatrix}`        | `vmat` (auto)          |
+| `Vmatrix`    | ‖ ‖ (norm)          | `\begin{Vmatrix} ... \end{Vmatrix}`        | `Vmat` (auto)          |
+| `matrix`     | ingen              | `\begin{matrix} ... \end{matrix}`          | `matrix` (auto)        |
+| `cases`      | { (kun venstre)    | `\begin{cases} ... \end{cases}`            | `cases` (auto)         |
+
+> Skille mellom kolonner: `&`. Ny rad: `\\`.
+> Inni en matrise/cases-blokk i Latex Suite: `Tab` setter inn `&`, `Enter` setter inn `\\` og ny linje, `Shift+Enter` hopper til slutten av neste linje (bruk denne for å komme deg ut av matrisen).
+> Trippel- eller flerlinjematriser skrives med samme mønster, bare fortsett med `&` og `\\` for hver rad.
