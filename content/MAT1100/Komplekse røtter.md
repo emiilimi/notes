@@ -1,5 +1,5 @@
 
-### På polarform
+### Kvadratrøtter på polarform
 la $z \in \mathbb{C}, z\neq 0, z=re^{i\theta}$
 [[KOmplekse tall]]
 
@@ -10,10 +10,7 @@ da blir $w^{2}=r'^{2}*e^{i*2\theta}$  mellomregning $(r'e^{i\theta})^{2}=r'^{2}*
 
 $w=\pm\sqrt{ r }*e^{i(\theta/2)}$
 
-
-
-	
-	husk at $-1=e^{i\pi}$ og $i=e^{i(\pi/2)}$
+husk at $-1=e^{i\pi}$ og $i=e^{i(\pi/2)}$
 ## Roten av et negativt tall
 
 
