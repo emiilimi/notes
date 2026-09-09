@@ -31,3 +31,5 @@ Som gir to rene imaginære tall, der den ene er den andre $*-1$, altså konjuger
 
 For komplekse tall bruk polarform og kompleks rot.
 
+
+## N-te-røtter

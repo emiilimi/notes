@@ -8,7 +8,7 @@ Can machines think?
 
 Proposes a different question: The imitation game (Turing test)
 Interrogator - 1 is trying to trick the machine, 1 does not. 
-Then switc human with AI.
+Then switch human with AI.
 
 1st benchmark ever? 
 
@@ -145,12 +145,23 @@ Chain of thought. Think through problems step by step, write down reasoning in b
 System 1, system 2. (System 2: reasoning, essentially chain of thought.) Gain in capability by imitating humans. 
 
 
-Conceptual blending without language? Really good question.
+**Conceptual blending without language?** Really good question.
 Concepts can be without language.
 Making sense of physics. Blending visualisation. Topography maps, visuals, graphs, electical charge formula. "Language does not in fact define thought"
 
 Do we want unbiased or biased models/how do we want our models to be representative?
 Bias: Personal opinion. Opaque models? Some represent real world as accurate as possible. Others are "unbiased"/"objective" for legal purposes etc. (or for legal purposes specifically, biased in a certain direction)
+
+**Blending, perception of time and self?**
+Does conceptual blending of time and self apply to AI, in what way? 
+
+Suspicion: Quantitative problem. Humans have many different ways tp represent information. Can offload into visual representations, maps, etc. (Is there something about this that makes us self-aware??) AI is phiyscally restricted in ways of representing informations (vectors, tokens, etc), cant offload into visuals in the same way (but perhaps in the future?). But then again has other ways to offload (by running code programs internally etc.)
+Very interesting!
+
+My brewing reflectuions/questions:
+Can alignment be described as a sum of biases/emergin behaviours? Anthropic's research into AI Characther... 
+
+
 
 Anbefaling: neuronpedia
 

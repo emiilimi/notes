@@ -109,7 +109,8 @@ $(e^{i\theta})^{-1}=e^{-i\theta}$
 fordi $e^{i\theta}e^{-i\theta}=e^{i(\theta-\theta)}=e^{i 0}=1$
 (og 1 er nøytralt element for multiplikasjon)
 
-Kartesisk: $\frac{1}{z}$ som utvides til $\frac{\bar{z}}{}$
+Kartesisk: $\frac{1}{z}$ som utvides til $\frac{\bar{z}}{|z^{2}|}$ (utvide med $\bar{z}$)
+
 #### Multiplikasjon av komplekse tall i polarform
 
 $r_{1}e^{i\theta_{1}}*r_{2}e^{i\theta_{2}}=r_{1}*r_{2}*e^{i(\theta_{1}+\theta_{2})}$

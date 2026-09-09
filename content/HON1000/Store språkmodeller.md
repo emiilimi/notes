@@ -46,3 +46,6 @@ Finner ut hva som er viktig (attention), og mater det videre slik at det prosses
 Laste ned alt som finnes på internett. Trenes på ett ord av gangen. (Mye rart på internett, ikke represententativ. "Quora reply". Bøker? Vitenskap?)
 Bra, fordi kombinerer embeddings, 
 
+
+
+Neste: [[Conceptual blending]]
