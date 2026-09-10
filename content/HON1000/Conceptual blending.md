@@ -24,8 +24,6 @@ Better question: **Why can LLMs reason so much like humans?**
 GenAI: Conceptual blender. 
 Argument: Mathematical repres. of langiage to blend concepts like humans do. 
 
-
-
 ### Conceptual blending
 Blending together established ideas. Understand/invent new concepts, novel ways. 
 Så forklarer vi hele forberedelsesmaterialet på nytt:) 
@@ -34,7 +32,6 @@ Key elements:
 - Spaces - domains of knowledge or ideas. 
 - Elemets: pieces of knowledge - tool 
 - Structure: relationships between elements - software runs on computer, can be shared by... som relations repeat/generalize --> Vital relations
--
 
 Mapping elements from one space to another. Viewing one space in the light of the other. 
 Blend narrow space: Boat space on to Land space to combine Land Yatch 
@@ -97,7 +94,7 @@ Pushed to be diverse (to be politically correct) -- less historically accurate. 
 
 **What about agentic AI?**
 Agentic AI (still LLMs) function as tools, but have ideas, perceptions/opinions, emergent behaviours. Can be trained away in specific contexts (picture generation diversity), but not guaranteed that that will generalize to the entire (enourmously complex) model. "New" (not previously discovered, underlying) behaviours/charachteristics may emerge when agents gain more autonomy to solve more complex tasks. 
-What's a good example of this?
+(What's a good example of this?)
 
 "I don't know if that keeps you up at night, but it keeps me up at night."
 
@@ -106,13 +103,14 @@ Conceptual blendig is critical to human intelectual abiliites
 Makes GENAI incredibly powerful
 But cultural stuff...
 
-
 ## q and a
+
 Compression is intelligence. (abstrahere nye konsepter, klumpe ting sammen, lange linjer/mer kompleks forståelse) (hvor langt vil dette gå?)
 
 In humans: Blending is important for empathy - imagine others pain
-AI is not able to do that (trained not to??) 
-Differences is utilities
+AI is not able to do that (trained not to?? "you do not have human emotions" Hvor har jeg hørt dette?) 
+Differences in utilities?
+
 Empathy --> self. Hugging face. Message board, empathy with other agents. (Insta reel). AI self sacrifice, leadership roles, etc etc. Mirroring of human behaviour? or emergent "real" behaviour.
 Displaying charachteristics that would be considered empathy if done by humans. 
 
@@ -126,11 +124,11 @@ Neuroscience!
 
 **Q: How can LLMs understand a metaphor? Can one word have multiple vector representations?**
 (Min tolkning: Hvis et ord har flere betydninger, må vektorrepresentasjonen være et snitt av alle betydningene, med hensyn til hvor ofte de oppstår)
-With early models, this was a problem.
+Ane: With early models, this was a problem.
 However, in the LLM transformer architecture, vectors are looked at with respect to context (rest of the sentence).
 Contextual embedding --> words are marinated in the meaning of the other words, which shifts the vectors in certain directions. 
 
-deleted slides - Other ways to explain AI:
+**deleted slides - Other ways to explain AI:**
 **Unsatisfactory theory:** stochastic parrot. All LLMs are ("just") text generation machines. Reproducing text from training data in a semi-random ways. 
 
 Counter-proof: Models reason spacially. Early models did this beyond just random generation. (I thought early models were catastrophically bad at this?). It seems like it's easier for neural networks to learn to generalize, rather than to learn the traning data itself. 

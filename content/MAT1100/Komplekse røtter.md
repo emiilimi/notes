@@ -33,3 +33,14 @@ For komplekse tall bruk polarform og kompleks rot.
 
 
 ## N-te-røtter
+
+N-te-roten av et komplekst tall: rotasjon rundt enhetssirkelen, det finnes n n-te-røtter.
+Den prinsipiale n-te roten er gitt ved:
+$w_{1}=\sqrt[n]{r e^{i\theta}  }=\sqrt[n]{r  }e^{i\theta/n}$
+
+$w_{+}=e^{i 2 \pi/n}$
+
+resterende røtter finnes ved å multiplisere $w_{2}=w_{1} \cdot w_{+}$, $w_{3}=w_{2} \cdot w_{+}$  osv.
+
+Bevis for dette: 
+[(forelesningsnotater)](https://www.uio.no/studier/emner/matnat/math/MAT1100/h26/forelesningsbilder%20og%20notater/uke04a.pdf)
