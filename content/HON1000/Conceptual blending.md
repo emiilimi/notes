@@ -40,7 +40,10 @@ Cognitive chunking. Blending happens immediately, is a tool for us. (Metaphor th
 Easy to break things down into other more understandable concepts. New ideas. 
 Poetic illustration (we'll come back to it)
 
+## spørsmål i midten
+
 The generic space?
+No answer
 
 ## Text embeddings
 "going to blend conceptual blendings with text embeddings:)"

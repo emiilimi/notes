@@ -1,5 +1,5 @@
 
-I går skjedde to ting: PISA (ferdigheter så dårlige at det blir et problem for høyere utdanning) og OpenAI nytt bevis. (Og dere befinner dere et sted midt i mellom de to. Ha selvdisiplin.h)
+I går skjedde to ting: PISA (ferdigheter så dårlige at det blir et problem for høyere utdanning) og OpenAI nytt bevis. (Og dere befinner dere et sted midt i mellom de to. Ha selvdisiplin.)
 Ikke kongens begravelse.
 "gjøre neste dag så givende så mulig"
 
@@ -24,11 +24,13 @@ Altså at $P(z)=(z-r)Q(z)$hvor $Q$ er polynom av grad $n-1$
 Anta at $P$ har den reelle koeffissienten $c_{k}=\mathbb{R}$ 
 "tren hjernene deres til å se skjønnhet i håndskrift"
 "øye-hånd-koordinasjon. mye som skjer i hjernen, bra"
+creds til Daniel for [denne videoen](https://www.youtube.com/watch?v=naj0kjZgE0c)(det kunne vært verre)
+
 
 - Da har vi at hver gang $r$ er en rot med multiplisitet $l$ er $\bar{r}$ også en rot med multiplisitet $l$
 - P kan faktoriseres. på formen $P(z)=c_{n}(z-r_{1})\dots(z-r_{k})Q_{1}\dots Q_{n}$
 -der $r_{1}\dots r_{k}$ er reelle tall
-$Q_{1}\dots Q_{m}$ er reele andregrasdpolynom med $\Delta <0$
+$Q_{1}\dots Q_{n}$ er reele andregrasdpolynom med $\Delta <0$
 
 Bevis for a) multiplisitet: Anta at r er en rot
 

@@ -44,4 +44,4 @@ med eller uten Anne (ref KOLA)
 
 ### BINOMIALFORMELEN:
 Utledes av pascals trekant kind of?
-$(a+b)^n=\sum_{i=0}^{n}(\begin{matrix}n \\  i\end{matrix})a^{n-i}b^i$
+$(a+b)^n=\sum_{i=0}^{n}\binom{n}{i}a^{n-i}b^i$
