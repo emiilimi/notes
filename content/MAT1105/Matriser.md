@@ -190,7 +190,8 @@ Skrive matrisen som summen av sine søyler trenger ikke vi å drive på med.
 
 $\vec{F}:\mathbb{R}^n\to \mathbb{R}^m$
 
-
+$F(\vec{a}_{1}+\vec{a}_{2})=F(\vec{a}_{1})+F(\vec{a}_{2})$
+$F(c\vec{a})=cF(\vec{a})$
 1. $𝐅⁡(𝐚1 +𝐚2) =𝐅⁡(𝐚1) +𝐅⁡(𝐚2)$
 2. 𝐅⁡(𝑐⁢𝐚) =𝑐⁢𝐅⁡(𝐚)
 
@@ -204,7 +205,18 @@ projeksjonsmatrise $\vec{b} \vec{b}^T$
 ## Finne matrise til avbildning (transformation?) med rotasjon vinkel
 Trigonometri:)
 
-qagbfvbg
+$\hat{i}$ og $\hat{j}$
+sett sammen de nye posisjonene til $e_{1}$ og $e_{2}$ som vanligvis har verdiene $e_{1}=\begin{pmatrix}1\\  0\end{pmatrix}$ og $e_{2}=\begin{pmatrix}0  \\   1 \end{pmatrix}$
+
+Eks: speiling om $y=x$
+$e_{1}=\begin{pmatrix}0  \\  1\end{pmatrix}$ og $e_{2}=\begin{pmatrix}1  \\   0\end{pmatrix}$
+lineær transformasjon blir da lik $\begin{pmatrix}0 & 1 \\  1 & 0\end{pmatrix}$
+slik at vilkårlige punkt $(2,4)$ blir $\begin{pmatrix}0 & 1 \\  1 & 0\end{pmatrix}\begin{pmatrix}2  \\  4\end{pmatrix}=\begin{pmatrix} 4\\  2\end{pmatrix}$
+
+
+For rotasjon av akser med vinkel $\theta$
+$e_{1}=\begin{pmatrix}\cos \theta \\  \sin \theta\end{pmatrix}$ og $e_{2}=\begin{pmatrix}\cos\left( \frac{\pi}{2}+\theta \right)  \\  \sin\left( \frac{\pi}{2}+\theta \right)\end{pmatrix}$
+så tranformasjonen $\begin{pmatrix}\cos \theta & \cos\left( \frac{\pi}{2}+\theta \right) \\  \sin \theta & \sin\left( \frac{\pi}{2}+\theta \right)\end{pmatrix}$
 
 # plotte polynomer
 

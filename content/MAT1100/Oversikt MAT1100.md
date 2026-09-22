@@ -35,4 +35,4 @@
 - Midtveiseksamen: 05/10 (mandag uke 41)
 - Eksamen: 07/12 (mandag uke 50)
 
-![[Pasted image 20260817112757.png]]
+![[Pasted image 20260914213549.png]]

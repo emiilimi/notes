@@ -110,8 +110,8 @@ og mer på tavle!
 
 # Skjæringssetningen
 La $f:[a,b]\to \mathbb{R}$ være kontinuerlig
-Anta at $f(a)<K<f(b)$ Da finnes det en $c \in [a,b]$
-slik at $f(c)=K$
+Anta at $f(a)<K<f(b)$  (forutsatt $f(a)<f(b)$Da finnes det en $c \in [a,b]$ ($a<c<b$) hvis ikke erd et ikke gøy
+slik at $f(c)=K$ 
 Det gjelder jo bare for kontinuerlige funksjoner!
 
 Finnes det flere c?
@@ -121,10 +121,134 @@ Finnes det flere c?
 ikke tom - a, øvre begrensning b, for alle sosm er mindre eller lik K blir c lik K.
 Motsigelsesbevis. 
 
-og der datt eg av og begynte å tenke på AI safety. 
+
+$S=\{ x \in [a,b]:f(x)\leq K \}$
+$c=sup(S)$ -> siste skjæringspunkt (hvis flere) (implisitt at grafen går oppover siden $f(a)<f(b)$)
+
+"så prøver vi å tegne opp motsigelsen, altså noe som ikke stemmer... jeg har laget en tegning av noe jeg vet er umulig. en øvelse i seg selv å forestille seg ting som er umulige"
+(For alle funksjonsverdier som er større enn K, så må grafen være strengt større enn K. sånn c er definert)
+
+legger f(c) over K - de to/2 = epsilon. 
+
+Når man gjør denne algebraen (en del egenskaper ved ulikheter og absoluttverdier også videre)
+
+
+motsigelsen: for verdier fra c-delta er verdiene strengt større en K -- stemmer jo ikke. 
+
+
 
 "heer er det mye triksing. mye å fordøye."
 Bruke skjøringgsetningen - skal vi gjøre på torsdag. Så er det å få en liten oversikt over hvordan det funker. 
 
+"I Frankrike lever man som en munk. 9/9/6. I Tyskland: høyere krav til argumentasjon og bevis, 50% stryk."
+
+## Eksempel $\epsilon \delta$
+$\sqrt{ 3 }$ finnes og ligger i $[1,2]$
+
+$f:f(x)=x^{2}$
+Denne er kontinuerlig, for identitetsfunksjonen er kontinuerlig, og den ganget med seg selv er kontinuerlig.
+siden $1<3<4$ finnnes det $c \in (1,2)$ $f(c)=3, c^{2}=3$
+
+Skjæringssetningen er det so faranterer eksistens av n-te røtter
+
+Proposisjon: $f:[a,b]\to[c,d]$ være kontinuerlig og strengt voksende
+$c=f(a)$ og $d=f(b)$
+Da er $f$ bijektiv og inversfunksjonen $f^{-1}:[c,d]\to[a,b]$ er strengt voksende og kontinuerlig. 
+**Bevis**
+
+Surjektivitet: 
+Skjæringssetningen gir at for hver $y \in [c,d]$ finnes det $x \in [a,b]$ slik at $(f(x)=y)$
+
+
+For å vise bijektivitet: det må finnes en, BARE en.
+La oss anta at $f(x)=y$ og $f(x')=y$
+Motsiglese: Hvis $x<x'$ da må $f(x)<f(x')$ som gir at de begge er lik y ikke er mulig.
+Bruker at funksjonen er strengt voksende. 
+
+**Hvorfor er inversfunkjsonen strengt voksende?**
+$[a,b]\to[c,d]$ blir $[c,d]\to[a,b]$ (flipper aksene.)
+
+Anta $c\leq y<y'\leq d$ 
+Vi vil sjekke at $f^-1(y)<f^{-1}(y')$
+
+ 
+
+### Kontinuitet
+
+Når jeg har en voksende funkjson - blir grensen fra venstre supremum av funksonverdiene. 
+Tilsvarende for motsatt vei
+$e \in [c,d]$ 
+$\lim_{ y \to e^- }f^{-1}(y)=sup \{ f^{-1}(y):y<e \}$
+Samme for $e^+$
+Vi tar dettte for gitt, hvordan bruker vi det?
+
+dersom $sup \{ f^{-1}(y):y<e \}<f^{-1}(e)$
+Ikke kontinuerlig! (hopp i funksjon.)
+
+
+
+### Grenseverdier
+$\lim_{ n \to \infty }\frac{(5n^{5}+20n+1)}{3n^{5}+4n^{4}}=\frac{5}{3}$
+Bruker regnereglene våre - grenser av produkter og brøker (pass på nevner må ikke gå mot null)
+
+Grenser av koeffisienter det har vi ikke vist.
+
+
+### Et annet bevis. 
+
+Ligner veldig på grensebegrepet.
+Kontinuitet.
+
+Ekvivalente setninger om kontinueitet. $a\neq_{0} \lim_{ a \to a }\frac{1}{x}=\frac{1}{a}$
+"jeg har kjøpt fine sånne fargekritt, for å forberede meg til denne forelesningen"
+
+for hver $\epsilon>0$ dinnes det $\delta>0$ slik at for alle $x, x\neq_{0}$
+hvis 
+
+x må holde seg vekke fra null!
+$\delta< \frac{a}{2}$
+$\frac{1}{x} < \frac{2}{a}$
+
+$| \frac{x-a}{}$
+
+
+Når $\delta<$ både $\frac{a}{2}$ og $\frac{\epsilon a^{2}}{2}$
+og $|x-a| < \delta$
+får vi $|\frac{1}{x}-\frac{1}{a}|<\epsilon$
+
+det var et epsilon delta bevis for at $\frac{1}{x}$ er kontinuerlig!
+
+Gir meg først epsilon, prøver å finne denne delta, argumenterer rundt x så lenge man vet at $x<\delta$
+
+"tok 200 år å komme frem til, nå blåser vi gjennom det på 2 uker"
+
+"han gjør det så ulesbart som mulig"- Toni
+### Også begrunner vi rotfunksjonen
+
+# Operasjoner på grenser
+
+Proposisjon: la $f:A\to R$ være kontinuerlig
+
+Og resten er i notatet fra forelesningen. 
+
+
+"eg sparer denne til senere, dette her er gull verdt"
+"5 kr, direkteimportert fra japan"
+"hver matematikers våte drøm"
+*folk ler*
+"you came at the right moment" - Theodora
+
+
+
+"alt jeg sier nå, er bare omformuleringer av ting vi vet"
+
+def:
+$(f+g)(x)=f(x)+g(x)$
+$(fg)(x)=f(x))(g(x)$
+Regneregler for sammensetninger av funksjoner kan vi utlede ved å utrrykke det lredd for ledd, og si at assosiativitet, distributivitet av addisjon over multiplikasjon, og andre egenskaper gjelder for de reelle tallene.
+
+Gir et språk for å snakke om funksjoner og grenser på en bedre måte.
+
+### Eksempler på bruk av alt dette her
 
 

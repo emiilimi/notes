@@ -201,3 +201,6 @@ hvis og bare hvis a=proj a på b
 ## Trekantlikheten
 
 Korteste avstand til et punkt er en rett linje. Høres ganske åpenbart ut. Bevis i forelesnignsnotat.
+
+Annet bevis i en kalkulus forelesning en gang. 
+Vi har i hvertfall at $|a+b|\leq|a|+|b|$
