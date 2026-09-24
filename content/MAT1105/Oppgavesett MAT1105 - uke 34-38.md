@@ -343,6 +343,10 @@ som gir at $t=\frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^{2}}$
 $$(x_1 + x_2 + \cdots + x_n)^2 \le n\,(x_1^2 + x_2^2 + \cdots + x_n^2).$$
 Når har vi likhet? Begrunn.
 
+
+
+
+
 ---
 
 ## Tema 4 — Matriser: notasjon, transponering, symmetri

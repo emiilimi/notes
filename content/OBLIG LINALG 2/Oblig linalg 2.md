@@ -63,22 +63,13 @@ Bevis:
 Geometrisk inntuitivt (snittet av punktene)
 1 vei først:  hvis $\vec{p}=\frac{1}{2}(\vec{a}+\vec{b})$, har vi at: 
 
-$$
-\begin{align} \\
-|\vec p - \vec a| &= |\vec p - \vec b| \\
-
-|\frac{1}{2}\left( \vec{a}+\vec{b}\right)-\vec{a}|&=| \frac{1}{2}(\vec{a}+\vec{b})-\vec{b} \\
-| \frac{\vec{b}}{2}-\frac{\vec{a}}{2}| &=| \frac{\vec{a}}{2}-\frac{\vec{b}}{2}| \\
- |\vec{b}-\vec{a}| & =|\vec{a}-\vec{b}|=|-(\vec{b}-\vec{a})|
-\end{align}
-$$
-disse er like! Flott!
 
 $$
 \begin{align}
 |\vec{p}-\vec{a}|&=|\frac{1}{2}(\vec{a}+\vec{b})-\vec{a}| \\
 &=| \frac{\vec{b}}{2}- \frac{\vec{a}}{2}|  \\
-&=\frac{|\vec{b}-\vec{a}|}{2} \\
+&=\frac{|\vec{b}-\vec{a}|}{2} \\ \\
+&=\frac{|\vec{a}-\vec{b}|}{2}
 
 \end{align}
 
