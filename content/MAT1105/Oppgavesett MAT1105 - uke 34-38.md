@@ -343,7 +343,7 @@ som gir at $t=\frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^{2}}$
 $$(x_1 + x_2 + \cdots + x_n)^2 \le n\,(x_1^2 + x_2^2 + \cdots + x_n^2).$$
 Når har vi likhet? Begrunn.
 
-
+Schwarz-ulikheten: $|\vec{a}||\vec{b}|\geq |\vec{a}\cdot \vec{b}|$
 
 
 
@@ -375,6 +375,40 @@ c) Vis at oppdelingen i b) er **entydig**.
 a) Vis at $A^TA$ er symmetrisk.
 b) Vis at $(A^TA)_{jj} = |\vec a_j|^2$.
 c) Bruk b) til å vise: hvis $A^TA = 0$, så er $A = 0$.
+
+
+
+a) VI vil vise at $A^TA$ er symmetrisk. Altså $(A^TA)ij=(A^TA)ji$
+Vi vet at $A=\begin{pmatrix}a_{11} & a_{12} & \dots & a_{1n} \\  a_{21} & a_{22} & \dots & a_{2n} \\  \vdots & \vdots &  &  &  \\  a_{m_{1}} & a_{m_{2}} & \dots & a_{mn}\end{pmatrix}$ og komponentene gis ved $a_{ij}$
+
+Siden $A$ er en $m \times n$ $A^TA$ har dimensjonene $n\times n$ 
+
+Vi har at $(A^TA)ij=\sum_{r=1}^n(A^T)_{ir}a_{rj}=\sum_{r=1}^na_{ri}a_{rj}$, for alle naturlige tall $i,j\in \{ 1,\dots ,n \}$
+Og $(A^TA){ji}=\sum_{r=1}^n (A^T)_{jr}a_{ri}=\sum_{r=1}^na_{rj}a_{ri}$
+
+De to summene er like (kommutativitet for multiplikasjon i de reelle tallene)
+$(A^TA)_{ij}=(A^TA)_{ji}$ har vi at $A^TA$ er symmetrisk
+
+
+Eventuelt:
+Symmetriske matriser: $B=B^T$
+$(A^TA)^T=(A)^T(A^T)^T=A^TA$
+
+b) Vi har at søylevektorene i $A$ er $\vec{a}_{1},\dots \vec{a}_{n}$
+$(A^TA)jj$ gitt ved søylevektorer er $\vec{a}_{j}\cdot\vec{a}_{j}$ (fordi radvektor j i $A^T$ er lik søylevektor $\vec{a}_{j}$ i $A$ )
+$\vec{a}_{j}\cdot\vec{a}_{j}=|\vec{a}j|^{2}$
+
+c) Vi vet at $A^TA=0$. Antar at vi er i de reelle tallene. 
+Vi vil vise at $A=0$
+
+$A^TA=0$ betyr at for alle naturlige tall $i,j\in[1,n]$ har vi at $(A^TA)ij=0$
+$(A^TA)jj=|\vec{a}_{j}|^{2}=0$ gir at alle komponenter i $\vec{a}_{j}=(a_{1},a_{2},a_{3}\dots a_{m})$ må være lik null ($|\vec{a}_{j}|^{2}= a_{1}^{2}+a_{2}^{2}+a_{3}^{2}+\dots+a_{m}^{2}$ er bare null når alle komponenter er null (fordi kvadratet av et reelt tall må være $\geq 0$))
+
+Dette gjelder for alle naturlige tall $j\in[1,n]$ så alle søylevektorene i $A$ har lengde null, som bare skjer når alle komponentene er lik null. 
+
+
+
+
 
 ---
 
@@ -485,7 +519,7 @@ c) Formuler og bevis de tilsvarende to påstandene for surjektivitet.
 ---
 
 ## Tema 9 — Utsagnslogikk og kvantorer
-Notat: [[Utsagnslogikk]] · [[Kvantorer - bevisteknikk]]
+Notat: [[Utsagnslogikk]] · [[bevisteknikk]]
 
 ### Enkle
 
@@ -521,7 +555,7 @@ c) Hva skjer hvis du bytter $\vee$ med $\wedge$ begge steder? Er de to da ekviva
 ---
 
 ## Tema 10 — Bevisteknikk og induksjon
-Notat: [[Kvantorer - bevisteknikk]] · [[Induksjon]]
+Notat: [[bevisteknikk]] · [[Induksjon]]
 
 ### Enkle
 

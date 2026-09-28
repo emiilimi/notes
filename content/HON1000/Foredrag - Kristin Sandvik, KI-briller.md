@@ -8,29 +8,27 @@ Tatt med fagkoffert:)
 God teknologi å tenke om hvordan vi skal regulere ting.
 "ekte slides, oversatt av KI"
 
-"litt toegget sverd. kanskje det mest intrusve som har kommet til markedet"
+"litt toegget sverd. kanskje det mest intrusive som har kommet til markedet"
 ny digitaliseringsminiser vurderer forbud.
 
 Vurdere alle tiltak, også forbud. Men er ikke så enkelt å forby.
 Hvordan kan et forbud se ut?
 
-"jeg er ikke helt sikker på at de har lov til dette, men de har ivertfall sagt det"
+"jeg er ikke helt sikker på at de har lov til dette, men de har ihvertfall sagt det"
 kommuner som vil forby KI-briller.
 
 
 Hva er problemet? (bortsett fra at det er crazy)
 Hvordan kan man regulere dette? Hvordan kan man forby?
-
 (gjelder generelt på alt.)
 
 ### Teknologiregulering
 
 Identifisere problem (yt for kids?)
 
-
 Hard law: Bindene jus
 
-soft law - etikk, normer, ikkebindende retningslinjer
+Soft law - etikk, normer, ikkebindende retningslinjer
 Etiske rammeverk.
 
 - Forstå debatter om overregulering, undereregulering, deregulering og forbud
@@ -161,7 +159,7 @@ Statene bør kunne regulere KI. prøver. "Washington drain the swamp"
 
 Innvandringskontroll - påvirker tilgangen på KI-talent. "For usa er dette helt krise." (men de soper jo opp masse folk fra Kina bl.a. og europa!)
 
-"trump våkner opp på mornignen og tenker at Isalnd skal bli et datasenter"
+"trump våkner opp på mornignen og tenker at Island skal bli et datasenter"
 Politisk skjønn. "hopper over politikken"
 
 #### KOnssevkenser

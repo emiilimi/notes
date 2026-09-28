@@ -36,6 +36,7 @@ notasjon m over k gitt at m er elementer i A.
 
 $\begin{matrix} m \\  k\end{matrix}=\frac{m!}{(m-k)!(k!)}$
 
+Antall måter å velge ut $k$ av $m$ objekter, uordnet
 
 ## Sammenheng mellom biomialkoeffisienter
 $\begin{matrix}n+1 \\  i\end{matrix}=\begin{matrix}n \\  i-1\end{matrix}+ \begin{matrix} n \\  i\end{matrix}$

@@ -76,6 +76,8 @@ Sannhetstabell:
 *"Alle synes dette er rart*
 Farris, men bare på torsdager osv. 
 
+Men hva er negasjonen av implikasjon?
+
 ## Ekvivalens
 
 $P \implies Q \land Q \implies P$
@@ -105,3 +107,12 @@ $\land \leftrightarrow \cap$
 $\lor \leftrightarrow \cup$
 
 Bevises ved sannhetstabell. Det gidder jeg ikke. 
+
+
+# Det ingen sa til oss
+$P\implies Q\equiv \neg P\lor Q$
+$\neg(P\implies Q)=\neg P\land Q$
+
+Distributivitet:
+$P\land(Q \lor R)=(P\land Q)\lor (P\land R)$
+$P\land(Q\lor R)=(P\land Q)\lor(P\land R)$

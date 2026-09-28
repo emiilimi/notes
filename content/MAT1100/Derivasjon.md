@@ -106,10 +106,25 @@ Ulike notasjoner. $\Delta$
 
 dx lever litt sitt eget liv. (dette er uavhengig av definisjonen) Forestiller oss at den blir uendelig liten. Koeffisient av to uendelige små ting.... Men vi legger dette litt til side når vi regner stringent.
 
+
+[[Rolles teorem og korrolarer og konvekse funksjoenr]]
+
 ### Derivasjon av inversfunksjon
 
 Teorem: så lenge vi vet at den der deriverbar, får vi en formel for den deriverte fra kjerneregelen.
 
+$(f^-1)'(f(a))=\frac{1}{f'(a)}$
 
 
 hjemmelekse: derivere n-te rot basert på inversfunksjon teorem.
+
+### Førtse halvdel av forelesning 25.09
+
+...
+
+
+
+28. september: [[L'Hopitals regel]]
+
+
+

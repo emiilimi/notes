@@ -192,15 +192,18 @@ Også beviser/utleder vi at cosinus er rasistisk.
 ## Schwarz-ulikheten
 Bevis
 $|\vec{a}\cdot\vec{b}|<=|\vec{a]}||\vec{b}|$
-Setter inn pytagoras. |a^2| = proja a på b ^2
+Setter inn pytagoras. $|\vec{a}|^{2}=proj_{\vec{b}}\vec{a}$ = proja a på b ^2
 
 Se forelesningsnotat. Greit bevis. 
 Når får man likhet?
-hvis og bare hvis a=proj a på b
+hvis og bare hvis a=proj a på b $a=proj_{\vec{b}}\vec{a}$
 
-## Trekantlikheten
+## Trekantulikheten
 
-Korteste avstand til et punkt er en rett linje. Høres ganske åpenbart ut. Bevis i forelesnignsnotat.
+Korteste avstand til et punkt er en rett linje. Høres ganske åpenbart ut. Bevis i [forelesnignsnotat.](https://www.uio.no/studier/emner/matnat/math/MAT1105/h26/notater/foils_chap1.pdf)
 
 Annet bevis i en kalkulus forelesning en gang. 
 Vi har i hvertfall at $|a+b|\leq|a|+|b|$
+(gjelder også for vektorer
+
+DETTE ER VIKTIG!!

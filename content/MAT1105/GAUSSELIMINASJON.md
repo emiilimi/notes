@@ -12,7 +12,7 @@ hvis $x_{n+1}$ finnes:
 
 ### Elementærmatriser
 
-
+Matriser som er radekvivalente med $I_{n}$
 ### Kompleksitet
 $A-I_{n}$
 $\frac{2n^{3}}{3}$ operasjoner kreves for å få $A$ på redusert trappeform
@@ -22,6 +22,8 @@ $\frac{2n^{3}}{3}$ operasjoner kreves for å få $A$ på redusert trappeform
 
 ### Løse to systemer samtidig
 Samme koeffisientmatrise: Samme gausseliminasjon, radreduserer. Bare at de to søylene lengst til høyre vil være løsningene.
+
+[[Inverse matriser]]
 
 ### Gausseliminasjon med programmering<3
 (IKKE PENSUM)
@@ -58,3 +60,5 @@ def gaussian_elimination(A,verbose=True):
             print(f"zeroed out above row {i} in col. {j}:\n", A)
         i -= 1
 ```
+
+

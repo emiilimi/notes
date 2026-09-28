@@ -51,6 +51,12 @@ Symmetrisk matrise: $A=A^T$
 
 $a_{ij}$ blir da $a_{ji}$
 
+$(A+B)^T=A^T+B^T$
+$(AB)^T=B^T A^T$
+
+$((A+B)^T)_{ij}=(A+B)ji$
+ og så videre til vi står komponentvis $a_{ij}+b_{ij}=a_{ij}+b_{ij}$
+
 ### Reshape
 `y.reshape((1,-1)` tar en vektor og git en radvektor. -1 betyr regn ut automatisk hvo mange rader/søyler. 1 betyr 1 rad. (1,-1) gir da en søylevektor
 
@@ -101,15 +107,6 @@ Hvis $A$ og $B$ begge er mxn, så definerer vi
 $A+B=\begin{matrix} a_{11}+b_{11},a_{12}+b_{12},\dots \\  a_{21}+b_{21},a_{22},b_{22},\dots\end{matrix}$
 $A-B$ samme bare minus $a_{11}-b_{11}$
 $tA$ matrise med komponenter $ta_{ij}$
-
-## Egenskaper ved matriser
-hopper over en slide for vi har ikke definert matriseaddisjon ennå.
-
-$(A+B)^T=A^T+B^T$
-$(AB)^T=B^T A^T$
-
-$((A+B)^T)_{ij}=(A+B)ji$
- og så videre til vi står komponentvis $a_{ij}+b_{ij}=a_{ij}+b_{ij}$
 
 # Matrisemultiplikasjon
 
@@ -181,7 +178,6 @@ $(𝐴⁢𝐼𝑛)𝑖⁢𝑗=\sum_{r=1}^n a_{ir}⁢(𝐼𝑛)𝑟⁢𝑗=𝑎�
 trekke ut søyle j, trekke ut søyle i
 $A \cdot\vec{e}_{j}$ eller $\vec{e}_{i} \cdot X$
 der e har bare 0 bortsett fra komponent i=1 eller j=1.
-(MEN hvorfor tar vi summen i=1 til k?)
 
 Langt over det nivået som forventes at vi skal regne på. 
 Skrive matrisen som summen av sine søyler trenger ikke vi å drive på med.
@@ -246,3 +242,8 @@ Vandermonde pluss polynomer som søyler med koeffisitenten til nye polynomet.
 "egentlig mindre viktige ting"
 Sette sammen flere matriser til en størrematrise. 
 De som har tid og lyst kan lese gjennom det stoffet, ikke så veldig eksamensrelevant.
+
+
+
+[[GAUSSELIMINASJON]]
+

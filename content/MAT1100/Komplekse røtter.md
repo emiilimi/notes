@@ -44,3 +44,8 @@ resterende røtter finnes ved å multiplisere $w_{2}=w_{1} \cdot w_{+}$, $w_{3}=
 
 Bevis for dette: 
 [(forelesningsnotater)](https://www.uio.no/studier/emner/matnat/math/MAT1100/h26/forelesningsbilder%20og%20notater/uke04a.pdf)
+
+
+
+### Komplekse røtter til polynom
+her [[Algebraens fundamentalteorem]]

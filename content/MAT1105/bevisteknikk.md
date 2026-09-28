@@ -46,5 +46,10 @@ $\neg(P\implies Q)=P\land \neg Q$
 eksempel: $a \in \mathbb{R}$, $b \in \mathbb{Q}\implies ab \in \mathbb{Q}$
 
 "spezielt betinget motsigelsebevis" Det du skal bevise har formen P leder til Q
+## Kontrapositivt bevis
+$P\implies Q$ skal man vise at $\neg P \impliedby \neg Q$
+
+er dette riktig
 
 ### Induksjonsbevis
+[[Induksjon]]
