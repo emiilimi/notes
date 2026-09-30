@@ -128,3 +128,4 @@ hjemmelekse: derivere n-te rot basert på inversfunksjon teorem.
 
 
 
+Også er det visst noe som heter [[Implisitt derivasjon]]

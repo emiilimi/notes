@@ -13,6 +13,7 @@
 | Infinity                  | `\infty`            | $\infty$              | `ooo` (auto)                             |
 | Prikkprodukt              | `a\cdot b`          | $a\cdot b$            | `cdot` eller `**` (auto)                 |
 | Produktet av en rekke     | `\prod`             | $\prod$               | `prod` (auto) → Tab                      |
+| komposisjon av funksjoner | `\circ`             | $\circ$               |                                          |
 
 Så hvis eg vil skrive $a^2 + b^2 = c^2$
 Herlig. $$\sqrt{x}$$

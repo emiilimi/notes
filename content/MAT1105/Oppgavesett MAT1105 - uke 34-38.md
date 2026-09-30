@@ -431,8 +431,36 @@ er definert? Angi størrelsen på dem som er det.
 
 **5.4** La $A$ være en reell $n \times n$-matrise. Skriv et **kontrapositivt bevis** for følgende utsagn:
 > Hvis $(A\vec x)\cdot \vec y = \vec x \cdot (A\vec y)$ for alle $\vec x, \vec y \in \mathbb{R}^n$, så er $A$ symmetrisk.
+> 
+
+ Kontrapositivt: $P \implies Q$  da tar vi $\neg Q\implies \neg P$
+ Vi vet (kontrapositivt): $A$ er ikke symmetrisk, $A^T\neq A$, $a_{ij}\neq a_{}ji$
+Vi vil vise at $\exists \vec{x},\vec{y} \in \mathbb{R}^n:$ $(A\vec x)\cdot \vec y \neq \vec x \cdot (A\vec y)$ 
+
+Velger $\vec{x}=\vec{e}_{i}$ og $\vec{y}=\vec{e}_{j}$
+$(A\vec{e}_{i})\cdot \vec{e}_{j}=\vec{a}_{i}\cdot \vec{e}_{j}$ (der $\vec{a}_{i}$ er søylevektor nr i)
+$\vec{a}_{i}\cdot \vec{e}_{j}=a_{ij}$
+
+Tilsvarende for HS:
+Velger $\vec{x}=\vec{e}_{i}$ og $\vec{y}=\vec{e}_{j}$
+$\vec{e}_{i}\cdot (A\vec{e}_{j})=\vec{e}_{i}\cdot \vec{a}_{j}$ (der $\vec{a}_{j}$ er søylevektor nr i)
+$\vec{e}_{i}\cdot \vec{a}_{j}=a_{ji}$
+
+Siden $A$ ikke er symmetrisk vil komponentene $a_{ji}$ og $a_{ij}$ ikke være like.
+Vi har dermed vist kontrapositivt at hvis $(A\vec x)\cdot \vec y = \vec x \cdot (A\vec y)$ for alle $\vec x, \vec y \in \mathbb{R}^n$, så er $A$ symmetrisk.
 
 *(Oppgave 2.5 i [1] — som står på ukesoppgavelista — og oppgave 1 på avsluttende eksamen H2025. Kompendiet ber om «hvis og bare hvis»; eksamen ba om den kontrapositive veien. Gjør begge.) Hint: hva er $(A\vec e_i)\cdot \vec e_j$?*
+
+
+Hvis og bare hvis:
+Mangler andre veien
+Vi vet: $A$ er symmetrisk, $A^T=A$, $a_{ij}=a_{ji}$
+Vi vil vise at $\forall \vec{x},\vec{y} \in \mathbb{R}^n:(A\vec{x})\cdot \vec{y}=\vec{x}\cdot (A\vec{y})$
+Husk: $(AB)^T=B^TA^T$ og at matrisemultiplikasjon av radvektor $\times$ søylevektor = skalarproduktet av søylevektorene.
+
+Derav VS: $(A\vec{x})\cdot \vec{y}=(A\vec{x})^T\vec{y}=\vec{x}^TA^T\vec{y}$
+HS: $\vec{x}\cdot(A\vec{y})=\vec{x}^T(A\vec{y})=\vec{x}^TA\vec{y}$
+$A$ er symmetrisk, så $A^T=A$, og $\vec{x}^TA^T\vec{y}=\vec{x}^T(A\vec{y})=\vec{x}^TA\vec{y}$
 
 **5.5** La $A$ være en $n \times n$-matrise som kommuterer med **alle** $n\times n$-matriser, altså $AB = BA$ for alle $B$. Vis at $A = cI_n$ for en skalar $c$.
 *Litt utenfor pensum i form, men bruker bare kap. 2. Hint: prøv $B = E_{ij}$, matrisen med $1$ i posisjon $(i,j)$ og $0$ ellers. Regn ut $AE_{ij}$ og $E_{ij}A$ komponentvis.*
@@ -505,16 +533,103 @@ b) Er $f: [1,\infty) \to [-2,\infty)$ bijektiv? Begrunn.
 
 **8.3** La $f(x) = \dfrac{2x-1}{x+3}$. Vis at $f: \mathbb{R}\setminus\{-3\} \to \mathbb{R}\setminus\{2\}$ er bijektiv, og finn $f^{-1}$.
 
+
+Bijektiv forutsetter at $f$ er injektiv og surjektiv.
+Injektiv: 
+$f'(x)=2(x+3)-(2x-1)=\frac{7}{(x+3)^{2}}$ (ser at $f$ er kontinuerlig i hele sin definisjonsmengde, antar at den er deriverbar for $\mathbb{R} \setminus {-3}$ (hvordan sjekker jeg evt d?))
+Siden den deriverte er strengt positiv for hele sin definisjonsmengde, er $f$ strengt voksende (men hva om hopp og sånt?) nei dette er ikke gyldig
+
+Den deriverte er definert og strengt positiv for $(-\infty,-3)$ og $(3,\infty)$
+Ser på funksjonsverdiene (grenseverdiene) $\lim_{ x \to -\infty }f(x)=\frac{\left( 2-\frac{1}{x} \right)}{1+\frac{3}{x}}=2$ 
+$\lim_{ x \to -3^- }f(x)=\lim_{ x \to -3^- } \frac{2x-1}{x+3}=+\infty$
+$\lim_{ x \to \infty }f(x)=2$
+$\lim_{ x \to -3^+ }=-\infty$
+
+Nå ser vi at funksjonen er strengt voksende for $(-\infty,3)$ og $(3,+\infty)$, selv om verdiene for $(-\infty,3)$ er høyere enn verdiene for $(3,\infty)$, overlapper de ikke. 
+Da er funksjonen en-entydig altså injektiv.
+
+
+Surjektvitet har vi også vist ved grenseverdiene over: funksjonen er strengt voksende i to intervaller, og dekker verdimengden $\mathbb{R} \setminus \{ 2 \}$
+ 
+Da er $f$ bijektiv og har en invers
+
+$f^{-1}(f(a))=a$
+$$
+\begin{align}
+ \frac{2x-1}{x+3}&=y \\
+2x-1 & =y(x+3)=yx+3y \\
+2x-yx & =3y+1 \\
+x(2-y) & =3y+1 \\
+x & =\frac{3y+1}{2-y}
+\end{align}
+$$
+
+$f^{-1}(y)=\frac{3y+1}{2-y}$
+
 ### Vanskeligere
 
 **8.4** La $f: A \to B$ og $g: B \to C$ være funksjoner.
 a) Vis at hvis $f$ og $g$ er injektive, så er $g \circ f$ injektiv.
+
+Om $f$ er injektiv så har vi at $x_{1}\neq x_{2}\implies(f(x_{1}))\neq f(x_{2})$, tilsvarende for $g(y)$
+
+$x_{1}\neq x_{2}\implies a_{1}=f(x_{1})\neq a_{2}=f(x_{2})\implies g(a_{1})\neq g(a_{2})$
+$g(a_{1})=g \circ f(x_{1})\neq g \circ f(x_{2})=g(a_{2})$
+
 b) Vis at hvis $g\circ f$ er injektiv, så er $f$ injektiv. Gi et eksempel som viser at $g$ ikke trenger å være det.
+
+Kontrapositivt: $f$ er ikke injektic $\implies$ $g \circ f$ er ikke injektiv
+At $f$ ikke er injektiv gir at $x_{1},x_{2}, a$ slik at $f(x_{1})=f(x_{2})=a$ og $x_{1}\neq x_{2}$
+$g \circ f(x_{1})=g(a)$
+$g \circ f(x_{2})=g(a)$
+Dette gir at $g\circ f$ ikke er injektiv.
+
+
+Da har vi at $f$ må være injektiv for at $g \circ f$ skal være injektiv.
+
+La $f$ være $e^{ x }$, som er injektiv. (Dette kan vises.)
+La $g$ være $|x|$, som ikke er injektiv.
+
+$f:\mathbb{R}\to \mathbb{R}_{+}$
+og for positive tall er $|x|$ bare $x$, og da injektiv
+Som gir at $f \circ g$ er injektiv :)
+
+
 c) Formuler og bevis de tilsvarende to påstandene for surjektivitet.
 *(Dette er Oppgave 3.10 i [2], litt utvidet.)*
 
+
+a) Vis at hvis $f$ og $g$ er surjektive, så er $g \circ f$ også surjektiv.
+$f$ er definert fra $A\to B$, $g: B\to C$
+
+Om $f$ er surjektiv, er $V_{f}=B=D_{g}$
+Om $g$ er surjektiv, er $V_{g}=C$ (fordi $D_{g}$ er hele $B$ eller er ikke det en gang strengt nødvendig?)
+
+b) Vis at hvis $f\circ g$ er surjektiv, så er $g$ surjektiv
+
+At $f\circ g:A\to C$ er surjektiv betyr at $V_{f \circ g}=C$
+
 **8.5** La $n \in \mathbb{N}$, og la $A$ og $B$ være mengder med $\#A = \#B = n$. La $f: A \to B$ være en funksjon. Skriv et **motsigelsesbevis** for følgende utsagn:
 > Hvis $f$ er injektiv, så er $f$ også surjektiv.
+
+
+Vi vet at $n \in \mathbb{N}$, og $A$ og $B$ er mengder med $\#A = \#B = n$. $f: A \to B$
+
+$f$ er injektiv $\implies f$ er surjektiv
+Motsigelse: 
+$f$ ikke er surjektiv $\implies f$ ikke injektiv
+
+Hvis $f$ ikke er surjektiv, så er $f$ ikke injektiv
+$f:A\to B$, husk $\#A=\#B=n$
+
+Vi definerer $C$ som en ekte delmengde av $B$, der $\#C<\#A=\#B$
+om $f$ ikke er surjektiv, betyr det at $f:A\to C$
+Men: $\#C<\#A$, som betyr at to $x \in A$ nødvendigvis må ha samme verdi $f(x) \in C$
+For at $f$ skal være injektiv, må definisjonsmengden og verdimengden inneholde like mange verdier.
+
+
+Dette er et kontrapositivt bevis, ikke et motisgelsesbevis, og ikke egentlig et bevis i det hele tatt. 
+Fiks ONSDAG eller TORSDAG
 
 ---
 
@@ -532,19 +647,33 @@ Notat: [[Utsagnslogikk]] · [[bevisteknikk]]
 **9.4** Finn negasjonen av følgende utsagn, både med kvantorer og i ord:
 > For alle $\varepsilon > 0$ finnes det en $N \in \mathbb{N}$ slik at for alle $n \ge N$ er $|x_n - x| < \varepsilon$.
 
+Tolkning: jo lenger ut i følgen 
+
+
+$\forall \epsilon>0 \:\exists N \in \mathbb{N}:(\forall n\geq N\implies|x_{n}-x|<\epsilon)$
+
+Negasjon: Det eksisterer en $\epsilon >0$ slik at for alle $N \in \mathbb{N}$ eksisterer en $n\geq N$ og $|x_{n}-x|>\epsilon$
+Negasjon $\exists \epsilon>0\:\forall N\in \mathbb{N}:(\exists n\geq N \land|x_{n}-x|>\epsilon)$
+
+
 ### Vanskeligere
 
 **9.5** La $A \subseteq \mathbb{R}$, og betrakt utsagnet
 > For alle $a \in A$ finnes det en $r > 0$ slik at for alle $x$ med $|x-a| < r$ er $x \in A$.
 
 a) Skriv utsagnet med kvantorer.
-$\forall a \in A, \exists r>0:\forall (x:|x-a|<r), x \in A$
+$\forall a \in A, \exists r>0:\forall  x:(|x-a|<r \implies x \in A)$
 b) Finn negasjonen, både med kvantorer og i ord.
-$\exists a \in A, \forall r>0: \exists x:|x-a|<r, x \notin A$
 
-Her er jeg USIKKER...
+$\exists a\in A\:\:\forall r>0: \exists x:((|x-a|<r)\land x\not\in A)$
+
 
 c) Avgjør om utsagnet er sant for $A = (0,1)$, $A = [0,1]$ og $A = \mathbb{Q}$. Begrunn hvert svar.
+
+$A=(0,1)$
+
+Confused. Se på dette i morgen.
+
 
 **9.6** La $P(n)$ og $Q(n)$ være predikater på $\mathbb{N}$. Betrakt
 $$\text{(i)}\quad \big(\forall n\, P(n)\big) \vee \big(\forall n\, Q(n)\big), \qquad \text{(ii)}\quad \forall n\, \big(P(n) \vee Q(n)\big).$$
