@@ -1,41 +1,40 @@
 
 Leselekse:
-[https://philosophymindscience.org/index.php/phimisci/article/view/12307/12445](Vector grounding problem)
-
+[Vector grounding problem](https://philosophymindscience.org/index.php/phimisci/article/view/12307/12445)
 
 Sara Pernille Jensen. Georg Morgenstjerne:) Computational physichs, phd i filosofi
 
 Illustrere filosofisk metode:)))
 
 
+Emilies anbefalte ekstralitteratur: [variabelnavn!](https://www.lesswrong.com/s/5uZQHpecjn7955faL/p/fg9fXrHpeaDD6pEPL)
+
 ### Problemorientert filosofi
 ikke nødvendigvis "hvem som sa hva" men heller "hvordan skal vi få løst disse problemene"
 Tankeeksperimenter "intuition pump", analogier.
 
-Konseptuell analyse: Nødvendige og tilstrekkelige vilkår for at et konsept er tilfelle. Alle tilfeller av K må finnfi nødvendige vilkår, og alle tilfeller som innfrir nødvendige vilkår må være tillfeller av K
-Nødvendig og tilstrekkelig vilkår: Partall er delelig med to. 
+Konseptuell analyse: Nødvendige og tilstrekkelige vilkår for at et konsept er tilfelle. (logikk:)
+Alle tilfeller av K må innfri nødvendige vilkår, og alle tilfeller som innfrir nødvendige vilkår må være tillfeller av K
+Nødvendig og tilstrekkelig vilkår: Partall er delelig med to. (dette er definisjonen på at partall er delelig med to)
 Nødvendige og tilstrekkelige vilkår gjør at man kan få en enighet om hva man snakker om. 
 
-
-
 ### Det kinesiske rommet
-Funksjonalisme (om bevissthet): Egenskaper knyttes til funkjsoner, observerbare funksjoner. To systemer som har samme observerbare funkjsoner, har samme egenskaper.
-Riktig algoritme = bevissthet
+Funksjonalisme: Egenskaper knyttes til funkjsoner, observerbare funksjoner. To systemer som har samme observerbare funkjsoner, har samme egenskaper.
+Riktig algoritme (observert utenfra) = bevissthet
 
-Perl er veldig uenig. 
+Searle er veldig uenig. 
 Sterk KI: Datamaskiner eller programmer kan oppnå forståelse. 
 Forstå kinesisk: å klare å oppføre seg som noen som forstår kinesisk.
-Jeg kan være maskinens om kjører K, uten å forstå kinesisk. 
+Jeg kan være maskinen som kjører "algoritmen" kinesisk, uten å forstå kinesisk. 
 
-Fra utsiden kan boksen kinesisk. Men ingen i boksen kan kinesisk. Kun syntaktisk manipulering. Er dette forståelse?
-Funskjonalitet = forståelse/bevissthet, kan derfor ikke stemme. Algoritmen opererer på symboler den ikke forstår
+Fra utsiden kan boksen kinesisk. Men ingen i boksen kan kinesisk. Kun syntaktisk manipulering. Er dette forståelse? (Og mer interessant: Kan intelligens oppstå fra kun ikke intelligente deler ? Se lenger nede.)
+At funskjonalitet $\implies$ forståelse/bevissthet, kan derfor ikke stemme. Algoritmen opererer på symboler den ikke forstår
 
-Ikke tilstrekkelig bevis for at maskiner er bevisste.
+Dette er på ingen måte tilstrekkelig bevis for at maskiner er bevisste.
 
 ### Syntaks og semantikk
 Ikke det samme. Semantikk: meningsinnhold. 
 Argument er at meniningsinnholdet kommer ikke fra syntaks alene. (Yudkowskis endrete variabelnavn)
-
 
 ## Hvordan får egentlig symboler mening?
 Kan man lære kinesisk av en kinesisk-til-kinesisk-ordbok? Syntaktisk karusell. 
@@ -67,7 +66,7 @@ GIr det mening å snakke om mistolkning når noe ikke har noen betydning?
 "nei, men den mente egentlig dette?" når den egentlig ikke mente noe som helst? 
 Fra funksjonalistisk perspektiv har LLMs bevissthet, men da forstår boksen kinesisk. 
 
-Poenget til Cerl: bevissthet er ikke det samme som funksjonalitet. Sier ingentign om LLMs faktisk er bevisste, men det er ikke et krav i seg selv.
+Poenget til Searle: bevissthet er ikke det samme som funksjonalitet. Sier ingentign om LLMs faktisk er bevisste, men det er ikke et krav i seg selv.
 
 
 
@@ -88,7 +87,7 @@ tredje teori: Både relasjonell og refererende.
 
 Alternativer til intensjon (intensjon impliserer bevissthet)
 Kausal-informativ-kobling. Symbolet inneholder informasjon om tingen - det må også være en pårvirkning mellom ting. Kausale ledd fra ting representert til representasjon.
-hva betyr dette egentlig
+hva betyr dette egentlig. Forankring i vden - sannhetsverdi? "forståelse" av årsak/virkning, historisk -- forståelse av tid også? Aner ikke
 Nødvendig, men ikke tilstrekkelig krav. Iboene mening: systemet må bruke representasjonen for formål, som knyttes til at noe har en funksjon.
 
 HVa er en funksjon. Biologiens filosofi. Hjertet pumper blod, fordi det har blitt utviklet (gjennom evolusjon) for å pumpe blod. Må ha en mulighet for misrepresentasjon. 
@@ -119,29 +118,26 @@ posisjonelle strukturer?  noe kan falle ned kanskje?
 Hvorfor er det viktig at vi kan skille mellom?
 Hvordan vi forholder oss til LLMs. Etikk? Bruk. 
 
-Juss: Har dette mening eller ikke? Sosialt viktig... 
-
+Juss: Har dette mening eller ikke? Sosialt viktig...
 Kan man vite hvordan mennesker tenker? Dobbel standard. Mennesker er ikke noe bedre. Etterrasjonaliseringer, og er ikke selv klar over egne fordommer.
 
 
-
 Iboende mening: a posteori kunnskap? Kan KI ettterlikne dette om resten er empiri
-Hvis jeg refererer til tallet tre, og katten min, så har jeeg en forståelse av hva jeg snakker om. Min forståelse av hva jeg sier, er viktig for meningen i hva jeg sier. 
+Hvis jeg refererer til tallet tre, og katten min, så har jeg en forståelse av hva jeg snakker om (en lik forståelse). Min forståelse av hva jeg sier, er viktig for meningen i hva jeg sier. 
 Språkmodeller kan ikke dette er hypotesen. 
 
 Det at du har en intensjon, impliserer iboende mening. 
 
-Rettigheter? Moral circle expansion.
+**Rettigheter?** Moral circle expansion.
 
-
+**Kan man si at det kinesiske rommet i seg selv har en forståelse?**
 Kinesiske rommet i seg selv har en forståelse, men ikke enkeltkomponentene. Searle svarer på dette. 
-Rart argument om at ingen av argumentene får forståelse. Men dette er sant??
+Argument om at ingen av enkeltkomponentene forstår noen ting, så da kan ikke helheten forstå noe. Men dette er sant? (Atomer er ikke intelligente. Se [elan vital](https://www.lesswrong.com/posts/6i3zToomS86oj9bS6/mysterious-answers-to-mysterious-questions))
 Det bedre motsvaret: Personen blir papegøye. Forstår og ikke forstår på samme tid. Internaliserer regler. Virker ikke som det er tilstrekkelig? 
-Personen forstår ikke, men systemet perosnene forstår. Hva betyr forstår? 
+Personen forstår ikke, men systemet personen forstår. Hva betyr forstår? 
 
 
-
-
+**Hva har iboende mening å si for oss?**
 Har mer å si for hvordan vi forholder oss til llms, ikke kvalitet for outputen.
 Vil føles bedre om kineseren forstår deg. 
 Sannhetsbevarende svar trenger ikke være iboende mening, heller 
