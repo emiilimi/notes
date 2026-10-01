@@ -189,6 +189,43 @@ c) Et induksjonsbevis viser at $P(n)\Rightarrow P(n+1)$ for **alle** $n$. Siden 
 
 ---
 
+## Tema 11 — Gausseliminasjon og elementærmatriser
+
+**11.1** $\begin{pmatrix} 1 & 2 & 0 & 3 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}$, med pivotsøyle 1 og 3. Én mulig rekkefølge: $\tfrac12 R_1$, $R_2 - R_1$, $R_3 - 3R_1$, $\tfrac12 R_2$, $R_3 - 3R_2$, $R_1 + R_2$.
+
+**11.2** (a) Ja. (b) Ja. (c) Nei: tallet 2 står *over* den ledende eneren i søyle 2. Matrisen er på trappeform, men ikke redusert. (d) Nei: de ledende enerne flytter seg ikke mot høyre nedover. (e) Nei: det ledende elementet i rad 2 er 2, ikke 1.
+
+**11.3** a) $E = \begin{pmatrix} 1&0&0\\0&1&0\\-3&0&1 \end{pmatrix}$ og $F = \begin{pmatrix} 1&0&0\\0&1&0\\3&0&1 \end{pmatrix}$, og $FE = I_3$.
+b) $EA = \begin{pmatrix} 1&2&1\\0&1&4\\0&-1&-1 \end{pmatrix}$.
+c) $E_2E_1 = \begin{pmatrix} 0&1&0\\4&0&0\\0&0&1 \end{pmatrix}$ og $E_1E_2 = \begin{pmatrix} 0&4&0\\1&0&0\\0&0&1 \end{pmatrix}$. Matrisen lengst til høyre virker først, siden $E_2E_1A = E_2(E_1A)$. Å bytte rader og så skalere er ikke det samme som å skalere og så bytte.
+
+**11.4** a) $E_1 = \begin{pmatrix}1&0\\-3&1\end{pmatrix}$ ($R_2 - 3R_1$), $E_2 = \begin{pmatrix}1&-1\\0&1\end{pmatrix}$ ($R_1 - R_2$), $E_3 = \begin{pmatrix}\frac12&0\\0&1\end{pmatrix}$ ($\tfrac12 R_1$).
+b) $A = \begin{pmatrix}1&0\\3&1\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}2&0\\0&1\end{pmatrix}$, altså de omvendte operasjonene i motsatt rekkefølge.
+c) Siden $A \sim I_2$, har $A\vec x = \vec b$ nøyaktig én løsning for *hver* $\vec b$.
+
+**11.5** a) Null operasjoner, eller gang en rad med 1. b) Hvis $B = E_k\cdots E_1A$, så er $A = F_1\cdots F_kB$, der $F_i$ reverserer $E_i$. Hver $F_i$ er selv en elementærmatrise. c) Hvis $B = E_k\cdots E_1A$ og $C = G_l\cdots G_1B$, så er $C = G_l\cdots G_1E_k\cdots E_1A$.
+
+## Tema 12 — Likningssystemer og løsningsmengder
+
+**12.1** $(A \mid \vec b_1\;\vec b_2) \sim \left(\begin{smallmatrix}1&0&0&1&-1\\0&1&0&2&0\\0&0&1&3&2\end{smallmatrix}\right)$, så $\vec x_1 = (1,2,3)$ og $\vec x_2 = (-1,0,2)$.
+
+**12.2** Redusert trappeform: $\left(\begin{smallmatrix}1&2&0&2&4\\0&0&1&1&1\\0&0&0&0&0\end{smallmatrix}\right)$. De frie variablene er $x_2 = s$ og $x_4 = t$. Løsningen blir $x_1 = 4 - 2s - 2t$ og $x_3 = 1 - t$, altså
+$$\vec x = (4,0,1,0) + s(-2,1,0,0) + t(-2,0,-1,1).$$
+
+**12.3** Etter eliminasjon blir siste rad $(0\;0\;\;a-4 \mid b-7)$.
+(i) $a \neq 4$: nøyaktig én løsning (uansett $b$).
+(ii) $a = 4$ og $b = 7$: uendelig mange løsninger, $(x,y,z) = (-1,3,0) + t(1,-2,1)$.
+(iii) $a = 4$ og $b \neq 7$: ingen løsning, fordi siste søyle er en pivotsøyle.
+
+**12.4** a) $(3,-2,4) = 3(1,0,2) - 2(0,1,1)$. Siden $A$ er lineær, er $\vec z = 3\vec x - 2\vec y = (4,5,-6)$ en løsning.
+b) $A(\vec x - \vec x_p) = A\vec x - \vec b$, og det er $\vec 0$ nøyaktig når $A\vec x = \vec b$.
+c) $\vec x_p + t\vec v$ er en løsning for alle $t \in \mathbb{R}$, og disse er forskjellige fordi $\vec v \neq \vec 0$.
+d) Nei. Vi vet at det finnes *minst* én løsning, men ikke om $A\vec x = \vec 0$ har ikke-trivielle løsninger. Hvis den har det, finnes det uendelig mange (jf. c).
+
+**12.5** a) Hver pivotsøyle bruker opp én rad, så det er høyst $m < n$ pivotsøyler. Da finnes minst én fri variabel. Sett den lik 1 og løs ut resten, så får du en løsning $\neq \vec 0$.
+b) Følger av a) og 12.4c.
+c) Tiden vokser som $n^3$, og $10^3 = 1000$, så det tar omtrent 500 s (rundt 8 minutter). Den dyre delen ($\approx 2n^3/3$) er å radredusere $A$. Den gjør du bare én gang, og hver ekstra høyreside koster bare omtrent $n^2$ operasjoner til.
+
 ## Bonus — Python
 
 **B.1** `[ 2  6 10]`, `10`, `30 3840`.

@@ -1,11 +1,13 @@
 ---
-tags: [MAT1105, oppgaver, oblig]
+tags: [MAT1105, oppgaver]
 ---
 
-# Oppgavesett MAT1105 — alt pensum til midtveis
+# Oppgavesett MAT1105 — midtveisøving
 
 > [!info] Om settet
-> Dekker **hele midtveispensumet**: **kap. 1–3 i [1]** (vektorer, matriser, Gausseliminasjon) og **hele [2]** (*Lynkurs i matematikkens grunnlag*: mengder, funksjoner, utsagnslogikk, bevisteknikk). Kap. 4 (inverse matriser) er *ikke* midtveispensum. Tema 11–12 om kap. 3 ble lagt til 1/10.
+> Dekker **hele midtveispensumet**: **kap. 1–3 i [1]** (vektorer, matriser, Gausseliminasjon) og **hele [2]** (mengder, funksjoner, utsagnslogikk, bevisteknikk). Kap. 4 (inverse matriser) er *ikke* midtveispensum.
+>
+> [1] = Ø. Ryan, *Linear algebra and numerical methods* · [2] = U. S. Fjordholm, *Lynkurs i matematikkens grunnlag*
 >
 > Hvert tema har **1–3 enkle** oppgaver (midtveisnivå — men uten svaralternativer, du må skrive svaret selv) og **2 vanskeligere** (avsluttende-eksamensnivå, noen bittelitt over).
 >
@@ -26,32 +28,11 @@ Notat: [[Kap 1 - Vektorer]]
 
 **1.1** La $\vec{x} = (3,-1,2,0)$ og $\vec{y} = (-2,4,1,5)$. Beregn $3\vec{x} - 2\vec{y}$.
 
-
-$3\vec{x}-2\vec{y}=(9+4,-3-8,6-2,0-10)=(13,-11,4,-10)$
-
-
 **1.2** La $\vec{u} = (1+2i,\; 3,\; -i)$ og $\vec{v} = (2,\; 1-i,\; 4i)$ i $\mathbb{C}^3$. Beregn $2\vec{u} - i\vec{v}$.
-
-$2\vec{u}=(2+4i,6,-2i)$
-$i\vec{v}=(2i,1i+1,-4,)$
-
-
-$2\vec{u}-\vec{i}=(2+6i,7+i,-4-2i)$
-
 
 **1.3** La $P = (2,-1,3)$ og $Q = (5,1,-1)$.
 a) Finn en parametrisering $\vec{y}(t)$ av linja gjennom $P$ og $Q$.
 b) Avgjør om $R = (8,3,-5)$ ligger på linja.
-
-$\vec{PQ}=(3,2,-4)$
-definerer $\vec{y}$ slik at $\vec{y}(0)=P$ og $\vec{y}(1)=Q$
-$\vec{y}(0)=P=(3t+2,2t-1,-4t+3)$
-$\vec{y}(1)=(3+2,2-1,-4+3)=Q$
-$\vec{y}(t)=(3t+2,2t-1,-4t+3)$
-
-b) 
-$\vec{y}(2)=(6+2,4-1,-8+3)=(8,3,-5)$
-Så ja, punktet ligger på linjen. (Stirrer på uttrykket og ser hva må t være for at første ledd skal bli 8, sjekker om det stemmer. )
 
 ### Vanskeligere
 
@@ -60,113 +41,10 @@ a) Finn en ligning for $\alpha$ på formen $ax+by+cz = d$.
 b) La $\ell_1$ være linja $\vec{y}(t) = (1,1,1) + t(1,1,1)$. Vis at $\ell_1$ **ikke** skjærer $\alpha$, og forklar geometrisk hvorfor — bruk skalarproduktet mellom $\vec n$ og retningsvektoren.
 c) La $\ell_2$ være linja $\vec{y}(t) = t(1,1,0)$. Finn skjæringspunktet mellom $\ell_2$ og $\alpha$.
 
-
-Løsnign:
-a) Skalaproduktet $(2,-3,1)\cdot(1-x,1-y,2-z)=0$
-$2-2x-3+3y+2-z=-2x+3y-z=1$
-
-b) $\vec{y}(t)=(1,1,1)+t(1,1,1)$ retningsvektor $(1,1,1)$
-$\vec{n}\cdot \vec{r}=(2-3+1)=0$ Altså er linjen parallell med planet. 
-SJekker at linjen ikke ligger i planet: (Setter $\vec{y}(0)$ inn i planet) $-2+3-1=0$ 
-
-c) Ser at $(1,1,0)$ ligger i planet. evt løs likningen $-2t+3t=1$, får $t=1$ og setter det inn i uttrykket for $\ell_{2}$
-
-
 **1.5** La $\vec{a}, \vec{b} \in \mathbb{R}^n$ med $\vec a \neq \vec b$, og la $\ell$ være linja gjennom dem. Vis at et punkt $\vec p \in \ell$ oppfyller
 $$|\vec p - \vec a| = |\vec p - \vec b|$$
 hvis og bare hvis $\vec p = \tfrac{1}{2}(\vec a + \vec b)$.
 *Skriv det som et ordentlig «hvis og bare hvis»-bevis: begge retninger.*
-
-$\vec{p}\in \ell$
-$|\vec p - \vec a| = |\vec p - \vec b|\iff \vec{p}=\frac{1}{2}(\vec{a}+\vec{b})$
-
-
-
-La p være punkt på linjen
-
-Teorem: 
- La $\vec{a}, \vec{b} \in \mathbb{R}^n$ med $\vec a \neq \vec b$, og la $\ell$ være linja gjennom dem. Vi skal vise at: 
- et punkt $\vec p \in \ell$ oppfyller
-$$|\vec p - \vec a| = |\vec p - \vec b|$$
-hvis og bare hvis $\vec p = \tfrac{1}{2}(\vec a + \vec b)$.
-
-Bevis: 
-Geometrisk inntuitivt (snittet av punktene)
-1 vei først:  hvis $\vec{p}=\frac{1}{2}(\vec{a}+\vec{b})$, har vi at: 
-
-$$
-\begin{align} \\
-|\vec p - \vec a| &= |\vec p - \vec b| \\
-
-|\frac{1}{2}\left( \vec{a}+\vec{b}\right)-\vec{a}|&=| \frac{1}{2}(\vec{a}+\vec{b})-\vec{b} \\
-| \frac{\vec{b}}{2}-\frac{\vec{a}}{2}| &=| \frac{\vec{a}}{2}-\frac{\vec{b}}{2}| \\
- |\vec{b}-\vec{a}| & =|\vec{a}-\vec{b}|=|-(\vec{b}-\vec{a})|
-\end{align}
-$$
-disse er like! Flott!
-$$
-\begin{align}
-|\vec{p}-\vec{a}|&=|\frac{1}{2}(\vec{a}+\vec{b})-\vec{a}| \\
-&=| \frac{\vec{b}}{2}- \frac{\vec{a}}{2}|  \\
-&=\frac{|\vec{b}-\vec{a}|}{2} \\
-
-\end{align}
-
-$$
-$$
-\begin{align}
-|\vec{p}-\vec{b}|&=|\frac{1}{2}(\vec{a}+\vec{b})-\vec{b}| \\
-&=| \frac{\vec{a}}{2}- \frac{\vec{b}}{2}|  \\
-&=\frac{|\vec{a}-\vec{b}|}{2} \\
-
-\end{align}
-
-$$
-Og disse to er like!
-
-2. også...
-kan vi uttrykke p ved linjen på en måte?
-
-Vi antar at $\vec{p}$ er et viklkårlig punkt på linjen. Forsøke å finne en t slik at sammmenhengen gjelder.
-$t$ inn i uttrykket for $\vec{p}$
-Uttrykker $\vec{p}$ som $t(\vec{b}-\vec{a})+\vec{a}$
-VS:
-$$
- |\vec{p}-\vec{a}|=|t(\vec{b}-\vec{a})+\vec{a}-\vec{a}|=|t(\vec{b}-\vec{a})|
-$$
-HS: 
-$$
-\begin{align}
- |\vec{p}-\vec{b}|&=|t(\vec{b}-\vec{a})+\vec{a}-\vec{b}| \\
-  & =|t(\vec{b}-\vec{a})-(\vec{b}-\vec{a}) |\\
-  & =|(\vec{b}-\vec{a})||(t-1)| \\
-
-\end{align}
-
-$$
-
-Og vi antar jo fra før at 
-$$
-|\vec p - \vec a| = |\vec p - \vec b|
-$$
-Så da er
-
-$$
-\begin{align}
-  |t(\vec{b}-\vec{a})|&=|(\vec{b}-\vec{a})||(t-1)| \\
-  |t||(\vec{b}-\vec{a})|& =|(\vec{b}-\vec{a})||(t-1)|\\
- |t| & =|t-1|\\
-\sqrt{t^{2} } & = \sqrt{ t^{2}-2t+1 } \\
-t^{2} & =t^{2}-2t+1 \\
-t^{2}-t^{2}--2t & =1 \\
-2t & =1 \\
-t & =\frac{1}{2}
-\end{align}
-$$
-Siden vi har satt $\vec{p} =$  $t(\vec{b}-\vec{a})+\vec{a}$
-Så er   $\vec{p}=\frac{1}{2}(\vec{b}-\vec{a})+\vec{a}=\frac{1}{2}(\vec{a}+\vec{b})$
-
-Som er det vi skulle vise i utgangspunktet
 
 ---
 
@@ -176,20 +54,12 @@ Notat: [[Kap 1 - Vektorer]]
 ### Enkle
 
 **2.1** La $\vec a = (1,-2,5)$ og $\vec b = (-3,2,-5)$. Beregn $\vec a \cdot \vec b$, $|\vec a|$ og $|\vec b|$.
-$\vec{a}\cdot \vec{b}=-3-4-25=-32$
-$|\vec{a}|=\sqrt{ 1^{2}+(-2)^{2}+5^{2} }=\sqrt{ 30 }$
-$|\vec{b}|=\sqrt{ (-3)^{2}+2^{2}+(-5)^{2} }=\sqrt{ 38 }$
 
 **2.2** Finn alle $t \in \mathbb{R}$ slik at $(t,2,-1)$ og $(3,t,4)$ er ortogonale.
-$(3t+2t-4)=0$
-$5t=4$
-$t=\frac{4}{5}$
 
 **2.3** I $\mathbb{C}^n$ bruker vi $\vec a \cdot \vec b = a_1\overline{b_1} + \cdots + a_n\overline{b_n}$. La
 $$\vec u = (1+i,\; 2,\; -3i), \qquad \vec v = (2i,\; 1-i,\; 1).$$
 Beregn $\vec u \cdot \vec v$ og $|\vec u|$.
-$\vec{u}\cdot \vec{v}=((1+i)(-2i)+2(1+i)-3i(1))=-2i+2+2+i-3i=4-4i$
-$|\vec{u}|=\sqrt{ |(1+i)|^{2} +2^{2}+|(-3i)|^{2}}=\sqrt{ 1^{2}+2^{2}+3^{2} }=\sqrt{ 10 }$
 
 ### Vanskeligere
 
@@ -197,94 +67,10 @@ $|\vec{u}|=\sqrt{ |(1+i)|^{2} +2^{2}+|(-3i)|^{2}}=\sqrt{ 1^{2}+2^{2}+3^{2} }=\sq
 $$|\vec a + \vec b|^2 + |\vec a - \vec b|^2 = 2|\vec a|^2 + 2|\vec b|^2.$$
 Tegn opp situasjonen i $\mathbb{R}^2$ og forklar i én setning hva identiteten sier om et parallellogram.
 
-$$
-\begin{align}
- |\vec a + \vec b|^2 + |\vec a - \vec b|^2&=(\vec{a}+\vec{b})\cdot(\vec{a}+\vec{b})+(\vec{a}-\vec{b})\cdot (\vec{a}-\vec{b}) \\
- 
-& =\vec{a}\cdot(\vec{a}+\vec{b})+\vec{b}\cdot(\vec{a}+\vec{b})+\vec{a}\cdot(\vec{a}-\vec{b})-\vec{b}\cdot(\vec{a}-\vec{b}) \\
-& =\vec{a}\cdot \vec{a}+2\vec{a}\vec{b}+\vec{b}\cdot \vec{b}+\vec{a}\cdot \vec{a}-2\vec{a}\vec{b}+\vec{b}\cdot \vec{b} \\ \\
-& =2|\vec{a}|^{2}+2|\vec{b}|^{2} \\
-\end{align}
-$$
-Lengden av diagonalene???
-Må faktisk tegne dette opp.
-
-
 **2.5**
 a) La $\vec a \in \mathbb{R}^n$. Vis at hvis $\vec a \cdot \vec x = 0$ for **alle** $\vec x \in \mathbb{R}^n$, så er $\vec a = \vec 0$.
 b) Bruk a) til å vise: hvis $\vec a \cdot \vec x = \vec b \cdot \vec x$ for alle $\vec x$, så er $\vec a = \vec b$.
 c) Vis at $|\vec a| = |\vec b|$ hvis og bare hvis $\vec a + \vec b$ og $\vec a - \vec b$ er ortogonale.
-
-
-Vi vet: $\vec{a} \in \mathbb{R}^n$ og $\forall \vec{x} \in \mathbb{R}^n, \vec{a} \cdot \vec{x}=0$
-Vi vil vise at: $\vec{a}=\vec{0}$
-
-(siden dette skal gjelde for alle $\vec{x} \in \mathbb{R}^n$, kan vi velge n $\vec{x}$. Det SKAL gjelde for alle uansett, så da må det gjelde for $\vec{x}$ som vi velger )
-
-Velger $\vec{x}=\vec{e}_{i}$ som har alle elementer lik 0 bortsett fra $e_{i}=1$, der $i  \in (1,2,3,\dots n)$
-Da blir $\vec{a} \cdot \vec{x}=a_{i}$, og vi har at for alle $i$ så er $a_{i}=0$
-Og da må $\vec{a}=\vec{0}$
-
-
-b)
-Vi vet: $\forall \vec{x} \in \mathbb{R}^n:\vec{a}\cdot \vec{x}=\vec{b}\cdot \vec{x}$
-Vi vil vise at $\vec{a}=\vec{b}$
-
-
-$\vec{a}\cdot \vec{x}-(\vec{b}\cdot \vec{x})=0$
-$(\vec{a}-\vec{b})\cdot\vec{x}=0$
-
-Vi velger $\vec{x}=\vec{e}_{i}=(0,0,0,\dots,1,\dots,n)$ der $e_{i}=1$ 
-$(\vec{a}-\vec{b})\cdot\vec{x}=0$
-blir da
-$((a_{1}-b_{1})0+(a_{2}-b_{2})0+(a_{3}-b_{3})+\dots(a_{i}-b_{i})1+\dots+(a_{n}-b_{n})0)=(a_{i}-b_{i})$
-
-som kun blir lik null når
-$a_{i}=b_{i}$
-
-For alle $i \in (0,1,2,3\dots n)$ gir dette at alle $a_{i}=b_{i}$, som betyr at $\vec{a}=\vec{b}$
-
-c) Vis at $|\vec a| = |\vec b|$ hvis og bare hvis $\vec a + \vec b$ og $\vec a - \vec b$ er ortogonale.
-
-Vi vet at $\vec a + \vec b$ og $\vec a - \vec b$ er ortogonale. 
-Vi vil vise at $|\vec a| = |\vec b|$ 
-
-Bevis: 
-Def. ortogonale gir at
-$(\vec{a}+\vec{b})\cdot(\vec{a}-\vec{b})=0$
-
-$$
-\begin{align}
-(\vec{a}+\vec{b})\cdot(\vec{a}-\vec{b})&=\vec{a}\cdot(\vec{a}-\vec{b})+\vec{b}\cdot(\vec{a}-\vec{b}) \\
- & =|\vec{a}|^2+\vec{a}\cdot \vec{b}-\vec{a}\cdot \vec{b}-|\vec{b}|^2 \\
- & =|\vec{a}|^2-|\vec{b}|^2
-\end{align}
-$$
-
-$|\vec{a}|^2-|\vec{b}|^2=0$
-Gir at $|\vec{a}|^2=|\vec{b}|^2$ 
-$|\vec{a}|=|\vec{b}|$
-
-
-Også andre veien: Vi antar at $|\vec a| = |\vec b|$ 
-og vil vise at $\vec a + \vec b$ og $\vec a - \vec b$ er ortogonale?
-
-
-
-Kan vi gjøre akkurat det samme motsatt vei?
-Se på det i morgen:)
-
-Eller har vi vist det hvis og bare hvis fordi det er ekvivalens hele tiden her.
-
-b) Teorem: Dersom 
-$\forall \vec{x} \in \mathbb{R}^n, \vec{a}\cdot \vec{x}=\vec{b}\cdot \vec{x}\implies \vec{a}=\vec{b}$
-Skriv ut.
-$\vec{a}\cdot \vec{x}=(a_{1}x_{1}+a_{2}x_{2}+a_{3}x_{3}+\dots +a_{n}x_{n})$
-$\vec{b}\cdot \vec{x}=(b_{1}x_{1}+b_{2}x_{2}+b_{3}x_{3}+\dots+b_{n}x_{n})$
-Disse to vil kun være like dersom $a_{1}=b_{1},a_{2}=b_{2},a_{3}=b_{3},\dots a_{n}=b_{n}$
-Og da har vi at $\vec{a}=\vec{b}$
-
-Er dette ikke gyldig?
 
 ---
 
@@ -295,21 +81,11 @@ Notat: [[Kap 1 - Vektorer]]
 
 **3.1** La $\vec a = (7,1,5)$ og $\vec b = (3,4,0)$.
 a) Finn projeksjonen av $\vec a$ ned på $\vec b$.
-
-$proj_{\vec{b}}\vec{a}=\frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^2}\vec{b}=\frac{21+4+0}{9+16}=1\vec{b}=\vec{b}$
-
-
 b) Finn $\cos\theta$ eksakt, der $\theta$ er vinkelen mellom $\vec a$ og $\vec b$.
-$\cos \theta=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}$
-**3.2** Med $\vec a$ og $\vec b$ som i 3.1: skriv $\vec a = \vec p + \vec q$ der $\vec p$ er parallell med $\vec b$ og $\vec q$ er ortogonal på $\vec b$. Sjekk svaret ditt.
-$\vec{p}\cdot \vec{q}=0$
-$\vec{p}=proj_{\vec{b}}\vec{\vec{a}}=\vec{b}$
-$(3,4,0)$ og $(4,-3,5)$
 
+**3.2** Med $\vec a$ og $\vec b$ som i 3.1: skriv $\vec a = \vec p + \vec q$ der $\vec p$ er parallell med $\vec b$ og $\vec q$ er ortogonal på $\vec b$. Sjekk svaret ditt.
 
 **3.3** La $\vec a = (2,-1,3)$ og $\vec b = (-4,2,-6)$. Har vi likhet i Schwarz-ulikheten $|\vec a \cdot \vec b| \le |\vec a||\vec b|$ her? Begrunn uten å regne ut lengdene.
-
-Ja, fordi vektorene er parallelle $\vec{a}\cdot-2=\vec{b}$
 
 ### Vanskeligere
 
@@ -319,33 +95,9 @@ og at likhet bare inntreffer når $t\vec b = \vec p$.
 *Hint: skriv $\vec a - t\vec b = (\vec a - \vec p) + (\vec p - t\vec b)$ og bruk Pytagoras.*
 *(Dette er andre halvdel av beviset for Proposisjon 1.4 i [1] — prøv å gjøre det selv før du slår opp.)*
 
-Vi vet at: $\vec a, \vec b \in \mathbb{R}^n$ med $\vec b \neq \vec 0$, og $\vec p = \operatorname{proj}_{\vec b}(\vec a)$. 
-$\vec{p}=\frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^{2}}\vec{b}$
-geometrisk tolkning gir at $\vec{a}-\vec{p}$ er vektoren fra p til a. så egentlig skal vi vise at $\frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^{2}}$ er den skalaren som gir korteste vei. Da må $\vec{a}-\vec{p}$ stå vinkelrett på $\vec{p}$
-
-Kanskje derfor hintet sier Pytagoras?
-Dette var vanskelig.
-1. 
-$\vec{a}-\vec{t}b=\vec{a}-\vec{p}+\vec{p}-t\vec{b}= (\vec a - \vec p) + (\vec p - t\vec b)$
-$\vec{p}-t\vec{b}=\vec{b}\left( \frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^{2}}-t \right)$ altså parallell med $\vec{b}$ (og $\vec{a}-\vec{p}$ er per def ortogonal på $\vec{b}$)
-$(\vec{a}-\vec{p})ortogonal(\vec{p}-t\vec{b})$
-Pytagoras gir at $| (\vec a - \vec p) + (\vec p - t\vec b)|^{2}=|(\vec{a}-\vec{p})|^{2}+|(\vec{p}-t\vec{b})|^{2}$ 
-som er $\geq|(\vec{a}-\vec{p})|^{2}$
-Siden lengder alltid er positive, har vi da at $|\vec a - \vec p| \le |\vec a - t\vec b|$ for alle t
-(ingen t vil kunne gi en negativ lengde i andre del av uttrykket. Og ja, jeg har hoppet over noen mellomregninger her)
-
-Når er disse like? Dersom $(\vec{p}-t\vec{b})=0$
-Vi har fra tidligere at $\vec{p}-t\vec{b}=\vec{b}\left( \frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^{2}}-t \right)$ og at $\vec{b}\neq 0$
-som gir at $t=\frac{\vec{a}\cdot \vec{b}}{|\vec{b}|^{2}}$
-
-
 **3.5** Bruk Schwarz-ulikheten til å vise at for alle $x_1,\dots,x_n \in \mathbb{R}$ gjelder
 $$(x_1 + x_2 + \cdots + x_n)^2 \le n\,(x_1^2 + x_2^2 + \cdots + x_n^2).$$
 Når har vi likhet? Begrunn.
-
-Schwarz-ulikheten: $|\vec{a}||\vec{b}|\geq |\vec{a}\cdot \vec{b}|$
-
-
 
 ---
 
@@ -376,40 +128,6 @@ a) Vis at $A^TA$ er symmetrisk.
 b) Vis at $(A^TA)_{jj} = |\vec a_j|^2$.
 c) Bruk b) til å vise: hvis $A^TA = 0$, så er $A = 0$.
 
-
-
-a) VI vil vise at $A^TA$ er symmetrisk. Altså $(A^TA)ij=(A^TA)ji$
-Vi vet at $A=\begin{pmatrix}a_{11} & a_{12} & \dots & a_{1n} \\  a_{21} & a_{22} & \dots & a_{2n} \\  \vdots & \vdots &  &  &  \\  a_{m_{1}} & a_{m_{2}} & \dots & a_{mn}\end{pmatrix}$ og komponentene gis ved $a_{ij}$
-
-Siden $A$ er en $m \times n$ $A^TA$ har dimensjonene $n\times n$ 
-
-Vi har at $(A^TA)ij=\sum_{r=1}^n(A^T)_{ir}a_{rj}=\sum_{r=1}^na_{ri}a_{rj}$, for alle naturlige tall $i,j\in \{ 1,\dots ,n \}$
-Og $(A^TA){ji}=\sum_{r=1}^n (A^T)_{jr}a_{ri}=\sum_{r=1}^na_{rj}a_{ri}$
-
-De to summene er like (kommutativitet for multiplikasjon i de reelle tallene)
-$(A^TA)_{ij}=(A^TA)_{ji}$ har vi at $A^TA$ er symmetrisk
-
-
-Eventuelt:
-Symmetriske matriser: $B=B^T$
-$(A^TA)^T=(A)^T(A^T)^T=A^TA$
-
-b) Vi har at søylevektorene i $A$ er $\vec{a}_{1},\dots \vec{a}_{n}$
-$(A^TA)jj$ gitt ved søylevektorer er $\vec{a}_{j}\cdot\vec{a}_{j}$ (fordi radvektor j i $A^T$ er lik søylevektor $\vec{a}_{j}$ i $A$ )
-$\vec{a}_{j}\cdot\vec{a}_{j}=|\vec{a}j|^{2}$
-
-c) Vi vet at $A^TA=0$. Antar at vi er i de reelle tallene. 
-Vi vil vise at $A=0$
-
-$A^TA=0$ betyr at for alle naturlige tall $i,j\in[1,n]$ har vi at $(A^TA)ij=0$
-$(A^TA)jj=|\vec{a}_{j}|^{2}=0$ gir at alle komponenter i $\vec{a}_{j}=(a_{1},a_{2},a_{3}\dots a_{m})$ må være lik null ($|\vec{a}_{j}|^{2}= a_{1}^{2}+a_{2}^{2}+a_{3}^{2}+\dots+a_{m}^{2}$ er bare null når alle komponenter er null (fordi kvadratet av et reelt tall må være $\geq 0$))
-
-Dette gjelder for alle naturlige tall $j\in[1,n]$ så alle søylevektorene i $A$ har lengde null, som bare skjer når alle komponentene er lik null. 
-
-
-
-
-
 ---
 
 ## Tema 5 — Matrisemultiplikasjon og regneregler
@@ -431,36 +149,8 @@ er definert? Angi størrelsen på dem som er det.
 
 **5.4** La $A$ være en reell $n \times n$-matrise. Skriv et **kontrapositivt bevis** for følgende utsagn:
 > Hvis $(A\vec x)\cdot \vec y = \vec x \cdot (A\vec y)$ for alle $\vec x, \vec y \in \mathbb{R}^n$, så er $A$ symmetrisk.
-> 
-
- Kontrapositivt: $P \implies Q$  da tar vi $\neg Q\implies \neg P$
- Vi vet (kontrapositivt): $A$ er ikke symmetrisk, $A^T\neq A$, $a_{ij}\neq a_{}ji$
-Vi vil vise at $\exists \vec{x},\vec{y} \in \mathbb{R}^n:$ $(A\vec x)\cdot \vec y \neq \vec x \cdot (A\vec y)$ 
-
-Velger $\vec{x}=\vec{e}_{i}$ og $\vec{y}=\vec{e}_{j}$
-$(A\vec{e}_{i})\cdot \vec{e}_{j}=\vec{a}_{i}\cdot \vec{e}_{j}$ (der $\vec{a}_{i}$ er søylevektor nr i)
-$\vec{a}_{i}\cdot \vec{e}_{j}=a_{ij}$
-
-Tilsvarende for HS:
-Velger $\vec{x}=\vec{e}_{i}$ og $\vec{y}=\vec{e}_{j}$
-$\vec{e}_{i}\cdot (A\vec{e}_{j})=\vec{e}_{i}\cdot \vec{a}_{j}$ (der $\vec{a}_{j}$ er søylevektor nr i)
-$\vec{e}_{i}\cdot \vec{a}_{j}=a_{ji}$
-
-Siden $A$ ikke er symmetrisk vil komponentene $a_{ji}$ og $a_{ij}$ ikke være like.
-Vi har dermed vist kontrapositivt at hvis $(A\vec x)\cdot \vec y = \vec x \cdot (A\vec y)$ for alle $\vec x, \vec y \in \mathbb{R}^n$, så er $A$ symmetrisk.
 
 *(Oppgave 2.5 i [1] — som står på ukesoppgavelista — og oppgave 1 på avsluttende eksamen H2025. Kompendiet ber om «hvis og bare hvis»; eksamen ba om den kontrapositive veien. Gjør begge.) Hint: hva er $(A\vec e_i)\cdot \vec e_j$?*
-
-
-Hvis og bare hvis:
-Mangler andre veien
-Vi vet: $A$ er symmetrisk, $A^T=A$, $a_{ij}=a_{ji}$
-Vi vil vise at $\forall \vec{x},\vec{y} \in \mathbb{R}^n:(A\vec{x})\cdot \vec{y}=\vec{x}\cdot (A\vec{y})$
-Husk: $(AB)^T=B^TA^T$ og at matrisemultiplikasjon av radvektor $\times$ søylevektor = skalarproduktet av søylevektorene.
-
-Derav VS: $(A\vec{x})\cdot \vec{y}=(A\vec{x})^T\vec{y}=\vec{x}^TA^T\vec{y}$
-HS: $\vec{x}\cdot(A\vec{y})=\vec{x}^T(A\vec{y})=\vec{x}^TA\vec{y}$
-$A$ er symmetrisk, så $A^T=A$, og $\vec{x}^TA^T\vec{y}=\vec{x}^T(A\vec{y})=\vec{x}^TA\vec{y}$
 
 **5.5** La $A$ være en $n \times n$-matrise som kommuterer med **alle** $n\times n$-matriser, altså $AB = BA$ for alle $B$. Vis at $A = cI_n$ for en skalar $c$.
 *Litt utenfor pensum i form, men bruker bare kap. 2. Hint: prøv $B = E_{ij}$, matrisen med $1$ i posisjon $(i,j)$ og $0$ ellers. Regn ut $AE_{ij}$ og $E_{ij}A$ komponentvis.*
@@ -476,10 +166,6 @@ Notat: [[Matriser]]
 
 **6.2** La $\vec b = (3,4)$. Finn matrisen til avbildningen $\vec x \mapsto \operatorname{proj}_{\vec b}(\vec x)$.
 
-Kan vi utlede dette? 
-
-
-
 **6.3** $T: \mathbb{R}^2 \to \mathbb{R}^2$ er lineær, og
 $$T\begin{pmatrix}1\\2\end{pmatrix} = \begin{pmatrix}2\\5\end{pmatrix}, \qquad T\begin{pmatrix}2\\3\end{pmatrix} = \begin{pmatrix}-1\\2\end{pmatrix}.$$
 Finn matrisen til $T$.
@@ -488,36 +174,8 @@ Finn matrisen til $T$.
 
 **6.4** La $F: \mathbb{R}^n \to \mathbb{R}^m$ være lineær.
 a) Vis at $F(\vec 0) = \vec 0$.
-Kaller projeksjonsmatrisen til $F$ for $B=\begin{pmatrix}b_{11} & b_{12} & \dots & b_{1n} \\  b_{21} & b_{22} & \dots & b_{2n} \\  \vdots & \vdots &  & \vdots \\  b_{m_{1}} & b_{m2} & \dots & b_{mn}\end{pmatrix}$
-
-$(B(\vec{0}))_{i}=\sum_{r=1}^{n} b_{ir}\vec{0}_{r}=\sum_{r=1}^{n}b_{ir}0$
-For alle $i \in \{ 1,2,\dots,m \}$ så er komponent $i$ i $F(\vec{0})$ lik null. Da må $F(\vec{0})=\vec{0}$
-
-
-b) Vis at $F(s\vec a + t\vec b) = sF(\vec a) + tF(\vec b)$ for alle skalarer $s,t$ og alle $\vec a= (a_{1},a_{2},\dots a_{n}), \vec b=(b_{1},b_{2},\dots b_{n})$
-Nå kaller vi matrisen til $F$ for $F$ 
-
-$F(s\vec{a}+t\vec{b})_{i}=\sum_{r=1}^{n}f_{ir}((s\vec{a})_{r}+(t\vec{b})_{r})=\sum_{r=1}^{n}f_{ir}((sa_{r})+tb_{r})$
-Distributivitet over addisjon (Nå er vi i de reelle tallene), + distribusjon av summer. 
-$=\sum_{r=1}^{n}(f_{ir}sa_{r}+f_{ir}tb_{r})=\sum_{r=1}^{n}s(f_{ir}a_{r})+\sum_{r=1}^{n}t(f_{ir}b_{r})=(sF\vec{a})_{i}+tF(\vec{b})_{i}=(sF(\vec{a})+tF(\vec{b}))_{i}$
-Og dette gjelder for alle $i \in \{ 1,2,\dots,m \}$, altså er $F(s\vec a + t\vec b)$ lik $sF(\vec a) + tF(\vec b)$ 
-
+b) Vis at $F(s\vec a + t\vec b) = sF(\vec a) + tF(\vec b)$ for alle skalarer $s,t$ og alle $\vec a, \vec b$.
 c) La $A$ være en $m\times n$-matrise og $\vec c \in \mathbb{R}^m$ med $\vec c \neq \vec 0$. Vis at $G(\vec x) = A\vec x + \vec c$ **ikke** er lineær.
-
-Vi vet:  $A$ være en $m\times n$-matrise og $\vec c \in \mathbb{R}^m$ med $\vec c \neq \vec 0$. 
-Vi vil vise: $G(\vec x) = A\vec x + \vec c$ **ikke** er lineær.
-
-Vi viser ved motsigelse: Anta at  $G(\vec{x})$ er lineær
- Da må $G(c\vec{a})=cG(\vec{a})$
-
-Uttrykker $\vec{x}$ som $t\vec{y}$, der $t \in{\mathbb{R}\setminus\{1\}}$
-Da er $G(\vec{x})=G(t\vec{y})=A(t\vec{y})+c$
-Siden $G(\vec{x})$ er lineær, er $G(t\vec{y})=t(G(\vec{y}))=t(A\vec{y}+\vec{c})=tA\vec{y}+t\vec{c}$ 
-
-Dette gir at $\vec{c}=t\vec{c}$, og skal gjelde for alle skalarer $t$
-Men da har vi en selvmotsigelse, for dette gjelder bare $\forall t \in \mathbb{R}$ når $\vec{c}=\vec{0}$
-
-
 
 **6.5** La $\vec b \in \mathbb{R}^n$ med $|\vec b| = 1$, og sett $P = \vec b\,\vec b^T$.
 a) Vis at $P\vec x = \operatorname{proj}_{\vec b}(\vec x)$ for alle $\vec x$.
@@ -565,103 +223,16 @@ b) Er $f: [1,\infty) \to [-2,\infty)$ bijektiv? Begrunn.
 
 **8.3** La $f(x) = \dfrac{2x-1}{x+3}$. Vis at $f: \mathbb{R}\setminus\{-3\} \to \mathbb{R}\setminus\{2\}$ er bijektiv, og finn $f^{-1}$.
 
-
-Bijektiv forutsetter at $f$ er injektiv og surjektiv.
-Injektiv: 
-$f'(x)=2(x+3)-(2x-1)=\frac{7}{(x+3)^{2}}$ (ser at $f$ er kontinuerlig i hele sin definisjonsmengde, antar at den er deriverbar for $\mathbb{R} \setminus {-3}$ (hvordan sjekker jeg evt d?))
-Siden den deriverte er strengt positiv for hele sin definisjonsmengde, er $f$ strengt voksende (men hva om hopp og sånt?) nei dette er ikke gyldig
-
-Den deriverte er definert og strengt positiv for $(-\infty,-3)$ og $(3,\infty)$
-Ser på funksjonsverdiene (grenseverdiene) $\lim_{ x \to -\infty }f(x)=\frac{\left( 2-\frac{1}{x} \right)}{1+\frac{3}{x}}=2$ 
-$\lim_{ x \to -3^- }f(x)=\lim_{ x \to -3^- } \frac{2x-1}{x+3}=+\infty$
-$\lim_{ x \to \infty }f(x)=2$
-$\lim_{ x \to -3^+ }=-\infty$
-
-Nå ser vi at funksjonen er strengt voksende for $(-\infty,3)$ og $(3,+\infty)$, selv om verdiene for $(-\infty,3)$ er høyere enn verdiene for $(3,\infty)$, overlapper de ikke. 
-Da er funksjonen en-entydig altså injektiv.
-
-
-Surjektvitet har vi også vist ved grenseverdiene over: funksjonen er strengt voksende i to intervaller, og dekker verdimengden $\mathbb{R} \setminus \{ 2 \}$
- 
-Da er $f$ bijektiv og har en invers
-
-$f^{-1}(f(a))=a$
-$$
-\begin{align}
- \frac{2x-1}{x+3}&=y \\
-2x-1 & =y(x+3)=yx+3y \\
-2x-yx & =3y+1 \\
-x(2-y) & =3y+1 \\
-x & =\frac{3y+1}{2-y}
-\end{align}
-$$
-
-$f^{-1}(y)=\frac{3y+1}{2-y}$
-
 ### Vanskeligere
 
 **8.4** La $f: A \to B$ og $g: B \to C$ være funksjoner.
 a) Vis at hvis $f$ og $g$ er injektive, så er $g \circ f$ injektiv.
-
-Om $f$ er injektiv så har vi at $x_{1}\neq x_{2}\implies(f(x_{1}))\neq f(x_{2})$, tilsvarende for $g(y)$
-
-$x_{1}\neq x_{2}\implies a_{1}=f(x_{1})\neq a_{2}=f(x_{2})\implies g(a_{1})\neq g(a_{2})$
-$g(a_{1})=g \circ f(x_{1})\neq g \circ f(x_{2})=g(a_{2})$
-
 b) Vis at hvis $g\circ f$ er injektiv, så er $f$ injektiv. Gi et eksempel som viser at $g$ ikke trenger å være det.
-
-Kontrapositivt: $f$ er ikke injektic $\implies$ $g \circ f$ er ikke injektiv
-At $f$ ikke er injektiv gir at $x_{1},x_{2}, a$ slik at $f(x_{1})=f(x_{2})=a$ og $x_{1}\neq x_{2}$
-$g \circ f(x_{1})=g(a)$
-$g \circ f(x_{2})=g(a)$
-Dette gir at $g\circ f$ ikke er injektiv.
-
-
-Da har vi at $f$ må være injektiv for at $g \circ f$ skal være injektiv.
-
-La $f$ være $e^{ x }$, som er injektiv. (Dette kan vises.)
-La $g$ være $|x|$, som ikke er injektiv.
-
-$f:\mathbb{R}\to \mathbb{R}_{+}$
-og for positive tall er $|x|$ bare $x$, og da injektiv
-Som gir at $f \circ g$ er injektiv :)
-
-
 c) Formuler og bevis de tilsvarende to påstandene for surjektivitet.
 *(Dette er Oppgave 3.10 i [2], litt utvidet.)*
 
-
-a) Vis at hvis $f$ og $g$ er surjektive, så er $g \circ f$ også surjektiv.
-$f$ er definert fra $A\to B$, $g: B\to C$
-
-Om $f$ er surjektiv, er $V_{f}=B=D_{g}$
-Om $g$ er surjektiv, er $V_{g}=C$ (fordi $D_{g}$ er hele $B$ eller er ikke det en gang strengt nødvendig?)
-
-b) Vis at hvis $f\circ g$ er surjektiv, så er $g$ surjektiv
-
-At $f\circ g:A\to C$ er surjektiv betyr at $V_{f \circ g}=C$
-
 **8.5** La $n \in \mathbb{N}$, og la $A$ og $B$ være mengder med $\#A = \#B = n$. La $f: A \to B$ være en funksjon. Skriv et **motsigelsesbevis** for følgende utsagn:
 > Hvis $f$ er injektiv, så er $f$ også surjektiv.
-
-
-Vi vet at $n \in \mathbb{N}$, og $A$ og $B$ er mengder med $\#A = \#B = n$. $f: A \to B$
-
-$f$ er injektiv $\implies f$ er surjektiv
-Motsigelse: 
-$f$ ikke er surjektiv $\implies f$ ikke injektiv
-
-Hvis $f$ ikke er surjektiv, så er $f$ ikke injektiv
-$f:A\to B$, husk $\#A=\#B=n$
-
-Vi definerer $C$ som en ekte delmengde av $B$, der $\#C<\#A=\#B$
-om $f$ ikke er surjektiv, betyr det at $f:A\to C$
-Men: $\#C<\#A$, som betyr at to $x \in A$ nødvendigvis må ha samme verdi $f(x) \in C$
-For at $f$ skal være injektiv, må definisjonsmengden og verdimengden inneholde like mange verdier.
-
-
-Dette er et kontrapositivt bevis, ikke et motisgelsesbevis, og ikke egentlig et bevis i det hele tatt. 
-Fiks ONSDAG eller TORSDAG
 
 ---
 
@@ -679,33 +250,14 @@ Notat: [[Utsagnslogikk]] · [[bevisteknikk]]
 **9.4** Finn negasjonen av følgende utsagn, både med kvantorer og i ord:
 > For alle $\varepsilon > 0$ finnes det en $N \in \mathbb{N}$ slik at for alle $n \ge N$ er $|x_n - x| < \varepsilon$.
 
-Tolkning: jo lenger ut i følgen 
-
-
-$\forall \epsilon>0 \:\exists N \in \mathbb{N}:(\forall n\geq N\implies|x_{n}-x|<\epsilon)$
-
-Negasjon: Det eksisterer en $\epsilon >0$ slik at for alle $N \in \mathbb{N}$ eksisterer en $n\geq N$ og $|x_{n}-x|>\epsilon$
-Negasjon $\exists \epsilon>0\:\forall N\in \mathbb{N}:(\exists n\geq N \land|x_{n}-x|>\epsilon)$
-
-
 ### Vanskeligere
 
 **9.5** La $A \subseteq \mathbb{R}$, og betrakt utsagnet
 > For alle $a \in A$ finnes det en $r > 0$ slik at for alle $x$ med $|x-a| < r$ er $x \in A$.
 
 a) Skriv utsagnet med kvantorer.
-$\forall a \in A, \exists r>0:\forall  x:(|x-a|<r \implies x \in A)$
 b) Finn negasjonen, både med kvantorer og i ord.
-
-$\exists a\in A\:\:\forall r>0: \exists x:((|x-a|<r)\land x\not\in A)$
-
-
 c) Avgjør om utsagnet er sant for $A = (0,1)$, $A = [0,1]$ og $A = \mathbb{Q}$. Begrunn hvert svar.
-
-$A=(0,1)$
-
-Confused. Se på dette i morgen.
-
 
 **9.6** La $P(n)$ og $Q(n)$ være predikater på $\mathbb{N}$. Betrakt
 $$\text{(i)}\quad \big(\forall n\, P(n)\big) \vee \big(\forall n\, Q(n)\big), \qquad \text{(ii)}\quad \forall n\, \big(P(n) \vee Q(n)\big).$$
@@ -848,4 +400,4 @@ a) søyle 3 som vektor, b) $A^T$, c) maksverdien i hver søyle, d) matrisen $A^T
 
 ---
 
-*Lykke til! Du trenger ikke levere alt — plukk det du vil ha tilbakemelding på.*
+*Lykke til!*

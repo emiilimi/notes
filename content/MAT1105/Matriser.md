@@ -185,19 +185,16 @@ Skrive matrisen som summen av sine søyler trenger ikke vi å drive på med.
 # Lineære transformasjoner og matrisemultiplikasjoner
 
 $\vec{F}:\mathbb{R}^n\to \mathbb{R}^m$
-
+egenskaper: 
 $F(\vec{a}_{1}+\vec{a}_{2})=F(\vec{a}_{1})+F(\vec{a}_{2})$
 $F(c\vec{a})=cF(\vec{a})$
-1. $𝐅⁡(𝐚1 +𝐚2) =𝐅⁡(𝐚1) +𝐅⁡(𝐚2)$
-2. 𝐅⁡(𝑐⁢𝐚) =𝑐⁢𝐅⁡(𝐚)
 
 F har matrise A. Hva er egenltig F? transformere koordinatsystemeet
 Vi kan i hvertfall bevise at den fins? og at den er lineær
 
 ### Matrisen til en vektorprojeksjon
 projeksjonsmatrise $\vec{b} \vec{b}^T$
-
-
+Utledes i forelesningsnotat
 ## Finne matrise til avbildning (transformation?) med rotasjon vinkel
 Trigonometri:)
 

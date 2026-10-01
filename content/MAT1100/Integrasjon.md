@@ -20,6 +20,43 @@ Så kommer Erik Hiltunen og tar noe annet.
 
 "har ikke laget noe prøvemidtveis."
 
+
+### Hiltunen:
+Seksjon 7.2 i boken. 
+Bestemte integraler - areal. 
+Differanser $\Delta x_{i}=x_{-}-x_{i-1}$ , største lengden $\Delta x_{i}$ kalles maskevidde. 
+Vilkårlige punkter $x_{i}^*$ som ligger mellom $x_{i}$ og $x_{i-1}$
+
+$R(\pi,U)=\sum_{i=1}^{N} f(x^*_{1})\Delta x_{i}$, $\Delta x_{i}\to 0$
+(Riemannintegralet, ikke levec integral)
+At $f$ er integrerbar betyr: det fins et tall $I$, slik at riemanssummen
+Slik at (og nu kommer epsilon og delta, det har dere sett før)
+
+For hver $\epsilon>0 \exists \delta>0:$ 
+Hvis vi har en riemannssum med maskevidde $|\pi|$$\delta$ er verdien for riemannssummen ikke lenger enn $\epsilon$ fra $I$
+Dersom $f$ er integrerbar, så sier vi at $I$ er det bestemte integralet av $f$ fra $a$ til $b$
+$I=\int_{a}^{b} f(x) \, dx$
+Dette er definisjonen,
+merk: $\int_{a}^{a} f(x) \, dx=0$
+	merk: $\int_{b}^{a} f(x) \, dx=-\int_{a}^{b} f(x) \, dx$ om $a<b$. Def.
+
+Abstrakt. Blir mer konkret. I morgen kommer [[Analysens fundamentalteorem]]
+
+
+### Øvresummer og nedresummer
+Nedreintegralet og øvreintegralet kan være definert når riemannssummen ikke er definert. (Når skjer dette?)
+Nedreintegralet: øverste nedresum. (Nedresum: $S=\sum_{i=1}^{n}c_{i}\Delta x_{i}$ der $c_{1}\leq f(x) \forall x \in [x_{i-1},x_{i}]$
+Øvreintegral: infimum av øvresum.
+
+**Teorem:** 
+1. om $f$ er integrerbar, er $\int_{\lfloor a \rfloor}^{b}f(x)  \, dx=\int_{a}^{\lceil b \rceil}f(x)  \, dx=\int_{a}^{b}f(x)  \, dx$
+2. Dersom nedreintegral=øvreintegral=A, er $f$ integrerbar og $\int_{a}^{b} f(x) \, dx=A$
+
+
+**Bevis:**
+("vi bygger opp teorien steg for steg, dette her er matematisk analyse")
+
+
 ### Sgn
 $f(x)=sgn(x)$ har ingen antiderivert. Ved motsigelse.
 
