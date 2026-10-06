@@ -27,6 +27,7 @@ $UtelattMapper = @(
     ".obsidian"
     ".trash"
     ".git"
+    "ANDRE GREIER"
 )
 
 # Enkeltfiler eller monstre som ikke skal publiseres.
