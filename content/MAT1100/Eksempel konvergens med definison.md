@@ -20,3 +20,9 @@ HUSK $n>A$
 $|a_{n}-L|=\frac{5}{n+3} < \frac{5}{A+3}\leq\frac{5}{\left( \frac{5}{\epsilon}-3 \right)+3}=\epsilon$
 
 da stemmer det at når $n>A$ så er $|a_{n}-L|<\epsilon$
+
+
+
+
+
+### Eksempel epsilon delta

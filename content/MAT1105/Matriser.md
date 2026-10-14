@@ -15,33 +15,6 @@ $A$ er kvadratisk når $m=n$
 radvektor: et hosistonalt segment i $A$
 søylevektor: vertikalt segment
 
-### Lage matriser i python
-```python
-A=np.array([[1,2,3]])#radvektor
-B=np.array([[1],[2],[3]])#søylevektor
-
-```
-Og obs Python indeksering starter fortsatt på 0
-`A[0,1]` gir 2
-`B[1,0]` gir også 2
-
-3 x 4 matrisen $A$
-```python
-A=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
-m, n = np.shape(A) #3, 4
-
-#KOLONNOTASJON
-A[i, :] #radvektor
-A[:,j] #søylevektor
-
-
-#noter forskjell
-print(A[1,:]) #skriver ut en vektor, uten noe referanse til matrise
-print(A[[1],:]) #spytter ut en matrise [[5,6,7,8]]
-```
-#### Undermatrise i python
-ix notasjon for gitte rader og gitte søyler, ny matrise, men den skal vi ikke bruke så mye.
-
 ### Transponere matrise
 $A^T$ er snudd, rad 1 blir søyle 1 osv
 
@@ -57,50 +30,17 @@ $(AB)^T=B^T A^T$
 $((A+B)^T)_{ij}=(A+B)ji$
  og så videre til vi står komponentvis $a_{ij}+b_{ij}=a_{ij}+b_{ij}$
 
-### Reshape
-`y.reshape((1,-1)` tar en vektor og git en radvektor. -1 betyr regn ut automatisk hvo mange rader/søyler. 1 betyr 1 rad. (1,-1) gir da en søylevektor
 
 
-## Operasjoner ved både vektorer og MATRISER
-`np.max(A,axis=0)` trekker ut maksverdien i hver søyle og returnerer en vektor. 
-`np.min(A,axis=0` tilsvarende
-sum: summerer søylevis og returnerer vektor
-prod: ganger sammen alle tall i hver søyle, returnerer vektor
-
-**Vektoriserte funksjoner for vektorer er vektorisert** for matriser også.  Funkjsonen av alle komponentene:) 
-`sqrt, abs, sin, log` osv
-
-np.maximum sammenligner komponentvis for to matriser. og returnerer en matrise. np.minimum gjør samme. 
-
-Multiplikasjon og potens i Python: ganger sammen komponentvis og returnerer matrise. 
-*Skalarer*
-Plusse på skalar går helt fint komponentvis men ikke definer matematisk
-Hvis a er en rad-vektor, kan den plusses med b søylevektor returnerer MATRISE
+# Egenskaper ved matrisemultiplikasjon
+1. $(AB)C=A(BC)$   # men ikke endre på rekkefølgen!!!
+2. $A(B+C)=AB+AC$ distributivitet
+3. $(B+C)A=BA+CA$ også distributivitet
+4. For alle skalarer $s$, $s(AB)=(sA)B=A(sB)$
+5. A $m\times n$ så $AI_{n}=A$ og $I_{n}A=A$. $I_{n}$ er nøytralt element. 
 
 
-# artige matriser
-
-$0$ matrisen med bare nuller
-$1$ matrisen med bare enere
-$diag(A)$ matrisen med vektor a på diagonalen. Resten null?
-$I_{n}$ identitetsmatrisen, n=m=det vu vil den skal være, 1 på diagonalen. 
-
-Diagonalmatriser er symmetriske:)
-
-### Hilbertmatrisen
-$i_{kl}=\frac{1}{(k+l-1)}$
-
-
-kode: med reshape og transponering.
-
-
-### Vandermondematrisen
-
-
-## Fouriertranformasjonen
-ER MEGET KUL men ikke pensum.
-
-## Matriseaddisjon
+### Matrisaddisjon
 
 Definert komponentvis.
 Hvis $A$ og $B$ begge er mxn, så definerer vi 
@@ -158,7 +98,7 @@ $ax^T=(\begin{matrix} a_{1} \\  a_{2} \\ \dots \\  a_{m}\end{matrix}) ( \begin{m
 2. $A(B+C)=AB+AC$ distributivitet
 3. $(B+C)A=BA+CA$ også distributivitet
 4. For alle skalarer $s$, $s(AB)=(sA)B=A(sB)$
-5. A $m\times n$ så $AI_{n}=A$ og en til omskrivning. $I_{n}$ er nøytralt element. 
+5. A $m\times n$ så $AI_{n}=A$ og $I_{n}A=A$. $I_{n}$ er nøytralt element. 
 
 
 #### Bevis for #1
@@ -211,6 +151,77 @@ For rotasjon av akser med vinkel $\theta$
 $e_{1}=\begin{pmatrix}\cos \theta \\  \sin \theta\end{pmatrix}$ og $e_{2}=\begin{pmatrix}\cos\left( \frac{\pi}{2}+\theta \right)  \\  \sin\left( \frac{\pi}{2}+\theta \right)\end{pmatrix}$
 så tranformasjonen $\begin{pmatrix}\cos \theta & \cos\left( \frac{\pi}{2}+\theta \right) \\  \sin \theta & \sin\left( \frac{\pi}{2}+\theta \right)\end{pmatrix}$
 
+### Lage matriser i python
+```python
+A=np.array([[1,2,3]])#radvektor
+B=np.array([[1],[2],[3]])#søylevektor
+
+```
+Og obs Python indeksering starter fortsatt på 0
+`A[0,1]` gir 2
+`B[1,0]` gir også 2
+
+3 x 4 matrisen $A$
+```python
+A=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+m, n = np.shape(A) #3, 4
+
+#KOLONNOTASJON
+A[i, :] #radvektor
+A[:,j] #søylevektor
+
+
+#noter forskjell
+print(A[1,:]) #skriver ut en vektor, uten noe referanse til matrise
+print(A[[1],:]) #spytter ut en matrise [[5,6,7,8]]
+```
+#### Undermatrise i python
+ix notasjon for gitte rader og gitte søyler, ny matrise, men den skal vi ikke bruke så mye.
+
+### Reshape
+`y.reshape((1,-1)` tar en vektor og git en radvektor. -1 betyr regn ut automatisk hvo mange rader/søyler. 1 betyr 1 rad. (1,-1) gir da en søylevektor
+
+
+## Operasjoner ved både vektorer og MATRISER
+`np.max(A,axis=0)` trekker ut maksverdien i hver søyle og returnerer en vektor. 
+`np.min(A,axis=0` tilsvarende
+sum: summerer søylevis og returnerer vektor
+prod: ganger sammen alle tall i hver søyle, returnerer vektor
+
+**Vektoriserte funksjoner for vektorer er vektorisert** for matriser også.  Funkjsonen av alle komponentene:) 
+`sqrt, abs, sin, log` osv
+
+np.maximum sammenligner komponentvis for to matriser. og returnerer en matrise. np.minimum gjør samme. 
+
+Multiplikasjon og potens i Python: ganger sammen komponentvis og returnerer matrise. 
+*Skalarer*
+Plusse på skalar går helt fint komponentvis men ikke definer matematisk
+Hvis a er en rad-vektor, kan den plusses med b søylevektor returnerer MATRISE
+
+
+# artige matriser
+
+$0$ matrisen med bare nuller
+$1$ matrisen med bare enere
+$diag(A)$ matrisen med vektor a på diagonalen. Resten null?
+$I_{n}$ identitetsmatrisen, n=m=det vu vil den skal være, 1 på diagonalen. 
+
+Diagonalmatriser er symmetriske:)
+
+### Hilbertmatrisen
+$i_{kl}=\frac{1}{(k+l-1)}$
+
+
+kode: med reshape og transponering.
+
+
+### Vandermondematrisen
+
+
+## Fouriertranformasjonen
+ER MEGET KUL men ikke pensum.
+
+## Matriseaddisjon
 # plotte polynomer
 
 ```python

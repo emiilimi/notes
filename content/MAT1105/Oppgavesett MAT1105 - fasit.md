@@ -226,6 +226,116 @@ d) Nei. Vi vet at det finnes *minst* én løsning, men ikke om $A\vec x = \vec 0
 b) Følger av a) og 12.4c.
 c) Tiden vokser som $n^3$, og $10^3 = 1000$, så det tar omtrent 500 s (rundt 8 minutter). Den dyre delen ($\approx 2n^3/3$) er å radredusere $A$. Den gjør du bare én gang, og hver ekstra høyreside koster bare omtrent $n^2$ operasjoner til.
 
+## Tema 13 — Inverse matriser
+
+**13.1** $A^{-1} = \begin{pmatrix} -2 & 8 & 5 \\ -4 & 13 & 8 \\ 1 & -3 & -2 \end{pmatrix}$.
+
+**13.2** a) $ad - bc = 1$, så $B^{-1} = \begin{pmatrix} 2 & -5 \\ -1 & 3 \end{pmatrix}$.
+b) $\vec x = (2, -1)$ og $\vec x = (3, -1)$.
+c) $B\vec x = \vec b$ gir $\vec x = B^{-1}B\vec x = B^{-1}\vec b$, fordi $B^{-1}B = I$.
+
+**13.3** a) Usant: $(AB)^{-1} = B^{-1}A^{-1}$, fordi $AB\,B^{-1}A^{-1} = I$. Rekkefølgen snus.
+b) Sant: $A^T(A^{-1})^T = (A^{-1}A)^T = I^T = I$.
+c) Sant: Da kan ikke alle rader få pivot, så $A$ er ikke radekvivalent med $I$.
+d) Usant: $B = -A$ gir $A + B = 0$.
+
+**13.4** Anta for motsigelse at $A$ er inverterbar og $A^k = 0$. Gang med $A^{-1}$ fra venstre $k$ ganger: $I = (A^{-1})^kA^k = (A^{-1})^k \cdot 0 = 0$. Det er en motsigelse, siden $I \ne 0$.
+
+**13.5** (i) Ja, $A^{-1}$ er selv inverterbar, med invers $A$, så $f(A) \in E$. (ii) Ja, $A^{-1} = B^{-1}$ gir $A = (A^{-1})^{-1} = (B^{-1})^{-1} = B$. (iii) Ja, $B = f(B^{-1})$. (iv) Ja, $f(f(A)) = A$, så $f$ er sin egen invers.
+
+## Tema 14 — Lineærkombinasjoner, span og lineær uavhengighet
+
+**14.1** a) $\vec b_1 = 2\vec a_1 + \vec a_2$.
+b) Ikke mulig. I $(\vec a_1\; \vec a_2 \mid \vec b_2)$ blir siste søyle en pivotsøyle.
+c) Et plan gjennom origo. En normalvektor er $\vec a_1 \times \vec a_2 = (1, -2, 1)$, så planet er $x - 2y + z = 0$. (Sjekk: $\vec b_2$ gir $1 \ne 0$.)
+
+**14.2** a) Avhengige: $(3, 6) = 3(1, 2)$.
+b) Uavhengige: determinanten er $-2 \ne 0$.
+c) Avhengige: fire vektorer i $\mathbb{R}^3$ gir høyst tre pivoter (Proposisjon 5.3).
+d) Avhengige: $0 \cdot (1, 2, 3) + 1 \cdot \vec 0 + 0 \cdot (4, 5, 6) = \vec 0$. En mengde med nullvektoren er alltid avhengig.
+
+**14.3** a) For eksempel $2\vec a_1 + 3\vec a_2 + 0\vec a_3$ og $1\vec a_1 + 2\vec a_2 + 1\vec a_3$.
+b) $\vec a_1 + \vec a_2 - \vec a_3 = \vec 0$.
+c) To ulike skrivemåter for $\vec b$ gir, når du trekker dem fra hverandre, en kombinasjon som gir $\vec 0$ der ikke alle koeffisientene er $0$. Omvendt: hvis $\sum t_i\vec a_i = \vec 0$ ikke-trivielt, kan du legge $t_i$-ene til en hvilken som helst skrivemåte for $\vec b$ og få en ny.
+
+**14.4** La $A = (\vec a_1 \cdots \vec a_n)$, som er $m \times n$. Hver pivot tar sin egen rad, så det er høyst $m < n$ pivotsøyler. Da finnes minst én fri variabel. Sett den lik $1$ og løs $A\vec x = \vec 0$, så får du en løsning $\vec x \ne \vec 0$.
+
+**14.5** a) Anta $\sum c_i\vec x_i = \vec 0$. Bruk $T$: $\sum c_iT(\vec x_i) = T(\vec 0) = \vec 0$. Siden $T(\vec x_i)$ er uavhengige, er alle $c_i = 0$.
+b) Anta $\sum c_iT(\vec x_i) = \vec 0$. Da er $T(\sum c_i\vec x_i) = \vec 0 = T(\vec 0)$. Siden $T$ er injektiv, er $\sum c_i\vec x_i = \vec 0$, og da er alle $c_i = 0$.
+c) $T = 0$ (nullavbildningen) sender alt til $\vec 0$.
+
+## Tema 15 — Underrom
+
+**15.1** a) Ja.
+b) Nei: $\vec 0$ er ikke med.
+c) Nei: $(1, 1)$ er med, men ikke $-1 \cdot (1, 1)$.
+d) Ja: det er $\operatorname{Nul}\begin{pmatrix}1 & 1 & 1\end{pmatrix}$.
+e) Nei: $\vec 0$ er ikke med, og $2 \cdot (1, 0)$ er ikke på sirkelen.
+f) Ja.
+
+**15.2** a) Redusert trappeform: $\left(\begin{smallmatrix} 1 & 0 & 3/2 & 11/6 \\ 0 & 1 & -1/2 & -7/6 \\ 0 & 0 & 0 & 0 \end{smallmatrix}\right)$. De to ikke-null radene her er en basis for radrommet. Søyle 1 og 2 *i $A$*, $(2, 1, -1)$ og $(4, -1, -11)$, er en basis for søylerommet. Rangen er $2$.
+b) $\operatorname{Nul}(A) = \operatorname{Sp}\big((-3, 1, 2, 0),\ (-11, 7, 0, 6)\big)$, som har dimensjon $2$. $2 + 2 = 4$.
+
+**15.3** a) $3$. Ja, et 3-dimensjonalt underrom av $\mathbb{R}^3$ er hele $\mathbb{R}^3$.
+b) $5 - 3 = 2$.
+c) Ja, alltid løsning (pivot i hver rad). Men ikke entydig, siden det er 2 frie variabler.
+d) Nei, fem vektorer i $\mathbb{R}^3$ er alltid avhengige.
+
+**15.4** a) Redusert trappeform: $\left(\begin{smallmatrix} 1 & 0 & 3 & 2 \\ 0 & 1 & -4 & 3 \\ 0 & 0 & 0 & 0 \end{smallmatrix}\right)$. Søyle 1 og 2 i $A$, $(4, 1, 3)$ og $(2, -1, 3)$, er en basis.
+b) Legg til en standardvektor som gir tre pivoter, for eksempel $\vec e_1 = (1, 0, 0)$: $\det\left(\begin{smallmatrix} 4 & 2 & 1 \\ 1 & -1 & 0 \\ 3 & 3 & 0 \end{smallmatrix}\right) = 6 \ne 0$. (Her fungerer faktisk alle tre standardvektorene.)
+
+**15.5** (i) Ja, $A$ er $4 \times 3$, så $A\vec x \in \mathbb{R}^4$ for alle $\vec x \in \mathbb{R}^3$. (ii) Ja: rangen er $3$, så alle søyler er pivotsøyler og $\operatorname{Nul}(A) = \{\vec 0\}$. (iii) Nei: $\dim\operatorname{Col}(A) = 3 < 4$, og tre vektorer kan aldri spenne $\mathbb{R}^4$. (iv) Nei, siden $f$ ikke er surjektiv.
+
+**15.6** a) $\vec 0 = 0\vec a_1 + \cdots + 0\vec a_n$. Summen av to lineærkombinasjoner er en lineærkombinasjon: $\sum c_i\vec a_i + \sum d_i\vec a_i = \sum (c_i + d_i)\vec a_i$. Og $k\sum c_i\vec a_i = \sum (kc_i)\vec a_i$.
+b) Hvis $\vec x \cdot \vec s = 0$ og $\vec y \cdot \vec s = 0$, er $(\vec x + \vec y) \cdot \vec s = 0$ og $(k\vec x) \cdot \vec s = k(\vec x \cdot \vec s) = 0$, for alle $\vec s \in S$. Og $\vec 0 \cdot \vec s = 0$.
+
+## Tema 16 — Koordinater og basisskifte
+
+**16.1** $(-10, 20) = 3(2, 4) + 4(-4, 2)$, så $[\vec x]_{\mathcal{B}} = (3, 4)$.
+
+**16.2** a) $[\vec a_1]_{\mathcal{B}} = (2, -1)$ og $[\vec a_2]_{\mathcal{B}} = (-4, 3)$, så $P_{\mathcal{B}\leftarrow\mathcal{A}} = \begin{pmatrix} 2 & -4 \\ -1 & 3 \end{pmatrix}$.
+b) $[\vec x]_{\mathcal{B}} = P_{\mathcal{B}\leftarrow\mathcal{A}}(4, -5) = (28, -19)$.
+
+**16.3** $T(\vec b_1) = (12, -16)$ og $T(\vec b_2) = (22, 14)$. Uttrykt i $\mathcal{B}$ gir det
+$$[T]_{\mathcal{B}} = \frac{1}{13}\begin{pmatrix} 32 & 102 \\ -60 & 20 \end{pmatrix}.$$
+
+**16.4** $P = E_k \cdots E_1$, så $PA$ er radekvivalent med $A$. Radekvivalente matriser har de samme lineære avhengighetsrelasjonene mellom søylene (Proposisjon 5.2), og dermed de samme pivotsøylene. Antall pivotsøyler er dimensjonen til søylerommet.
+
+## Tema 17 — Determinanter
+
+**17.1** a) $14$. b) $-32$. c) $(-8, -6, 4)$.
+
+**17.2** $\det(A) = -1$. Langs første søyle: $2\begin{vmatrix} 1 & 4 \\ -2 & -6 \end{vmatrix} + 1\begin{vmatrix} -1 & 1 \\ 1 & 4 \end{vmatrix} = 2 \cdot 2 + (-5) = -1$. Siden $\det(A) \ne 0$, er $A$ inverterbar, som i 13.1.
+
+**17.3** a) $3^3 \cdot 2 = 54$. b) $2$. c) $1/2$. d) $-6$. e) $4/(-3) = -4/3$. f) $-2$.
+
+**17.4** a) En normalvektor er $(\vec b - \vec a) \times (\vec c - \vec a) = (-15, 15, 15)$, altså parallell med $(-1, 1, 1)$. Planet er $-x + y + z = 1$.
+b) $|\vec a \times \vec b| = |(6, 0, -3)| = 3\sqrt5$.
+c) $|\det(\vec a\; \vec b\; \vec c)| = 15$.
+
+**17.5** a) $1 = \det(I) = \det(AA^{-1}) = \det(A)\det(A^{-1})$.
+b) $1 = \det(U^TU) = \det(U^T)\det(U) = \det(U)^2$.
+
+## Tema 18 — Alt henger sammen
+
+**18.1**
+
+| | $S$ | $T$ |
+|---|---|---|
+| Pivotsøyler | 1 og 3 | 1, 2 og 3 |
+| Rang | 2 | 3 |
+| Basis for $\operatorname{Col}$ | $(1, 2, 3)$, $(3, 7, 10)$ | standardbasisen (eller søylene i $T$) |
+| Basis for $\operatorname{Nul}$ | $(-2, 1, 0)$ | ingen, siden $\operatorname{Nul} = \{\vec 0\}$ |
+| Uavhengige? Spenner $\mathbb{R}^3$? | Nei og nei | Ja og ja |
+| $\det$ | $0$ | $2$ |
+| Inverterbar? | Nei | Ja |
+
+**18.2** a) Sant. b) Usant: løsningene av $A\vec x = \vec b$ er $\vec x_p + \operatorname{Nul}(A)$, så de er enten ingen eller uendelig mange (jf. 12.4). c) Sant. d) Usant: det trengs minst 6 vektorer. e) **Usant**: $\begin{pmatrix}1\\0\end{pmatrix}$ og $\begin{pmatrix}0\\1\end{pmatrix}$ er radekvivalente, men har ulike søylerom. Dimensjonen er derimot lik, og radrommet er det samme. f) Usant: $\vec b = \vec 0$ har alltid løsningen $\vec 0$. g) Sant: $\dim\operatorname{Row} = \dim\operatorname{Col}$. h) Sant: rang $2$, så $3 - 2 = 1$.
+
+**18.3** $\det(A) = 9 \ne 0$, så $A$ er inverterbar. (i) Ja. (ii) Ja: $A\vec x + \vec b = A\vec y + \vec b$ gir $A(\vec x - \vec y) = \vec 0$, og da er $\vec x = \vec y$. (iii) Ja: $\vec x = A^{-1}(\vec y - \vec b)$ gir $f(\vec x) = \vec y$. (iv) Ja, med $f^{-1}(\vec y) = A^{-1}(\vec y - \vec b)$. Men $f$ er *ikke* lineær, fordi $f(\vec 0) = \vec b \ne \vec 0$ (se 6.4c).
+
+**18.4** (i) Ja. (ii) **Nei, uten regning**: $\dim\operatorname{Nul}(A) = 5 - \operatorname{rang}(A) \ge 5 - 3 = 2$. (iii) Ja: rangen er $3$, så $\operatorname{Col}(A) = \mathbb{R}^3$. (iv) Nei, siden $f$ ikke er injektiv.
+
 ## Bonus — Python
 
 **B.1** `[ 2  6 10]`, `10`, `30 3840`.

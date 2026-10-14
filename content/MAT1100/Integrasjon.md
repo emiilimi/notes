@@ -55,7 +55,22 @@ Nedreintegralet: øverste nedresum. (Nedresum: $S=\sum_{i=1}^{n}c_{i}\Delta x_{i
 
 **Bevis:**
 ("vi bygger opp teorien steg for steg, dette her er matematisk analyse")
+"husk, vi kan ikke bruke teoremet i beviset"
 
+La $\epsilon>0 \exists \delta>0$. Vi vet at delta fins, vi velger delta slik at maskevidden (pi aktig tegn) $<\delta$ medfører $|R(\pi,U)-I|<\epsilon$
+La $m_{i}=inf(f(x)), x \in[x_{i-1},x_{i}]$
+
+$S=\sum_{i=1}^{n}m_{i}\delta x_{i}$
+
+
+Vi velger punkter $x_{i}^*$ slik at $f(x)<m_{i}+\epsilon$ (Fordi mi er største nedre begrensning, også øker vi den litt (med epsilon), og da finnes et punkt i $f(x^*_{i})>m_{i}+\epsilon$
+
+$m_{i}>f(x)-\epsilon$
+
+$S>\sum_{i=1}^{n}(f(x_{1}^*)-\epsilon)\Delta x_{i}$
+
+
+Også finner vi riemannssummen, og vi vet at denn ligger innom I+epsilon. Og epsilon er vilkårlig liten,Sup S = I
 
 ### Sgn
 $f(x)=sgn(x)$ har ingen antiderivert. Ved motsigelse.

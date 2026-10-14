@@ -27,6 +27,8 @@ b = 2
 print(a / b, a // b, a % b, type(a / b))
 ```
 
+3.5, 3, 1, <'class:' float>
+
 **b)** Hva skrives ut? Tell mellomrommene nøye.
 ```python
 x = 3.14159
@@ -34,11 +36,16 @@ n = 42
 print(f"{x:.2f}|{x:8.3f}|{n:5d}|")
 ```
 
+	3.14|3.141   |   42|
+	husker ikke siste
+
 **c)** Hva skrives ut?
 ```python
 tall = list(range(10, 0, -3))
 print(tall, tall[1:3], tall[-1], len(tall))
 ```
+
+	[10, 7, 4, 1], [7, 4, 1], [1], 4
 
 **d)** Hva skrives ut på hver av de to linjene?
 ```python
@@ -48,6 +55,10 @@ tabell = [[n, a] for n, a in zip(navn, alder) if a > 20]
 print(tabell)
 print(tabell[1][0][0])
 ```
+
+	[ ['Ada', 23],['Cy',31]]
+		'C'
+	
 
 **e)** Hva skrives ut? Følg løkka med en tabell over `k` og `s`.
 ```python
@@ -62,6 +73,8 @@ while s < 20:
 print(k, s)
 ```
 
+	7, 31
+
 **f)** Hva skrives ut? Forklar hvorfor `a` og `c` blir forskjellige.
 ```python
 a = [1, 2, 3]
@@ -71,12 +84,18 @@ b.append(4)
 print(a, c, a == b, c == b)
 ```
 
+c blir kopi, a=b og b=a gjelder når a/b modifiseres.
+
+`[1,2,3,4],[1,2,3],True,False`
+
 **g)** Hva skjer når koden kjøres? Hvordan retter du den?
 ```python
 verdier = [4, 8, 15]
 for i in range(len(verdier) + 1):
     print(verdier[i] * 2)
 ```
+
+fjern +1
 
 ---
 
@@ -112,7 +131,7 @@ data = les_fil('maalinger.txt')
 ```
 
 **a)** Hva er `data['Tromso']` og `len(data)`? Hva er poenget med linja `infile.readline()`, og hva skjer hvis du fjerner den?
-
+data tromsø er 4.5, 3.0. Infile.readline() skipper første linje
 **b)** Hva skrives ut? Få med både tallene og hvor bred hver kolonne blir.
 ```python
 def snitt(liste):
@@ -121,6 +140,8 @@ def snitt(liste):
 for stasjon in data:
     print(f"{stasjon:10s}{snitt(data[stasjon]):6.2f}")
 ```
+
+
 
 **c)** Hva skrives ut? (Lokale og globale variabler, standardargumenter, retur av flere verdier.)
 ```python
@@ -133,6 +154,9 @@ y = f(3)
 z, w = f(3, a=10)
 print(x, y, z, w)
 ```
+
+
+Svar: `5 (6, 7) 30 31`
 
 **d)** Hva skrives ut? Alt som skrives ut, i riktig rekkefølge.
 ```python
@@ -147,6 +171,10 @@ tall = ['3.5', 'tre', '1e2']
 res = [konverter(t) for t in tall]
 print(res)
 ```
+"Kan ikke konvertere tre"
+3.5, None, 100
+
+
 
 **e)** Vi utvider `snitt` slik at den gir en egen feilmelding for tom liste. Hva skrives ut?
 ```python
@@ -161,7 +189,8 @@ for l in [[2, 4], []]:
     except ValueError as e:
         print(f"Feil: {e}")
 ```
-
+3
+"Feil: Tom liste"
 **f)** Programmet `prog.py` kjøres med `python prog.py 3 4.5`. Hva skrives ut?
 ```python
 import sys
@@ -169,7 +198,7 @@ a = sys.argv[1]
 b = float(sys.argv[2])
 print(a * 2, b * 2)
 ```
-
+33 9
 **g)** Testfunksjoner.
 1. Består testen under? Begrunn.
 2. Hvorfor sammenlikner vi med en toleranse `tol` og ikke med `==`? (Tips: hva gir `0.1 + 0.2 == 0.3`?)
@@ -196,7 +225,8 @@ def anvend(f, verdier):
 print(anvend(lambda x: x**2 - 1, [0, 1, 2, 3]))
 ```
 *(Denne typen kall, `løser(lambda x: ..., ...)`, har vært med på hver midtveis de siste årene.)*
-
+`[-1, 0, 3,8]`
+`
 ---
 
 ## Oppgave 3 — NumPy-arrays og plotting
@@ -209,7 +239,8 @@ x = np.linspace(0, 2, 5)
 print(x)
 print(x[1:-1], x[::2])
 ```
-
+`([0, 0.5, 1, 1.5, 2])
+`[0.5, 1, 1.5] [0, 1, 2]`
 **b)** Hva skrives ut på hver linje, og hvilken av de to siste linjene gir feilmelding?
 ```python
 import math
@@ -222,6 +253,11 @@ print(np.sin(liste))
 print(math.sin(arr))
 ```
 
+`[1, 2, 3, 1, 2, 3]`
+`([2,4,6])`
+`([2,5, 10]) `
+feilmelding å¨feil sted. np sin tåler liste, math tåler bare enkelttall.
+
 **c)** Hva skrives ut? Forklar forskjellen mellom `b` og `c`.
 ```python
 a = np.zeros(4)
@@ -231,7 +267,9 @@ c = a.copy()
 c[3] = 9
 print(a, b, c)
 ```
+`[0, 0, 0, 0] [7, 0] [0, 7, 0, 9]`
 
+slice av array er en view :/ deler minne. copy lager eget array. 
 **d)** Koden under fyller to arrays med en løkke.
 ```python
 n = 5
@@ -243,6 +281,9 @@ for i in range(n):
 ```
 1. Hva er `t` og `y` etter løkka?
 2. Skriv to linjer uten løkke (med `np.linspace` og vektorisering) som gir de samme arrayene.
+`t=0.5*np.linspace(0,4,5)`
+`y=t**2-1`
+
 
 **e)** Plotting av en ball som kastes rett opp:
 ```python

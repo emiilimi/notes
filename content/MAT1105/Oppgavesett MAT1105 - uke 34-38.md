@@ -2,16 +2,16 @@
 tags: [MAT1105, oppgaver, oblig]
 ---
 
-# Oppgavesett MAT1105 — alt pensum til midtveis
+# Oppgavesett MAT1105 — alt pensum til nå (kap. 1–6)
 
 > [!info] Om settet
-> Dekker **hele midtveispensumet**: **kap. 1–3 i [1]** (vektorer, matriser, Gausseliminasjon) og **hele [2]** (*Lynkurs i matematikkens grunnlag*: mengder, funksjoner, utsagnslogikk, bevisteknikk). Kap. 4 (inverse matriser) er *ikke* midtveispensum. Tema 11–12 om kap. 3 ble lagt til 1/10.
+> Dekker **kap. 1–6 i [1]** (vektorer, matriser, Gausseliminasjon, inverse matriser, lineær uavhengighet og baser, determinanter) og **hele [2]** (*Lynkurs i matematikkens grunnlag*: mengder, funksjoner, utsagnslogikk, bevisteknikk). Tema 1–12 er midtveispensumet. Tema 13–18 (kap. 4–6) ble lagt til 14/10, med oppgaver fra kompendiet og fra tidligere eksamener. Tema 14 og 18 har et «kart» som viser hvordan begrepene henger sammen.
 >
 > Hvert tema har **1–3 enkle** oppgaver (midtveisnivå — men uten svaralternativer, du må skrive svaret selv) og **2 vanskeligere** (avsluttende-eksamensnivå, noen bittelitt over).
 >
 > Enkle oppgaver er modellert på flervalgsoppgavene fra midtveis H24/H25; de vanskeligere på oppgave 1–3-typene fra avsluttende eksamen 2024/2025, der du *må begrunne alle svar*.
 >
-> **Sjekket mot pensum:** oppgavene er kontrollert mot *Detaljer i pensum* og mot kompendiene. Ingenting fra kap. 4+ i [1] er med, heller ikke seksjon 3.3 (programmering av Gausseliminasjon, ikke pensum), ingen blokkmatriser (2.5, ikke pensum), ingen Vandermonde-/Hilbert-/Fourier-matriser (ikke eksamensrelevant). Programmering kommer ikke på eksamen — derfor er Python-delen lagt helt til slutt som bonus.
+> **Sjekket mot pensum:** oppgavene er kontrollert mot *Detaljer i pensum* og mot kompendiene. Ingenting fra kap. 7+ i [1] er med, og heller ikke seksjon 3.3 (programmering av Gausseliminasjon, ikke pensum) eller 6.3 (merket med stjerne), ingen blokkmatriser (2.5, ikke pensum), ingen Vandermonde-/Hilbert-/Fourier-matriser (ikke eksamensrelevant). Programmering kommer ikke på eksamen — derfor er Python-delen lagt helt til slutt som bonus.
 > Noen oppgaver er merket med hvor de kommer fra, slik at du ser hva som er ren eksamenstrening og hva som er litt utenfor.
 >
 > Fasit med korte svar: [[Oppgavesett MAT1105 - fasit]]
@@ -453,14 +453,30 @@ Vi har dermed vist kontrapositivt at hvis $(A\vec x)\cdot \vec y = \vec x \cdot 
 
 
 Hvis og bare hvis:
-Mangler andre veien
+Vi har allerde vist at  hvis $(A\vec x)\cdot \vec y = \vec x \cdot (A\vec y)$ for alle $\vec x, \vec y \in \mathbb{R}^n$, så er $A$ symmetrisk. Mangler å vise det andre veien:
 Vi vet: $A$ er symmetrisk, $A^T=A$, $a_{ij}=a_{ji}$
-Vi vil vise at $\forall \vec{x},\vec{y} \in \mathbb{R}^n:(A\vec{x})\cdot \vec{y}=\vec{x}\cdot (A\vec{y})$
+Vi vil vise at: $\forall \vec{x},\vec{y} \in \mathbb{R}^n$ så er $(A\vec{x})\cdot \vec{y}=\vec{x}\cdot (A\vec{y})$
 Husk: $(AB)^T=B^TA^T$ og at matrisemultiplikasjon av radvektor $\times$ søylevektor = skalarproduktet av søylevektorene.
 
-Derav VS: $(A\vec{x})\cdot \vec{y}=(A\vec{x})^T\vec{y}=\vec{x}^TA^T\vec{y}$
+VS: $(A\vec{x})\cdot \vec{y}=(A\vec{x})^T\vec{y}=\vec{x}^TA^T\vec{y}$
 HS: $\vec{x}\cdot(A\vec{y})=\vec{x}^T(A\vec{y})=\vec{x}^TA\vec{y}$
+
 $A$ er symmetrisk, så $A^T=A$, og $\vec{x}^TA^T\vec{y}=\vec{x}^T(A\vec{y})=\vec{x}^TA\vec{y}$
+Disse vil være like hvis og bare hvis A er symmetrisk. 
+
+
+Eller heller skrive det opp slik:
+$$
+\begin{align}
+(A\vec{x})\cdot \vec{y}&=(A\vec{x})^T\vec{y} \\
+ & =\vec{x}^TA^T\vec{y} \\
+ & =\vec{x}^TA\vec{y} \\
+ & =\vec{x}^T(A\vec{y}) \\
+ & =(\vec{x}^T)^T\cdot(A \vec{y}) \\
+ & = \vec{x}\cdot(A\vec{y})
+\end{align}
+$$
+
 
 **5.5** La $A$ være en $n \times n$-matrise som kommuterer med **alle** $n\times n$-matriser, altså $AB = BA$ for alle $B$. Vis at $A = cI_n$ for en skalar $c$.
 *Litt utenfor pensum i form, men bruker bare kap. 2. Hint: prøv $B = E_{ij}$, matrisen med $1$ i posisjon $(i,j)$ og $0$ ellers. Regn ut $AE_{ij}$ og $E_{ij}A$ komponentvis.*
@@ -483,6 +499,9 @@ Kan vi utlede dette?
 **6.3** $T: \mathbb{R}^2 \to \mathbb{R}^2$ er lineær, og
 $$T\begin{pmatrix}1\\2\end{pmatrix} = \begin{pmatrix}2\\5\end{pmatrix}, \qquad T\begin{pmatrix}2\\3\end{pmatrix} = \begin{pmatrix}-1\\2\end{pmatrix}.$$
 Finn matrisen til $T$.
+
+
+
 
 ### Vanskeligere
 
@@ -508,23 +527,142 @@ Vi vet:  $A$ være en $m\times n$-matrise og $\vec c \in \mathbb{R}^m$ med $\vec
 Vi vil vise: $G(\vec x) = A\vec x + \vec c$ **ikke** er lineær.
 
 Vi viser ved motsigelse: Anta at  $G(\vec{x})$ er lineær
- Da må $G(c\vec{a})=cG(\vec{a})$
+Da må $G(t\vec{a})=tG(\vec{a})$
 
-Uttrykker $\vec{x}$ som $t\vec{y}$, der $t \in{\mathbb{R}\setminus\{1\}}$
-Da er $G(\vec{x})=G(t\vec{y})=A(t\vec{y})+c$
+Uttrykker $\vec{x}$ som $t\vec{y}$, der $t \in{\mathbb{R}\setminus\{1\}}$ (fordi om $t=1$ så blir $t\vec{y}=\vec{y}$ og da er vi ca like langt?)
+Da er $G(\vec{x})=G(t\vec{y})=A(t\vec{y})+c=tA\vec{y}+c$
 Siden $G(\vec{x})$ er lineær, er $G(t\vec{y})=t(G(\vec{y}))=t(A\vec{y}+\vec{c})=tA\vec{y}+t\vec{c}$ 
 
-Dette gir at $\vec{c}=t\vec{c}$, og skal gjelde for alle skalarer $t$
-Men da har vi en selvmotsigelse, for dette gjelder bare $\forall t \in \mathbb{R}$ når $\vec{c}=\vec{0}$
+Dette gir at $\vec{c}=t\vec{c}$, og skal gjelde for $t\neq 1$
+$t\vec{c}-\vec{c}=0$
+$(t-1)(\vec{c})=0$ og $(t-1)$ blir aldri null
+Men da har vi en selvmotsigelse, for dette gjelder bare når $\vec{c}=\vec{0}$ 
+Derfor kan ikke $G(\vec{x})=A\vec{x}+\vec{c}$ være lineær når $\vec{c}\neq \vec{0}$
+
+
+Så kan vi også si at vi vet fra a) at $F(\vec{0})=\vec{0}$ om $F$ er lineær
+$G(\vec{0})=A(\vec{0})+\vec{c}=c$ og da er ikke $G$ lineær
 
 
 
 **6.5** La $\vec b \in \mathbb{R}^n$ med $|\vec b| = 1$, og sett $P = \vec b\,\vec b^T$.
 a) Vis at $P\vec x = \operatorname{proj}_{\vec b}(\vec x)$ for alle $\vec x$.
+
+
 b) Vis at $P^2 = P$ og $P^T = P$. Forklar hvorfor $P^2 = P$ er geometrisk rimelig.
 c) Sett $S = I_n - 2P$. Vis at $S^T = S$ og $S^2 = I_n$. Hva gjør $S$ geometrisk? (Sjekk med $n=2$ og $\vec b = (1,0)$.)
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Tema 7 — Mengder
 Notat: [[Mengder]] · [[Kap. 1-3 i LYNKURS I MATEMATIKKENS GRUNNLAG]]
@@ -660,8 +798,6 @@ Men: $\#C<\#A$, som betyr at to $x \in A$ nødvendigvis må ha samme verdi $f(x)
 For at $f$ skal være injektiv, må definisjonsmengden og verdimengden inneholde like mange verdier.
 
 
-Dette er et kontrapositivt bevis, ikke et motisgelsesbevis, og ikke egentlig et bevis i det hele tatt. 
-Fiks ONSDAG eller TORSDAG
 
 ---
 
@@ -823,6 +959,230 @@ d) Kan vi med opplysningene over si at $A\vec z = (3,-2,4)$ har *nøyaktig* én 
 a) Vis at $A\vec x = \vec 0$ alltid har en løsning $\vec x \neq \vec 0$. *(Hint: hvor mange pivotsøyler kan $A$ høyst ha? Bruk Proposisjon 3.4 i [1].)*
 b) Vis at hvis $A\vec x = \vec b$ har én løsning, så har den uendelig mange. *(Bruk 12.4.)*
 c) Gausseliminasjon på en $n \times n$-matrise krever omtrent $2n^3/3$ operasjoner (Proposisjon 3.5 i [1]). En datamaskin løser et system med $n = 1000$ på 0,5 sekunder. Omtrent hvor lang tid tar det med $n = 10\,000$? Og hvorfor lønner det seg å løse flere systemer med samme $A$ *samtidig*, slik som i 12.1?
+
+---
+
+## Tema 13 — Inverse matriser
+Notat: [[Inverse matriser]]
+
+### Enkle
+
+**13.1** *(Oppgave 4.1 i [1] og 4a på prøveeksamen 2024.)* Finn den inverse matrisen til
+$$A = \begin{pmatrix} 2 & -1 & 1 \\ 0 & 1 & 4 \\ 1 & -2 & -6 \end{pmatrix}$$
+ved å radredusere $(A \mid I_3)$. Kontroller svaret ved å regne ut $AA^{-1}$.
+
+**13.2** *(Oppgave 4.2 i [1].)* En $2\times 2$-matrise $\begin{pmatrix} a & b \\ c & d\end{pmatrix}$ er inverterbar hvis og bare hvis $ad - bc \ne 0$, og da er inversen $\frac{1}{ad-bc}\begin{pmatrix} d & -b \\ -c & a\end{pmatrix}$.
+a) Bruk formelen til å finne inversen til $B = \begin{pmatrix} 3 & 5 \\ 1 & 2\end{pmatrix}$.
+b) Løs $B\vec x = (1, 0)$ og $B\vec x = (4, 1)$ ved å gange med $B^{-1}$.
+c) Hvorfor er det å gange med $B^{-1}$ det samme som å løse likningssystemet? Svar med én setning.
+
+**13.3** Sant eller usant? Begrunn kort. $A$ og $B$ er inverterbare $n\times n$-matriser.
+a) $(AB)^{-1} = A^{-1}B^{-1}$
+b) $(A^T)^{-1} = (A^{-1})^T$ *(Oppgave 4.3 i [1].)*
+c) En matrise med en nullrad kan ikke være inverterbar. *(Oppgave 4.4 i [1].)*
+d) $A + B$ er inverterbar.
+
+### Vanskeligere
+
+**13.4** *(Oppgave 1 på eksamen 2024 og oppgave 4.7 i [1].)* En kvadratisk matrise $A$ er *nilpotent* hvis det finnes en $k \in \mathbb{N}$ slik at $A^k = 0$. Skriv et motsigelsesbevis for:
+> La $A$ være en nilpotent matrise. Da er $A$ ikke inverterbar.
+
+**13.5** *(Oppgave 3 på konteeksamen 2024.)* La $E = \{A \in \mathbb{R}^{2\times 2} : A \text{ er inverterbar}\}$, og definer $f : E \to E$ ved $f(A) = A^{-1}$. Avgjør om $f$ er (i) veldefinert, (ii) injektiv, (iii) surjektiv og (iv) inverterbar.
+*Hint: Hva er $f(f(A))$?*
+
+---
+
+## Tema 14 — Lineærkombinasjoner, span og lineær uavhengighet
+Notat: [[Lineær avhengighet og sånt]]
+
+> [!abstract] Kartet: nesten alt handler om likningen $A\vec x = \vec b$
+> La $\vec a_1, \dots, \vec a_n$ være søylene i $A$ (en $m \times n$-matrise). Det viktigste faktumet i hele kapittelet er
+> $$A\vec x = x_1\vec a_1 + x_2\vec a_2 + \cdots + x_n\vec a_n.$$
+> Å gange en matrise med en vektor *er* å lage en lineærkombinasjon av søylene. Alt under følger av det.
+>
+> | Spørsmål | Det samme som | Sjekkes med pivoter |
+> |---|---|---|
+> | Er $\vec b \in \operatorname{Sp}(\vec a_1, \dots, \vec a_n)$? | Har $A\vec x = \vec b$ en løsning? | Siste søyle i $(A \mid \vec b)$ er ikke pivotsøyle |
+> | Spenner søylene $\mathbb{R}^m$? | Har $A\vec x = \vec b$ en løsning for *alle* $\vec b$? | Pivot i hver **rad** |
+> | Er søylene lineært uavhengige? | Har $A\vec x = \vec 0$ bare løsningen $\vec x = \vec 0$? | Pivot i hver **søyle** (ingen frie variabler) |
+> | Er søylene en basis for $\mathbb{R}^m$? | Begge de to over | Pivot i hver rad *og* hver søyle (så $m = n$) |
+>
+> **Søylerommet** $\operatorname{Col}(A)$ er mengden av alle $\vec b$ du kan «nå» med $A$. **Nullrommet** $\operatorname{Nul}(A)$ er mengden av alle $\vec x$ som sendes til $\vec 0$. Uavhengige søyler betyr at ingen ikke-null $\vec x$ «forsvinner».
+
+### Enkle
+
+**14.1** La $\vec a_1 = (1, 2, 3)$ og $\vec a_2 = (0, 1, 2)$.
+a) Skriv $\vec b_1 = (2, 5, 8)$ som en lineærkombinasjon av $\vec a_1$ og $\vec a_2$, eller vis at det ikke går.
+b) Samme spørsmål for $\vec b_2 = (1, 0, 0)$.
+c) Beskriv $\operatorname{Sp}(\vec a_1, \vec a_2)$ geometrisk, og finn en likning $px + qy + rz = 0$ for den.
+
+**14.2** Er vektorene lineært uavhengige? Bruk så lite regning som mulig.
+a) $(1, 2)$ og $(3, 6)$
+b) $(1, 0, 1)$, $(0, 1, 1)$ og $(1, 1, 0)$
+c) Fire vilkårlige vektorer i $\mathbb{R}^3$
+d) $(1, 2, 3)$, $(0, 0, 0)$ og $(4, 5, 6)$
+
+**14.3** *(Hva betyr «på en entydig måte»?)* Definisjonen i [1] sier at vektorene er lineært uavhengige hvis hver $\vec b$ i spennet kan skrives som en lineærkombinasjon *på bare én måte*. La $\vec a_1 = (1, 0)$, $\vec a_2 = (0, 1)$ og $\vec a_3 = (1, 1)$.
+a) Skriv $(2, 3)$ som en lineærkombinasjon av $\vec a_1, \vec a_2, \vec a_3$ på to forskjellige måter.
+b) Trekk de to uttrykkene fra hverandre. Hvilken lineærkombinasjon av $\vec a_1, \vec a_2, \vec a_3$ gir $\vec 0$?
+c) Forklar med egne ord hvorfor «flere måter å skrive $\vec b$ på» og «en ikke-triviell kombinasjon som gir $\vec 0$» er det samme. (Det er beviset for Proposisjon 5.1 i [1].)
+
+### Vanskeligere
+
+**14.4** *(Oppgave 2 på prøveeksamen 2024.)* La $\vec a_1, \dots, \vec a_n \in \mathbb{R}^m$, der $n > m$. Bevis at $\vec a_1, \dots, \vec a_n$ er lineært avhengige, altså at det finnes $x_1, \dots, x_n$ som ikke alle er $0$, slik at $x_1\vec a_1 + \cdots + x_n\vec a_n = \vec 0$.
+
+**14.5** *(Oppgave 5.10 a–b i [1].)* La $T$ være en lineær avbildning, og la $\vec x_1, \dots, \vec x_k$ være vektorer.
+a) Anta at $T(\vec x_1), \dots, T(\vec x_k)$ er lineært uavhengige. Vis at $\vec x_1, \dots, \vec x_k$ er lineært uavhengige.
+b) Anta at $T$ er injektiv, og at $\vec x_1, \dots, \vec x_k$ er lineært uavhengige. Vis at $T(\vec x_1), \dots, T(\vec x_k)$ er lineært uavhengige.
+c) Gi et eksempel som viser at b) ikke holder uten at $T$ er injektiv.
+
+---
+
+## Tema 15 — Underrom: søylerom, radrom, nullrom, basis og rang
+Notat: [[Lineær avhengighet og sånt]]
+
+> [!tip] Hvorfor tar vi pivotsøylene fra $A$, og ikke fra trappeformen?
+> Radoperasjoner **endrer** søylerommet, men **bevarer** de lineære avhengighetsrelasjonene mellom søylene (Proposisjon 5.2 i [1]). Trappeformen forteller deg derfor *hvilke* søyler som er uavhengige, men selve vektorene må du hente fra den opprinnelige matrisen.
+> Radrommet bevares av radoperasjoner. Der kan du bruke pivotradene i trappeformen direkte.
+
+### Enkle
+
+**15.1** Hvilke av mengdene er underrom? Sjekk de tre kravene: $\vec 0$ er med, mengden er lukket under addisjon, og den er lukket under skalering. Gi et moteksempel når svaret er nei.
+a) Linja $y = 2x$ i $\mathbb{R}^2$
+b) Linja $y = 2x + 1$ i $\mathbb{R}^2$
+c) Første kvadrant, $\{(x, y) : x \ge 0, y \ge 0\}$
+d) $\{(x_1, x_2, x_3) : x_1 + x_2 + x_3 = 0\}$
+e) Enhetssirkelen $\{(x, y) : x^2 + y^2 = 1\}$
+f) $\{\vec 0\}$
+
+**15.2** *(Oppgave 5.2 i [1].)* La
+$$A = \begin{pmatrix} 2 & 4 & 1 & -1 \\ 1 & -1 & 2 & 3 \\ -1 & -11 & 4 & 11 \end{pmatrix}.$$
+a) Finn en basis for radrommet og en basis for søylerommet til $A$. Hva er rangen til $A$?
+b) Finn en basis for nullrommet. Hva er dimensjonen? Sjekk at $\operatorname{rang}(A) + \dim\operatorname{Nul}(A) = 4$.
+
+**15.3** *(Konseptuell, samme type som oppgave 9 på midtveis 2026.)* La $A$ være en $3 \times 5$-matrise med rang $3$. Svar uten å regne:
+a) Hva er $\dim\operatorname{Col}(A)$? Er $\operatorname{Col}(A) = \mathbb{R}^3$?
+b) Hva er $\dim\operatorname{Nul}(A)$?
+c) Har $A\vec x = \vec b$ en løsning for alle $\vec b$? Er løsningen entydig?
+d) Er søylene i $A$ lineært uavhengige?
+
+### Vanskeligere
+
+**15.4** *(Oppgave 4 på eksamen 2025. Oppgave 5.3 i [1] og oppgave 4 på eksamen 2024 er av samme type.)* La
+$$A = \begin{pmatrix} 4 & 2 & 4 & 14 \\ 1 & -1 & 7 & -1 \\ 3 & 3 & -3 & 15 \end{pmatrix}.$$
+a) Finn en basis for søylerommet til $A$.
+b) Utvid basisen fra a) til en basis for $\mathbb{R}^3$.
+
+**15.5** *(Oppgave 3 på eksamen 2025.)* Definer $f : \mathbb{R}^3 \to \mathbb{R}^4$ ved $f(\vec x) = A\vec x$, der
+$$A = \begin{pmatrix} 2 & -1 & 3 \\ 4 & 1 & 2 \\ 1 & 2 & 2 \\ 2 & -2 & 4 \end{pmatrix}.$$
+Avgjør om $f$ er (i) veldefinert, (ii) injektiv, (iii) surjektiv og (iv) inverterbar. Forklar hvordan svarene henger sammen med $\operatorname{Nul}(A)$ og $\operatorname{Col}(A)$.
+
+**15.6** *(Oppgave 5.5 og 5.6 i [1].)*
+a) Vis at $\operatorname{Sp}(\vec a_1, \dots, \vec a_n)$ er et underrom av $\mathbb{R}^m$.
+b) La $S \subseteq \mathbb{R}^n$ være en mengde. Vis at det ortogonale komplementet $S^\perp = \{\vec x \in \mathbb{R}^n : \vec x \cdot \vec s = 0 \text{ for alle } \vec s \in S\}$ er et underrom.
+
+---
+
+## Tema 16 — Koordinater og basisskifte
+
+### Enkle
+
+**16.1** *(Oppgave 5.14 i [1].)* Finn koordinatvektoren til $\vec x = (-10, 20)$ relativt til basisen $\mathcal{B} = \{(2, 4), (-4, 2)\}$.
+
+**16.2** *(Oppgave 5.15 i [1].)* La $\mathcal{A} = \{(-1, 1), (1, 1)\}$ og $\mathcal{B} = \{(-1, 2), (-1, 3)\}$.
+a) Finn basisskiftematrisen $P_{\mathcal{B}\leftarrow\mathcal{A}}$.
+b) La $\vec x = 4\vec a_1 - 5\vec a_2$. Finn $[\vec x]_{\mathcal{B}}$.
+
+### Vanskeligere
+
+**16.3** *(Oppgave 5.16 i [1].)* La $T : \mathbb{R}^2 \to \mathbb{R}^2$ ha matrise $\begin{pmatrix} 2 & 6 \\ -6 & 2 \end{pmatrix}$. Finn matrisen til $T$ relativt til $\mathcal{B} = \{(3, 1), (-1, 4)\}$, altså $[T]_{\mathcal{B}}$.
+*Hint: Søylene i $[T]_{\mathcal{B}}$ er $[T(\vec b_1)]_{\mathcal{B}}$ og $[T(\vec b_2)]_{\mathcal{B}}$.*
+
+**16.4** *(Oppgave 5.11 i [1].)* La $P$ være en inverterbar $m \times m$-matrise og $A$ en $m \times n$-matrise. Vis at $\operatorname{Col}(A)$ og $\operatorname{Col}(PA)$ har samme dimensjon.
+*Hint: $P$ er et produkt av elementærmatriser.*
+
+---
+
+## Tema 17 — Determinanter
+
+### Enkle
+
+**17.1** *(Oppgave 6.1 i [1].)* Regn ut
+a) $\begin{vmatrix} 4 & -1 \\ 2 & 3 \end{vmatrix}$
+b) $\begin{vmatrix} 2 & 0 & 1 \\ 3 & -1 & 7 \\ 0 & 2 & 5 \end{vmatrix}$
+c) $(2, 0, 4) \times (-1, 2, 1)$
+
+**17.2** *(Oppgave 6.5 i [1] og 4b på prøveeksamen 2024.)* Regn ut determinanten til matrisen $A$ fra oppgave 13.1 på to måter: ved å følge radoperasjonene fra Gausseliminasjonen, og ved å ekspandere langs første søyle. Hva sier svaret om $A$?
+
+**17.3** La $A$ og $B$ være $3 \times 3$-matriser med $\det(A) = 2$ og $\det(B) = -3$. Finn
+a) $\det(3A)$
+b) $\det(A^T)$
+c) $\det(A^{-1})$
+d) $\det(AB)$
+e) $\det(A^2 B^{-1})$
+f) determinanten til matrisen du får ved å bytte to rader i $A$.
+
+### Vanskeligere
+
+**17.4** *(Oppgave 6.4 i [1].)* La $\vec a = (-1, 2, -2)$, $\vec b = (2, -1, 4)$ og $\vec c = (3, 3, 1)$.
+a) Finn en likning for planet gjennom de tre punktene.
+b) Finn arealet av parallellogrammet utspent av $\vec a$ og $\vec b$.
+c) Finn volumet av parallellepipedet utspent av $\vec a$, $\vec b$ og $\vec c$.
+
+**17.5** *(Oppgave 6.9 og 6.10 i [1].)*
+a) La $A$ være inverterbar. Vis at $\det(A^{-1}) = 1/\det(A)$.
+b) La $U$ være reell med $U^TU = I_n$ (ortogonal). Vis at $\det(U) = \pm 1$.
+
+---
+
+## Tema 18 — Alt henger sammen
+
+> [!abstract] Invertibel matrise-teoremet (Proposisjon 6.6 i [1])
+> For en $n \times n$-matrise $A$ er disse ekvivalente:
+> 1. $A$ er radekvivalent med $I_n$.
+> 2. $A\vec x = \vec 0$ har bare løsningen $\vec x = \vec 0$, altså $\operatorname{Nul}(A) = \{\vec 0\}$.
+> 3. $A\vec x = \vec b$ har entydig løsning for alle $\vec b$.
+> 4. $A$ er et produkt av elementærmatriser.
+> 5. $A$ er inverterbar.
+> 6. Søylene i $A$ er en basis for $\mathbb{R}^n$, altså $\operatorname{rang}(A) = n$.
+> 7. $\det(A) \ne 0$.
+>
+> Alle sju sier det samme: **det er en pivot i hver rad og hver søyle.** For en kvadratisk matrise gir det ene det andre, fordi antall rader er lik antall søyler.
+
+### Enkle
+
+**18.1** Fyll ut tabellen for de to matrisene
+$$S = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 7 \\ 3 & 6 & 10 \end{pmatrix}, \qquad T = \begin{pmatrix} 1 & 2 & 0 \\ 2 & 5 & 1 \\ 0 & 1 & 3 \end{pmatrix}.$$
+
+| | $S$ | $T$ |
+|---|---|---|
+| Pivotsøyler | | |
+| Rang | | |
+| Basis for $\operatorname{Col}$ | | |
+| Basis for $\operatorname{Nul}$ | | |
+| Er søylene uavhengige? Spenner de $\mathbb{R}^3$? | | |
+| $\det$ | | |
+| Inverterbar? | | |
+
+**18.2** Sant eller usant? Begrunn kort, gjerne med et moteksempel. $A$ er $n \times n$ der ikke noe annet står.
+a) Hvis søylene i $A$ er lineært avhengige, er $\det(A) = 0$.
+b) Hvis $A\vec x = \vec 0$ har uendelig mange løsninger, kan $A\vec x = \vec b$ likevel ha nøyaktig én løsning for en $\vec b$.
+c) Søylene i en $4 \times 6$-matrise er lineært avhengige.
+d) Søylene i en $6 \times 4$-matrise kan spenne $\mathbb{R}^6$.
+e) Hvis $A$ og $B$ er radekvivalente, er $\operatorname{Col}(A) = \operatorname{Col}(B)$.
+f) Hvis $\det(A) = 0$, har $A\vec x = \vec b$ ingen løsning.
+g) $\operatorname{rang}(A) = \operatorname{rang}(A^T)$.
+h) Hvis $A$ er $3 \times 3$ og $\operatorname{Col}(A)$ er et plan, er $\dim\operatorname{Nul}(A) = 1$.
+
+### Vanskeligere
+
+**18.3** *(Oppgave 3 på eksamen 2024.)* Definer $f : \mathbb{R}^3 \to \mathbb{R}^3$ ved $f(\vec x) = A\vec x + \vec b$, der
+$$A = \begin{pmatrix} 1 & 2 & 0 \\ 3 & 0 & 5 \\ 2 & 1 & 1 \end{pmatrix}, \qquad \vec b = \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix}.$$
+Avgjør om $f$ er (i) veldefinert, (ii) injektiv, (iii) surjektiv og (iv) inverterbar. Er $f$ lineær?
+
+**18.4** *(Oppgave 3 på prøveeksamen 2025.)* Definer $f : \mathbb{R}^5 \to \mathbb{R}^3$ ved $f(\vec x) = A\vec x$, der
+$$A = \begin{pmatrix} 2 & -2 & 6 & 1 & 4 \\ 1 & -3 & 1 & 2 & 1 \\ 4 & 1 & 4 & -1 & -2 \end{pmatrix}.$$
+Avgjør om $f$ er (i) veldefinert, (ii) injektiv, (iii) surjektiv og (iv) inverterbar. Hvilket av svarene kan du gi uten å regne i det hele tatt?
 
 ---
 
