@@ -110,5 +110,5 @@ $\int_{a}^{b} fg \, dx=[Fg]_{a}^b-\int_{a}^{b} Fg' \, dx$
 - Kjerneregel bakglengs: substitusjon/variabelskifte. Obs: finnes også invers substitusjon, det er litt snålt
 - Delbrøksoppspaltning, i litt mer komplisert form en vgs.
 - Trigonometriske integraler: her må man trikse litt. 
-- Trigonometriske substitusjoner.
+- Trigonometriske substitusjoner. Ida sin favoritt
 
