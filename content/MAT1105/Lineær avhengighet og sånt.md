@@ -1,3 +1,4 @@
+[[Matriser]] [[Inverse matriser]] [[Determinanter]]
 Intuisjon: Lineært uavhenige vektorer kan du ikke kombinere og komme tilbake til samme punkt. (altså summen av vektorene $=0$)
 Tenk ortogonale, men også bare har en komponent de andre ikke har f.eks. eller mer komplisert.
 
@@ -22,7 +23,7 @@ Radekvivalente matriser deler lineare avhengighetsrelasjoner mellom søyler. Gir
 
 Dersom $A\vec{x}=\vec{b}$ har en løsning, så er $\vec{b}$ en lineær kombinasjon av $\{ a_{i} \}_{i=1}^n$
 dersom $A\vec{x}=\vec{b}$ kun har 1 løsning: lineær kombinasjon på unik måte
-$\{ a_{i} \}_{i=1}^n$span $\mathbb{R}^m$ $A\vec{x}=\vec{b}$ har alltid en løsning. Alle rader er pivotrader. Hva skal det bety?
+$\{ a_{i} \}_{i=1}^n$span $\mathbb{R}^m$ $A\vec{x}=\vec{b}$ har alltid en løsning. Alle rader er pivotrader. søylerommet = løsningsrommet
 
 Så husker vi fra [[Matriser]] at siste søyle i $(A\:\:b)$ ikke er pivotsøyle bety at $A\vec{x}=\vec{b}$ har en løsning, om alle søyler er pivotsøyler: unik løsning. 
 Alltid har en løsning: alle rader er pivotrader. Og da siste søyle blir aldri pivotsøyle. 
@@ -63,6 +64,11 @@ Dette gir at $C_{1}$ og $C_{2}$ har samme lineære avhengighetsrelasjoner mellom
 
 Viser først at$C_{1}$ og $C_{2}$ har de samme posisjonene for pivotsøyler. Hvis ikke: (kontrapositivt)
 Finnes en første indeks $k$ er pivotsøyle i $C_{1}$ men ikke i $C_{2}$ (derfor har den en lineær avhengighetsrelasjon melllom disse tidligere søylene ).
+
+
+## Nullrom, col space etc
+Col span: bildet til lineærtransformasjonen:9
+
 
 
 

@@ -76,6 +76,7 @@ Flipped molekyl - flere vannmolekyler binder seg.
 Veien videre:
 
 "Overraskende pålitelige". Bedre modeller -- hvor stopper det?
+For ytterligere fremskritt: mer data.
 Physical AI. Tilgang til robotarm. Biolab. Etc. 
 
 Forskerens/brukerens rolle endres.
@@ -93,11 +94,11 @@ Figma: samler inn data. Konkurrerer med oss om å anvende. Dataene er det som ha
 "amerika og Kina pumper mye penger i dette, trenger man europeiske/norske datasentre?"
 Beste måten å beskytte seg er å kunne bruke KI. Hugging Face - bruke dårlig kinesisk openweights. Fable-lansering. suverenitetsproblem. 
 Mistral har en god modell??? What???
-Superintelligens? Du kan bruke KI-agenter til å utivkle KI-agenter. Kanskje Europa kan ta igjen?
+Superintelligens? Du kan bruke KI-agenter til å utivkle KI-agenter. Kanskje Europa kan ta igjen? (synes forøvrig dette er et ganske dårlig argument. de store labbene vil vel være bedre posisjonert til å bruke de kraftigste modellene til å gjøre masse KI-research?)
 
 "Bias i realfag?"
 Litt samme bias som mennesker. FOrklarer feil som riktig slik mennesker også gjør. Tillært av mennesker?
-Gjetter seg frem til hva som skal være et ganske riktig svar, og finner frem til løsningen derifra.
+Gjetter seg frem til hva som skal være et ganske riktig svar, og finner frem til løsningen derifra. (er dette bare en naturlig måte å løse problemer på, eller er dette noe de gjør fordi de etterlikner mennesker?)
 
 "harness"
 Lett for oss å lage. Mange muligheter her. 

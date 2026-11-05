@@ -1,3 +1,11 @@
+
+
+
+[[GAUSSELIMINASJON]]
+[[Inverse matriser]]
+[[Lineær avhengighet og sånt]]
+[[Egenverdier og egenvektorer]]
+
 Hva er en matrise?
 Komponent listes opp i to retninger, horisontalt, vertikalt. 
 Store bokstaver, komponenter i små
@@ -14,6 +22,8 @@ $A$ er kvadratisk når $m=n$
 
 radvektor: et hosistonalt segment i $A$
 søylevektor: vertikalt segment
+
+
 
 ### Transponere matrise
 $A^T$ er snudd, rad 1 blir søyle 1 osv
@@ -125,7 +135,7 @@ Skrive matrisen som summen av sine søyler trenger ikke vi å drive på med.
 # Lineære transformasjoner og matrisemultiplikasjoner
 
 $\vec{F}:\mathbb{R}^n\to \mathbb{R}^m$
-egenskaper: 
+egenskaper ved LINEÆRE TRANSFORMASJONER: 
 $F(\vec{a}_{1}+\vec{a}_{2})=F(\vec{a}_{1})+F(\vec{a}_{2})$
 $F(c\vec{a})=cF(\vec{a})$
 
@@ -135,6 +145,9 @@ Vi kan i hvertfall bevise at den fins? og at den er lineær
 ### Matrisen til en vektorprojeksjon
 projeksjonsmatrise $\vec{b} \vec{b}^T$
 Utledes i forelesningsnotat
+
+## Linearitet og isomorfisme
+Isomorf: Veldefinert, surjektiv, injektiv, og lineær. Trenger ikke ha en invers?
 ## Finne matrise til avbildning (transformation?) med rotasjon vinkel
 Trigonometri:)
 
@@ -244,6 +257,11 @@ Vandermonde pluss polynomer som søyler med koeffisitenten til nye polynomet.
 
 `np.block` setter sammen som søyler. 
 `plt.plot(x, Y)` der Y er matrise. 
+
+
+
+
+
 
 
 ## Blokkmatriser

@@ -1,5 +1,6 @@
 [[GAUSSELIMINASJON]]
 [[Matriser]]
+[[Determinanter]]
 
 
 1. $A$ is row equivalent with $I_{n}$​.
@@ -7,6 +8,8 @@
 3. $A\vec{x}=\vec{b}$ has a unique solution for all right hand sides $b$.
 4. $A$ can be written as a product of elementary matrices.
 5. $A$ is invertible.
+6. (ikke kommet ennå men det går fint. søylene i $A$ er lineært uavhenige)
+7. $\det(A)\neq 0$
 
 Bare husk disse. Er viktig. Trust. 
 

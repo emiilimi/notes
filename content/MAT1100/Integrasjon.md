@@ -1,8 +1,9 @@
 
-Når vi går andre veien, støter vi på problem. Det er ikke alle funksjoner som er den deriverte til en funksjon. ([[Derivasjon]])
+Når vi går andre veien, støter vi på problem. Det er ikke alle [[funksjoner]] som er den deriverte til en funksjon. ([[Derivasjon]])
 finnes denne funksjonen?? har vi en formel for den??
 
 For derivasjon har en definisjon regneregler - anvendelser på formler-
+[[Integrasjon - oppgavesett]] og [[Integrasjon - fasit]]
 
 # Antiderivasjon
 $f:I\to\mathbb{R}$
@@ -12,14 +13,6 @@ Antiderivertte til $f$: Kan vi finne en  $F:I\to \mathbb{R}$ slik at $F'=f$
 Noen snille funksjoner har ingen antiderivert gitt ved en **formel.** (Formel: kombinasjon av standardfunksjoner)
 Standardfunksjoner: polynomer, rasjonale funksjoner , eksponensialfunksjoner (hyperbolske også?), logaritmer, trignometriske funksjoner. Om jeg bare setter de sammen på alle mulige måter så er ikke det nok for å uttrykke $\int \exp(x^{2})$
 	Kan ikke gi en antiderivert som en eksplisitt formel!
-
-
-## Teori for integrasjon
-Todelt: Integrere funksjoner som har en antiderivert. Snorre
-Så kommer Erik Hiltunen og tar noe annet. 
-
-"har ikke laget noe prøvemidtveis."
-
 
 ### Hiltunen:
 Seksjon 7.2 i boken. 
@@ -40,8 +33,13 @@ Dette er definisjonen,
 merk: $\int_{a}^{a} f(x) \, dx=0$
 	merk: $\int_{b}^{a} f(x) \, dx=-\int_{a}^{b} f(x) \, dx$ om $a<b$. Def.
 
-Abstrakt. Blir mer konkret. I morgen kommer [[Analysens fundamentalteorem]]
+Abstrakt. Blir mer konkret. I
+## Analysens fundamentalteorem
+Hvis $f$ er kontinuerlig på et gitt intervall $I$ så er $f$ integrerbar på ethvert lukket intervall inneholdt i $I$
+Hvis $c \in I$ så er funksjonen $A:I\to \mathbb{R}$ definert for hver  $x \in I$ ved $A(x)=\int_{c}^{x} f(t) \, dt$
 
+(og ikke tenk på hva c egt er, det blir bare en konstant:)
+fordi vi kinda ikke har definert ubestemte integraler (bevist) ennå.
 
 ### Øvresummer og nedresummer
 Nedreintegralet og øvreintegralet kan være definert når riemannssummen ikke er definert. (Når skjer dette?)
@@ -51,7 +49,6 @@ Nedreintegralet: øverste nedresum. (Nedresum: $S=\sum_{i=1}^{n}c_{i}\Delta x_{i
 **Teorem:** 
 1. om $f$ er integrerbar, er $\int_{\lfloor a \rfloor}^{b}f(x)  \, dx=\int_{a}^{\lceil b \rceil}f(x)  \, dx=\int_{a}^{b}f(x)  \, dx$
 2. Dersom nedreintegral=øvreintegral=A, er $f$ integrerbar og $\int_{a}^{b} f(x) \, dx=A$
-
 
 **Bevis:**
 ("vi bygger opp teorien steg for steg, dette her er matematisk analyse")
@@ -86,7 +83,7 @@ Motsigelsen er at $F$ ikke er deriverbar i $0$
 "da har jeg et motsigelsesbevis for at $F(x)$ ikke er en antiderivert til $f$"
 
 ## når $I$ er et intervall og $f:I\to \mathbb{R}$ er kontinuerlig finnes det en antiderivert. 
-som vi har vært borti tidligere?
+som vi har vært borti tidligere? Dette er kinda analysens fundamentalteorem:)
 
 **Påstand** når $I$ er et intervall og $f:I\to \mathbb{R}$ er kontinuerlig finnes det en antiderivert.  Begrunnes ved Riemannsummer (areal under graf, firkanter)
 "dette er bare et teoretisk argument. ikke basert på at funksjoner er definert ved uttrykk"
@@ -108,4 +105,10 @@ $\int_{a}^{b}  fg\, dx$
 Anta at $F$ er antiderivert til lille $f$
 $\int_{a}^{b} fg \, dx=[Fg]_{a}^b-\int_{a}^{b} Fg' \, dx$
 
-Begrunnelse
+
+## Også har vi noen flere:
+- Kjerneregel bakglengs: substitusjon/variabelskifte. Obs: finnes også invers substitusjon, det er litt snålt
+- Delbrøksoppspaltning, i litt mer komplisert form en vgs.
+- Trigonometriske integraler: her må man trikse litt. 
+- Trigonometriske substitusjoner.
+
